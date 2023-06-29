@@ -44,6 +44,8 @@ public extension NSNotification {
 }
 
 public extension Notification.Name {
+    static let PVResetLibrary = Notification.Name("kResetLibraryNotification")
+    static let PVReimportLibrary = Notification.Name("kReimportLibraryNotification")
     static let PVRefreshLibrary = Notification.Name("kRefreshLibraryNotification")
     static let PVInterfaceDidChangeNotification = Notification.Name("kInterfaceDidChangeNotification")
 }
@@ -92,6 +94,7 @@ final class PVGameLibraryViewController: GCEventViewController, UITextFieldDeleg
     #endif
 
     var isInitialAppearance = false
+    var isLoaded = false
 
     // add or remove the conflict button (iff it is in the storyboard)
     func updateConflictsButton(_ hasConflicts: Bool) {
@@ -579,8 +582,35 @@ final class PVGameLibraryViewController: GCEventViewController, UITextFieldDeleg
             })
             .disposed(by: disposeBag)
 
+        collectionView.performBatchUpdates(nil, completion: {
+            (result) in
+            print("Finished loading view", self.count)
+            self.count += 1
+            if self.count == 3 {
+                self.checkROMs(true)
+            } else {
+                self.hud.hide(true)
+            }
+        })
+        self.hud.show(true)
+        self.hud.mode = .indeterminate
+        self.hud.labelText = "Initializing Games Library..."
+        collectionView.reloadData()
+
         loadGameFromShortcut()
         becomeFirstResponder()
+    }
+    
+    var count = 0
+    public func checkROMs(_ once:Bool) {
+        self.hud.show(true)
+        self.hud.mode = .indeterminate
+        self.hud.labelText = "Initializing ROM Database..."
+        if !once || !isLoaded {
+            self.updatesController.importROMDirectories()
+        }
+        self.hud.hide(true)
+        isLoaded = true
     }
 
     #if os(tvOS)

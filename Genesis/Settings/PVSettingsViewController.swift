@@ -273,6 +273,24 @@ final class PVSettingsViewController: QuickTableViewController {
         // Game Library 2
         let library2Rows: [TableRow] = [
             NavigationRow(
+                text: NSLocalizedString("Re-import all ROMs Directories", comment: ""),
+                detailText: .subtitle("Re-import all ROMs from all ROM Directories (e.g. com.provenance.snes)"),
+                icon: .sfSymbol("triangle.circle.fill"),
+                customization: nil,
+                action: { [weak self] _ in
+                    self?.reimportROMsAction()
+                }
+            ),
+            NavigationRow(
+                text: NSLocalizedString("Reset Everything", comment: ""),
+                detailText: .subtitle("Delete All Settings, Re-import ROMs ⚠️ Very Slow"),
+                icon: .sfSymbol("delete.forward.fill"),
+                customization: nil,
+                action: { [weak self] _ in
+                    self?.resetDataAction()
+                }
+            ),
+            NavigationRow(
                 text: NSLocalizedString("Refresh Game Library", comment: ""),
                 detailText: .subtitle("Re-import ROMs ⚠️ Slow"),
                 icon: .sfSymbol("arrow.uturn.forward"),
@@ -656,7 +674,50 @@ final class PVSettingsViewController: QuickTableViewController {
             present(alert, animated: true) { () -> Void in }
         }
     }
-
+    func reimportROMsAction() {
+        tableView.deselectRow(at: tableView.indexPathForSelectedRow ?? IndexPath(row: 0, section: 0), animated: true)
+        let alert = UIAlertController(title: "Re-Scan all ROM Directories?",
+                                      message: """
+                                        Attempt scan all ROM Directories (e.g. com.provenance.snes),
+                                        import all new ROMs found, and update existing ROMs
+                                      """,
+                                      preferredStyle: .alert)
+        alert.popoverPresentationController?.sourceView = tableView
+        alert.popoverPresentationController?.sourceRect = tableView.bounds ?? UIScreen.main.bounds
+        alert.preferredContentSize = CGSize(width: 500, height: 300)
+        alert.addAction(UIAlertAction(title: "Yes",
+                                      style: .default,
+                                      handler: { (_: UIAlertAction) -> Void in
+            NotificationCenter.default.post(name: NSNotification.Name.PVReimportLibrary, object: nil)
+            self.done(self)
+        }))
+        alert.addAction(UIAlertAction(title: "No",
+                                      style: .cancel,
+                                      handler: nil))
+        present(alert, animated: true) { () -> Void in }
+    }
+    func resetDataAction() {
+        tableView.deselectRow(at: tableView.indexPathForSelectedRow ?? IndexPath(row: 0, section: 0), animated: true)
+        let alert = UIAlertController(title: "Reset Everything?",
+                                      message: """
+                                        Attempt to delete all settings / configurations, then
+                                        reimport everything.
+                                      """,
+                                      preferredStyle: .alert)
+        alert.popoverPresentationController?.sourceView = tableView
+        alert.popoverPresentationController?.sourceRect = tableView.bounds ?? UIScreen.main.bounds
+        alert.preferredContentSize = CGSize(width: 500, height: 300)
+        alert.addAction(UIAlertAction(title: "Yes",
+                                      style: .default,
+                                      handler: { (_: UIAlertAction) -> Void in
+            NotificationCenter.default.post(name: NSNotification.Name.PVResetLibrary, object: nil)
+            self.done(self)
+        }))
+        alert.addAction(UIAlertAction(title: "No",
+                                      style: .cancel,
+                                      handler: nil))
+        present(alert, animated: true) { () -> Void in }
+    }
     func refreshGameLibraryAction() {
         tableView.deselectRow(at: tableView.indexPathForSelectedRow ?? IndexPath(row: 0, section: 0), animated: true)
         let alert = UIAlertController(title: "Refresh Game Library?",
@@ -679,6 +740,7 @@ final class PVSettingsViewController: QuickTableViewController {
                                       style: .default,
                                       handler: { (_: UIAlertAction) -> Void in
             NotificationCenter.default.post(name: NSNotification.Name.PVRefreshLibrary, object: nil)
+            self.done(self)
         }))
         alert.addAction(UIAlertAction(title: "No",
                                       style: .cancel,

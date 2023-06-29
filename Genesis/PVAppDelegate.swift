@@ -187,18 +187,41 @@ final class PVAppDelegate: UIResponder, UIApplicationDelegate {
         #endif
 
         // Handle refreshing library
-        NotificationCenter.default.rx.notification(.PVRefreshLibrary)
+        NotificationCenter.default.rx.notification(.PVReimportLibrary)
+            .take(1)
             .flatMapLatest { _ in
-                // Clear the database, then the user has to restart to re-scan
-//                gameLibrary.clearLibrary()
+                gameLibrary.refreshLibrary()
+            }
+            .subscribe(
+                onCompleted: {
+                    self.gameLibraryViewController?.checkROMs(false)
+                }).disposed(by: disposeBag)
+        NotificationCenter.default.rx.notification(.PVRefreshLibrary)
+            .take(1)
+            .flatMapLatest { _ in
                 gameLibrary.clearROMs()
             }
-            .subscribe().disposed(by: disposeBag)
-
+            .subscribe(
+                onCompleted: {
+                    self.gameLibraryViewController?.checkROMs(false)
+                }).disposed(by: disposeBag)
+        NotificationCenter.default.rx.notification(.PVResetLibrary)
+            .take(1)
+            .flatMapLatest { _ in
+                return gameLibrary.clearLibrary()
+            }
+            .subscribe(
+                onCompleted: {
+                    NSLog("PVAppDelegate: Completed ResetLibrary, Re-Importing")
+                    GameImporter.shared.initSystems()
+                    self.gameLibraryViewController?.checkROMs(false)
+                }
+            ).disposed(by: disposeBag)
         _initUI(libraryUpdatesController: libraryUpdatesController, gameImporter: gameImporter, gameLibrary: gameLibrary)
 
         let database = RomDatabase.sharedInstance
         database.refresh()
+        database.reloadCache()
 
         #if !targetEnvironment(macCatalyst) && canImport(SteamController) && !targetEnvironment(simulator)
         // SteamController is build with STEAMCONTROLLER_NO_PRIVATE_API, so dont call this! ??

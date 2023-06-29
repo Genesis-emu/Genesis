@@ -58,7 +58,7 @@ struct PVGameLibraryUpdatesController {
                 return nil
             })
 
-        let systemDirsConflicts = Observable.just(PVSystem.all.map { $0 })
+        let _systemDirsConflicts = Observable.just(PVSystem.all.map { $0 })
             .map({ systems -> [(System, [URL])] in
                 systems
                     .map { $0.asDomain() }
@@ -77,8 +77,8 @@ struct PVGameLibraryUpdatesController {
                 })
             })
 
-        let potentialConflicts = Observable.merge(gameImporterConflicts, systemDirsConflicts, updateConflicts).startWith(())
-
+        let potentialConflicts = Observable.merge( gameImporterConflicts, updateConflicts ).startWith(())
+    
         conflicts = potentialConflicts
             .map { gameImporter.conflictedFiles ?? [] }
             .map({ filesInConflictsFolder -> [Conflict] in
@@ -91,6 +91,36 @@ struct PVGameLibraryUpdatesController {
             })
             .map { conflicts in conflicts.filter { !$0.candidates.isEmpty }}
             .share(replay: 1, scope: .forever)
+    }
+
+    func importROMDirectories() {
+        DispatchQueue.main.async(execute: { () -> Void in
+            NSLog("PVGameLibrary: Starting Import")
+            RomDatabase.sharedInstance.reloadCache()
+            RomDatabase.sharedInstance.reloadFileSystemROMCache()
+            let dbGames: [AnyHashable: PVGame] = RomDatabase.sharedInstance.getGamesCache()
+            let dbSystems: [AnyHashable: PVSystem] = RomDatabase.sharedInstance.getSystemCache()
+            let disposeBag = DisposeBag()
+            dbSystems.values.forEach({ system in
+                NSLog("PVGameLibrary: Importing \(system.identifier)")
+                let files = RomDatabase.sharedInstance.getFileSystemROMCache(for: system)
+                let newGames = files.keys.filter({
+                        return dbGames.index(forKey:
+                                                (system.identifier as NSString)
+                            .appendingPathComponent($0.lastPathComponent)) == nil
+                    })
+                if newGames.count > 0 {
+                    print("PVGameLibraryUpdatesController: Importing ", newGames)
+                    GameImporter.shared.getRomInfoForFiles(atPaths: newGames, userChosenSystem: system.asDomain())
+#if os(iOS) || os(macOS)
+                    addImportedGames(to: CSSearchableIndex.default(), database: RomDatabase.sharedInstance).disposed(by: disposeBag)
+#endif
+                }
+                NSLog("PVGameLibrary: Imported OK \(system.identifier)")
+
+            })
+            NSLog("PVGameLibrary: Import Complete")
+        })
     }
 
     #if os(iOS)

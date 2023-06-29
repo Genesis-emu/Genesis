@@ -127,10 +127,10 @@ public struct PVGameLibrary {
     public func clearLibrary() -> Completable {
         Completable.create { observer in
             do {
-                try self.database.deleteAll()
+                try self.database.deleteAllData()
                 observer(.completed)
             } catch {
-                ELOG("Failed to delete all objects. \(error.localizedDescription)")
+                NSLog("Failed to delete all objects. \(error.localizedDescription)")
                 observer(.error(error))
             }
             return Disposables.create()
@@ -149,7 +149,18 @@ public struct PVGameLibrary {
             return Disposables.create()
         }
     }
-
+    public func refreshLibrary() -> Completable {
+        Completable.create { observer in
+            do {
+                try self.database.refresh()
+                observer(.completed)
+            } catch {
+                NSLog("Failed to refresh all objects. \(error.localizedDescription)")
+                observer(.error(error))
+            }
+            return Disposables.create()
+        }
+    }
     public func gamesForSystem(systemIdentifier: String) -> Results<PVGame> {
         return database.all(PVGame.self).filter(NSPredicate(format: "systemIdentifier == %@", argumentArray: [systemIdentifier]))
     }
