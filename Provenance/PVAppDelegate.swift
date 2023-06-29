@@ -17,15 +17,14 @@ import UIKit
 
 final class PVApplication: UIApplication {
     var core: PVEmulatorCore?
+    var emulator: PVEmulatorViewController?
     override func sendEvent(_ event: UIEvent) {
-        if (core != nil) {
-            core!.send(event)
+        if let core=self.core {
+            core.send(event)
         }
-
         super.sendEvent(event)
     }
 }
-
 
 final class PVAppDelegate: UIResponder, UIApplicationDelegate {
     internal var window: UIWindow?
@@ -123,6 +122,7 @@ final class PVAppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         application.isIdleTimerDisabled = PVSettingsModel.shared.disableAutoLock
+
         _initLogging()
         _initAppCenter()
         setDefaultsFromSettingsBundle()
@@ -144,6 +144,7 @@ final class PVAppDelegate: UIResponder, UIApplicationDelegate {
             try RomDatabase.initDefaultDatabase()
         } catch {
             let appName: String = Bundle.main.infoDictionary?["CFBundleName"] as? String ?? "the application"
+            print("Error: Database Error\n")
             let alert = UIAlertController(title: NSLocalizedString("Database Error", comment: ""), message: error.localizedDescription + "\nDelete and reinstall " + appName + ".", preferredStyle: .alert)
             ELOG(error.localizedDescription)
             alert.addAction(UIAlertAction(title: "Exit", style: .destructive, handler: { _ in
@@ -218,13 +219,63 @@ final class PVAppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    func applicationWillResignActive(_: UIApplication) {}
+    func saveCoreState(_ application: PVApplication) {
+        if let core = application.core {
+            if core.isOn, let emulator = application.emulator {
+                if PVSettingsModel.shared.autoSave, core.supportsSaveStates {
+                    NSLog("PVAppDelegate: Saving Core State\n")
+                    emulator.autoSaveState { result in
+                        switch result {
+                            case .success:
+                                NSLog("PVAppDelegate: Save Successful")
+                                break
+                            case let .error(error):
+                                NSLog("PVAppDelegate: \(error.localizedDescription)")
+                        }
+                    }
+                }
+            }
+        }
+    }
+    func pauseCore(_ application: PVApplication) {
+        if let core = application.core {
+            if core.isOn && core.isRunning {
+                NSLog("PVAppDelegate: Pausing Core\n")
+                core.setPauseEmulation(true)
+            }
+        }
+    }
 
-    func applicationDidEnterBackground(_: UIApplication) {}
+    func stopCore(_ application: PVApplication) {
+        if let core = application.core {
+            if core.isOn {
+                NSLog("PVAppDelegate: Stopping Core\n")
+                core.stopEmulation()
+            }
+        }
+    }
+
+    func applicationWillResignActive(_ application: UIApplication) {
+        if let app=application as? PVApplication {
+            pauseCore(app)
+            usleep(1000)
+            saveCoreState(app)
+        }
+    }
+
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        if let app=application as? PVApplication {
+            pauseCore(app)
+        }
+    }
 
     func applicationWillEnterForeground(_: UIApplication) {}
 
     func applicationDidBecomeActive(_: UIApplication) {}
 
-    func applicationWillTerminate(_: UIApplication) {}
+    func applicationWillTerminate(_ application: UIApplication) {
+        if let app=application as? PVApplication {
+            stopCore(app)
+        }
+    }
 }

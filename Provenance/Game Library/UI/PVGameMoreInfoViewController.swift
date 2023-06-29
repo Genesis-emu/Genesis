@@ -706,7 +706,7 @@ extension PVGameMoreInfoViewController {
                 do {
                     try RomDatabase.sharedInstance.delete(game: game)
                 } catch {
-                    self.presentError(error.localizedDescription)
+                    self.presentError(error.localizedDescription, source: self.view)
                 }
             }))
             alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))

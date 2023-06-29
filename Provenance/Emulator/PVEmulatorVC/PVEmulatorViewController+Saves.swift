@@ -90,7 +90,6 @@ extension PVEmulatorViewController {
             completion(.error(.ineligibleError))
             return
         }
-
         let image = captureScreenshot()
         createNewSaveState(auto: true, screenshot: image, completion: completion)
     }
@@ -119,7 +118,7 @@ extension PVEmulatorViewController {
                     //                        game.screenShots.append(newFile)
                     //                    }
                 } catch {
-                    presentError("Unable to write image to disk, error: \(error.localizedDescription)")
+                    presentError("Unable to write image to disk, error: \(error.localizedDescription)", source: self.view)
                 }
 
                 imageFile = PVImageFile(withURL: imageURL, relativeRoot: .iCloud)
@@ -189,7 +188,7 @@ extension PVEmulatorViewController {
 
         let realm = try! Realm()
         guard let core = realm.object(ofType: PVCore.self, forPrimaryKey: core.coreIdentifier) else {
-            presentError("No core in database with id \(self.core.coreIdentifier ?? "null")")
+            presentError("No core in database with id \(self.core.coreIdentifier ?? "null")", source: self.view)
             return
         }
 
@@ -201,7 +200,9 @@ extension PVEmulatorViewController {
             try! realm.write {
                 state.lastOpened = Date()
             }
-
+            if !FileManager.default.fileExists(atPath: state.file.url.path) {
+                return
+            }
             self.core.loadStateFromFile(atPath: state.file.url.path) { success, error in
                 let completion = {
                     self.core.setPauseEmulation(false)
@@ -211,7 +212,7 @@ extension PVEmulatorViewController {
 
                 guard success else {
                     let message = error?.localizedDescription ?? "Unknown error"
-                    self.presentError("Failed to load save state. " + message, completion: completion)
+                    self.presentError("Failed to load save state. " + message, source: self.view, completion: completion)
                     return
                 }
 
@@ -219,6 +220,15 @@ extension PVEmulatorViewController {
             }
         }
 
+        if !FileManager.default.fileExists(atPath: state.file.url.path) {
+            let message =
+                """
+                Save State is not valid
+                Please try anonther save state
+                """
+            presentWarning(message, source: self.view, completion: loadOk)
+            return
+        }
         if core.projectVersion != state.createdWithCoreVersion {
             loadSave()
             let message =
@@ -226,7 +236,7 @@ extension PVEmulatorViewController {
                 Save state created with version \(state.createdWithCoreVersion ?? "nil") but current \(core.projectName) core is version \(core.projectVersion).
                 Save file may not load. Create a new save state to avoid this warning in the future.
                 """
-            presentWarning(message, completion: loadOk)
+            presentWarning(message, source: self.view, completion: loadOk)
         } else {
             loadSave()
         }
@@ -269,6 +279,7 @@ extension PVEmulatorViewController {
     }
 
     @objc func showSaveStateMenu() {
+        updateSaveStates()
         recoverSaveStates()
         guard let saveStatesNavController = UIStoryboard(name: "SaveStates", bundle: nil).instantiateViewController(withIdentifier: "PVSaveStatesViewControllerNav") as? UINavigationController else {
             return
@@ -306,19 +317,19 @@ extension PVEmulatorViewController {
             do {
                 try fileManager.removeItem(at: infoURL)
             } catch {
-                presentError("Unable to remove old save state info.plist: \(error.localizedDescription)")
+                presentError("Unable to remove old save state info.plist: \(error.localizedDescription)", source: self.view)
             }
         }
 
         guard let realm = try? Realm() else {
-            presentError("Unable to instantiate realm, abandoning old save state conversion")
+            presentError("Unable to instantiate realm, abandoning old save state conversion", source: self.view)
             return
         }
 
         if fileManager.fileExists(atPath: autoSaveURL.path) {
             do {
                 guard let core = realm.object(ofType: PVCore.self, forPrimaryKey: core.coreIdentifier) else {
-                    presentError("No core in database with id \(self.core.coreIdentifier ?? "null")")
+                    presentError("No core in database with id \(self.core.coreIdentifier ?? "null")", source: self.view)
                     return
                 }
 
@@ -330,7 +341,7 @@ extension PVEmulatorViewController {
                     realm.add(newState)
                 }
             } catch {
-                presentError("Unable to convert autosave to new format: \(error.localizedDescription)")
+                presentError("Unable to convert autosave to new format: \(error.localizedDescription)", source: self.view)
             }
         }
 
@@ -338,7 +349,7 @@ extension PVEmulatorViewController {
             if fileManager.fileExists(atPath: url.path) {
                 do {
                     guard let core = realm.object(ofType: PVCore.self, forPrimaryKey: core.coreIdentifier) else {
-                        presentError("No core in database with id \(self.core.coreIdentifier ?? "null")")
+                        presentError("No core in database with id \(self.core.coreIdentifier ?? "null")", source: self.view)
                         return
                     }
 
@@ -350,7 +361,7 @@ extension PVEmulatorViewController {
                         realm.add(newState)
                     }
                 } catch {
-                    presentError("Unable to convert autosave to new format: \(error.localizedDescription)")
+                    presentError("Unable to convert autosave to new format: \(error.localizedDescription)", source: self.view)
                 }
             }
         }
@@ -368,7 +379,7 @@ extension PVEmulatorViewController {
                 return date0.compare(date1) == .orderedAscending
             })
             guard let realm = try? Realm() else {
-                presentError("Unable to instantiate realm, abandoning old save state conversion")
+                presentError("Unable to instantiate realm, abandoning old save state conversion", source: self.view)
                 return
             }
             var saves=["SaveState":1]
@@ -388,7 +399,7 @@ extension PVEmulatorViewController {
                         saves.index(forKey: file) == nil) {
                         do {
                             guard let core = realm.object(ofType: PVCore.self, forPrimaryKey: core.coreIdentifier) else {
-                                presentError("No core in database with id \(self.core.coreIdentifier ?? "null")")
+                                presentError("No core in database with id \(self.core.coreIdentifier ?? "null")", source: self.view)
                                 return
                             }
                             let imgFile = PVImageFile(withURL:  URL(fileURLWithPath: url.path.replacingOccurrences(of: "svs", with: "jpg")))
@@ -398,9 +409,25 @@ extension PVEmulatorViewController {
                                 realm.add(newState)
                             }
                         } catch {
-                            presentError("Unable to Add Save State")
+                            presentError("Unable to Add Save State", source: self.view)
                         }
                     }
+                }
+            }
+        } catch {
+            print(error)
+        }
+    }
+    func updateSaveStates() {
+        do {
+            for save in game.saveStates {
+                if !FileManager.default.fileExists(atPath: save.file.url.path) {
+                    try PVSaveState.delete(save)
+                }
+            }
+            for save in game.autoSaves {
+                if !FileManager.default.fileExists(atPath: save.file.url.path) {
+                    try PVSaveState.delete(save)
                 }
             }
         } catch {

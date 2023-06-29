@@ -16,6 +16,7 @@ import CoreSpotlight
 // Responsible for handling updates to game library, finding conflicts and resolving them
 struct PVGameLibraryUpdatesController {
     public let hudState: Observable<HudState>
+    public let hudStateWatcher: Observable<HudState>
     public let conflicts: Observable<[Conflict]>
 
     private let gameImporter: GameImporter
@@ -44,10 +45,11 @@ struct PVGameLibraryUpdatesController {
         let filesToImport = Observable.merge(initialScan, directoryWatcherExtractedFiles)
 
         // We use a hacky combineLatest here since we need to do the bind to `gameImporter.startImport` somewhere, so we hack it into the hudState definition
-        let o1 = Self.hudState(from: directoryWatcher, gameImporterEvents: gameImporterEvents, scheduler: scheduler)
+        // bind hudState to hudState, separate from startImport
+        let o1 = Self.hudStateInit(from: directoryWatcher, gameImporterEvents: gameImporterEvents, scheduler: scheduler)
         let o2 = filesToImport.do(onNext: gameImporter.startImport)
-        hudState = Observable.combineLatest(o1, o2) { _hudState, _ in return _hudState }
-
+        self.hudState = Observable.combineLatest(o1, o2) { _hudState, _ in return _hudState }
+        self.hudStateWatcher = o1
         let gameImporterConflicts = gameImporterEvents
             .compactMap({ event -> Void? in
                 if case .completed = event {
@@ -113,16 +115,16 @@ struct PVGameLibraryUpdatesController {
     }
     #endif
 
-    private static func hudState(from directoryWatcher: RxDirectoryWatcher, gameImporterEvents: Observable<GameImporter.Event>, scheduler: SchedulerType) -> Observable<HudState> {
+    private static func hudStateInit(from directoryWatcher: RxDirectoryWatcher, gameImporterEvents: Observable<GameImporter.Event>, scheduler: SchedulerType) -> Observable<HudState> {
         let stateFromGameImporter = gameImporterEvents
             .compactMap({ event -> HudState? in
                 switch event {
                 case .initialized, .finishedArtwork, .completed:
                     return nil
                 case .started(let path):
-                    return .title("Importing: \(path.lastPathComponent)")
+                    return .title("Checking Import: \(path.lastPathComponent)")
                 case .finished:
-                    return .hidden
+                    return .title("Import Successful")
                 }
             })
 
@@ -156,6 +158,14 @@ struct PVGameLibraryUpdatesController {
 extension PVGameLibraryUpdatesController: ConflictsController {
     func resolveConflicts(withSolutions solutions: [URL : System]) {
         gameImporter.resolveConflicts(withSolutions: solutions)
+        updateConflicts.onNext(())
+    }
+    func deleteConflict(path: URL) {
+        do {
+            try FileManager.default.removeItem(at: path)
+        } catch {
+            ELOG("\(error.localizedDescription)")
+        }
         updateConflicts.onNext(())
     }
 }

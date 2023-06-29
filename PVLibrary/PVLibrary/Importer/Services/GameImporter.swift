@@ -321,6 +321,17 @@ public final class GameImporter {
         serialImportQueue.addOperation(completionOperation)
     }
 
+    public func moveAndOverWrite(sourcePath: URL, destinationPath: URL) {
+        do {
+            if FileManager.default.fileExists(atPath: destinationPath.path) {
+                try FileManager.default.removeItem(atPath: destinationPath.path)
+            }
+            try FileManager.default.moveItem(at: sourcePath, to: destinationPath)
+            DLOG("Moved \(sourcePath.path) to \(destinationPath.path)")
+        } catch {
+            ELOG("Unable to move \(sourcePath.path) to \(destinationPath.path) because: \(error.localizedDescription)")
+        }
+    }
     public func resolveConflicts(withSolutions solutions: [URL: System]) {
         let importOperation = BlockOperation()
 
@@ -341,12 +352,7 @@ public final class GameImporter {
             let sourcePath: URL = filePath
             let destinationPath: URL = subfolder.appendingPathComponent(sourceFilename, isDirectory: false)
 
-            do {
-                try FileManager.default.moveItem(at: sourcePath, to: destinationPath)
-                DLOG("Moved \(sourcePath.path) to \(destinationPath.path)")
-            } catch {
-                ELOG("Unable to move \(sourcePath.path) to \(destinationPath.path) because: \(error.localizedDescription)")
-            }
+            moveAndOverWrite(sourcePath: sourcePath, destinationPath: destinationPath)
 
             // moved the .cue, now move .bins .imgs etc
             let relatedFileName: String = sourcePath.deletingPathExtension().lastPathComponent
@@ -390,7 +396,7 @@ public final class GameImporter {
 
                     do {
                         let newDestinationPath = subfolder.appendingPathComponent(file.lastPathComponent, isDirectory: false)
-                        try FileManager.default.moveItem(at: file, to: newDestinationPath)
+                        moveAndOverWrite(sourcePath: file, destinationPath: newDestinationPath)
                     } catch {
                         ELOG("Unable to move related file from \(filePath.path) to \(subfolder.path) because: \(error.localizedDescription)")
                     }
@@ -729,7 +735,7 @@ public extension GameImporter {
                 database.all(PVGame.self, filter: NSPredicate(format: "ANY relatedFiles.partialPath = %@", argumentArray: [partialPath])).first, // Check if it's an associated file of another game
                 chosenSystem.identifier == existingGame.system.identifier { // Check it's a same system too
                 // Matched a known game
-                finishUpdateOrImport(ofGame: existingGame)
+                finishUpdateOrImport(ofGame: existingGame, path: path)
                 return
             }
         }
@@ -782,13 +788,7 @@ public extension GameImporter {
             // No system found to match this file
             guard var systems = systemsMaybe else {
                 ELOG("No system matched extension {\(fileExtensionLower)}")
-				do {
-					try FileManager.default.moveItem(at: path, to: conflictPath)
-					ILOG("It's a new game, so we moved \(filename) to conflicts dir")
-					self.encounteredConflicts = true
-				} catch {
-					ELOG("Failed to move \(urlPath.path) to conflicts dir")
-				}
+                moveAndOverWrite(sourcePath: path, destinationPath: conflictPath)
                 return
             }
 
@@ -810,12 +810,7 @@ public extension GameImporter {
                     guard let existingGames = GameImporter.findAnyCurrentGameThatCouldBelongToAnyOfTheseSystems(systems, romFilename: filename) else {
                         // NO matches to existing games, I suppose we move to conflicts dir
                         self.encounteredConflicts = true
-                        do {
-                            try FileManager.default.moveItem(at: path, to: conflictPath)
-                            ILOG("It's a new game, so we moved \(filename) to conflicts dir")
-                        } catch {
-                            ELOG("Failed to move \(urlPath.path) to conflicts dir")
-                        }
+                        moveAndOverWrite(sourcePath: path, destinationPath: conflictPath)
                         // Worked or failed, we're done with this file
                         return
                     }
@@ -828,7 +823,7 @@ public extension GameImporter {
                         // This is a quagmire scenario, I guess also move to conflicts dir...
                         self.encounteredConflicts = true
                         do {
-                            try FileManager.default.moveItem(at: path, to: conflictPath)
+                            moveAndOverWrite(sourcePath: path, destinationPath: conflictPath)
                             let matchedSystems = systems.map { $0.identifier }.joined(separator: ", ")
                             let matchedGames = existingGames.map { $0.romPath }.joined(separator: ", ")
                             WLOG("Scanned game matched with multiple systems {\(matchedSystems)} and multiple existing games \(matchedGames) so we moved \(filename) to conflicts dir. You figure it out!")
@@ -865,7 +860,7 @@ public extension GameImporter {
                 // Downside would be that you have to then check the MD5 for every file and that would take forver
                 // perhaps we should add more info to the PVGame entry for the file modified date and compare that instead,
                 // then check md5 only if the date differs. - Joe M
-                finishUpdateOrImport(ofGame: existingGame)
+                finishUpdateOrImport(ofGame: existingGame, path: path)
             } else {
                 // New game
                 // TODO: Look for new related files?
@@ -935,6 +930,8 @@ public extension GameImporter {
         guard let results = resultsMaybe, !results.isEmpty else {
             // the file maybe exists but was wiped from DB,
             // try to re-import and rescan if can
+            // skip re-import during artwork download process
+            /*
             let urls = importFiles(atPaths: [game.url])
             if !urls.isEmpty {
                 lookupInfo(for: game, overwrite: overwrite)
@@ -946,6 +943,8 @@ public extension GameImporter {
                 }
                 return
             }
+            */
+            return
         }
 
         var chosenResultMaybe: [String: Any]? =
@@ -1266,13 +1265,7 @@ extension GameImporter {
         let newCDFilePath = newDirectory.appendingPathComponent(candidateFile.filePath.lastPathComponent)
 
         // Try to move the CD file
-        do {
-            try FileManager.default.moveItem(at: candidateFile.filePath, to: newCDFilePath)
-            ILOG("Moving item \(candidateFile.filePath.path) to \(newCDFilePath.path)")
-        } catch {
-            ELOG("Unable move CD file to create \(candidateFile.filePath) - \(error.localizedDescription)")
-            return nil
-        }
+        moveAndOverWrite(sourcePath: candidateFile.filePath, destinationPath: newCDFilePath)
 
         var relatedFiles: [URL]?
         // moved the .cue, now move .bins .imgs etc to the destination dir (conflicts or system dir, decided above)
@@ -1335,14 +1328,15 @@ extension GameImporter {
             ELOG("Couldn't add new game \(title): \(error.localizedDescription)")
             return nil
         }
-
-        finishUpdateOrImport(ofGame: game)
+        
+        finishUpdateOrImport(ofGame: game, path: path)
         return game
     }
 
-    private func finishUpdateOrImport(ofGame game: PVGame) {
+    private func finishUpdateOrImport(ofGame game: PVGame, path: URL) {
         var modified = false
 
+        //print("Processing",path.absoluteString);
         if game.requiresSync {
             if importStartedHandler != nil {
                 let fullpath = PVEmulatorConfiguration.path(forGame: game)
@@ -1353,7 +1347,7 @@ extension GameImporter {
             lookupInfo(for: game, overwrite: true)
             modified = true
         }
-
+        
         if finishedImportHandler != nil {
             let md5: String = game.md5Hash
             DispatchQueue.main.async(execute: { () -> Void in
@@ -1468,7 +1462,7 @@ extension GameImporter {
 
         let extensionLowercased = filePath.pathExtension.lowercased()
 
-        // Check if zip
+        // Check if 7z 
         if PVEmulatorConfiguration.archiveExtensions.contains(extensionLowercased) {
             ILOG("Candidate file is an archive, returning from moveRom()")
             return nil
@@ -1752,7 +1746,7 @@ extension GameImporter {
                 return
             }
 
-            // Skip the actual .7z, zip etc
+            // Skip the actual .7z, etc
             if PVEmulatorConfiguration.archiveExtensions.contains(file.pathExtension.lowercased()) {
                 return
             }
@@ -1798,7 +1792,7 @@ extension GameImporter {
                         ILOG("Path <\(toDirectory)> doesn't exist. Creating.")
                         try FileManager.default.createDirectory(at: toDirectory, withIntermediateDirectories: true, attributes: nil)
                     }
-                    try FileManager.default.moveItem(at: file, to: toPath)
+                    moveAndOverWrite(sourcePath: file, destinationPath: toPath)
                     DLOG("Moved file from \(file) to \(toPath.path)")
                     filesMovedToPaths.append(toPath)
                 } catch {
@@ -1813,7 +1807,7 @@ extension GameImporter {
                     let newM3UFilename = "\(cueFilename).m3u"
                     let newM3UPath = toDirectory.appendingPathComponent(newM3UFilename, isDirectory: false)
                     do {
-                        try FileManager.default.moveItem(at: file, to: newM3UPath)
+                        moveAndOverWrite(sourcePath: file, destinationPath: newM3UPath)
                         filesMovedToPaths.append(newM3UPath)
                     } catch {
                         ELOG("Failed to move m3u \(file.lastPathComponent) to directory \(toDirectory.lastPathComponent)")
