@@ -1,5 +1,5 @@
 //  PVEmuThreeCore.m
-//  Copyright © 2023 Genesis. All rights reserved.
+//  Copyright © 2023 Provenance. All rights reserved.
 
 #import "PVEmuThreeCore.h"
 #import "PVEmuThreeCore+Controls.h"

@@ -1,5 +1,5 @@
 //  MTLViewController.swift
-//  Copyright © 2023 Genesis Emu. All rights reserved.
+//  Copyright © 2023 Provenance Emu. All rights reserved.
 
 import Foundation
 import UIKit

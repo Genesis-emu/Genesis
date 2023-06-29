@@ -294,13 +294,13 @@ extern bool _isInitialized;
 			[self gamepadEventOnPad:player button:NKCODE_BUTTON_4 action:(pressed?1:0)]; // Square
 			break;
 		case(PVPSPButtonCross):
-			[self gamepadEventOnPad:player button:NKCODE_BUTTON_3 action:(pressed?1:0)]; // Cross
+			[self gamepadEventOnPad:player button:NKCODE_BUTTON_2 action:(pressed?1:0)]; // Cross
 			break;
 		case(PVPSPButtonTriangle):
 			[self gamepadEventOnPad:player button:NKCODE_BUTTON_1 action:(pressed?1:0)]; // Triangle
 			break;
 		case(PVPSPButtonCircle):
-			[self gamepadEventOnPad:player button:NKCODE_BUTTON_2 action:(pressed?1:0)]; // Circle
+			[self gamepadEventOnPad:player button:NKCODE_BUTTON_3 action:(pressed?1:0)]; // Circle
 			break;
 		case(PVPSPButtonL1):
 			[self gamepadEventOnPad:player button:NKCODE_BUTTON_7 action:(pressed?1:0)];

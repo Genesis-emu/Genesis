@@ -94,6 +94,16 @@ int argc =  1;
 
 - (void)setPauseEmulation:(BOOL)flag {
     command_event(flag ? CMD_EVENT_PAUSE : CMD_EVENT_UNPAUSE, NULL);
+    runloop_state_t *runloop_st = runloop_state_get_ptr();
+    if (flag) {
+        NSLog(@"RetroArch: Pause\n");
+        runloop_st->flags |= RUNLOOP_FLAG_PAUSED;
+        runloop_st->flags |= RUNLOOP_FLAG_IDLE;
+    } else {
+        NSLog(@"RetroArch: UnPause\n");
+        runloop_st->flags &= ~RUNLOOP_FLAG_PAUSED;
+        runloop_st->flags &= ~RUNLOOP_FLAG_IDLE;
+    }
     [super setPauseEmulation:flag];
 }
 
@@ -597,8 +607,9 @@ void bundle_decompressed(retro_task_t *task,
    if (err)
 	   NSLog(@"%s", err);
    if (dec) {
-	  if (!err)
-		 command_event(CMD_EVENT_REINIT, NULL);
+       [_current useRetroArchController:_current.retroArchControls];
+	  //if (!err)
+      //command_event(CMD_EVENT_REINIT, NULL);
 	  free(dec->source_file);
 	  free(dec);
    }

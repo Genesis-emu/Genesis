@@ -207,7 +207,8 @@
 	g_Config.bFastMemory = self.fastMemory;
 	g_Config.iGPUBackend = self.gsPreference;
 	g_Config.bDisplayStretch = self.stretchOption;
-
+    g_Config.iButtonPreference = self.buttonPref;
+    
 	// Internal Options
 	g_Config.bEnableCheats = true;
 	g_Config.bEnableNetworkChat = false;

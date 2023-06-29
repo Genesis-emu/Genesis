@@ -1843,6 +1843,27 @@
 			remoteGlobalIDString = B3E21D6A203211BE009939D3;
 			remoteInfo = Spotlight;
 		};
+		930498C02A93073800BF257F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A3D408C17B2DCE4004DFFFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B383225D26ED9C530029D12F;
+			remoteInfo = "Check Git Submodules";
+		};
+		930498C22A93073800BF257F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A3D408C17B2DCE4004DFFFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3B29D3F2156177100903290;
+			remoteInfo = "Create Version files";
+		};
+		930498C42A93073800BF257F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A3D408C17B2DCE4004DFFFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3E21D6A203211BE009939D3;
+			remoteInfo = Spotlight;
+		};
 		934BE9AD296F177B00FB9933 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 934BE9A6296F177A00FB9933 /* PVRetroArch.xcodeproj */;
@@ -5194,6 +5215,37 @@
 		};
 		930498BE2A93073800BF257F /* Genesis-UnderDevelopment */ = {
 			isa = PBXNativeTarget;
+			buildConfigurationList = 930499EB2A93073800BF257F /* Build configuration list for PBXNativeTarget "Provenance-UnderDevelopment" */;
+			buildPhases = (
+				930498CE2A93073800BF257F /* Sources */,
+				9304999B2A93073800BF257F /* Embed Frameworks */,
+				930499A32A93073800BF257F /* Embed App Extensions */,
+				930499A52A93073800BF257F /* Frameworks */,
+				930499C72A93073800BF257F /* Code Sign libretro.h Cores */,
+				930499C82A93073800BF257F /* Resources */,
+				930499EA2A93073800BF257F /* Script: Set Build Number */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				930498BF2A93073800BF257F /* PBXTargetDependency */,
+				930498C12A93073800BF257F /* PBXTargetDependency */,
+				930498C32A93073800BF257F /* PBXTargetDependency */,
+			);
+			name = "Genesis-UnderDevelopment";
+			packageProductDependencies = (
+				930498C52A93073800BF257F /* AltKit */,
+				930498C72A93073800BF257F /* SteamController */,
+				930498C92A93073800BF257F /* Introspect */,
+				930498CB2A93073800BF257F /* Reachability */,
+				930498CD2A93073800BF257F /* PVLogging */,
+			);
+			productName = Genesis;
+			productReference = 930499EF2A93073800BF257F /* Genesis-UnderDevelopment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B305EEF6276B4C71003AE510 /* Genesis Watch */ = {
+			isa = PBXNativeTarget;
 			buildConfigurationList = 930499EB2A93073800BF257F /* Build configuration list for PBXNativeTarget "Genesis-UnderDevelopment" */;
 			buildPhases = (
 				930498CE2A93073800BF257F /* Sources */,
@@ -6209,6 +6261,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
 			shellScript = ". Scripts/set_bundle_build_number.sh Genesis\n";
+		};
+		930499C72A93073800BF257F /* Code Sign libretro.h Cores */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Code Sign libretro.h Cores";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"${SRCROOT}\"/CoresRetro/RetroArch/scripts/code-sign-cores.sh\n";
+		};
+		930499EA2A93073800BF257F /* Script: Set Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/$(INFOPLIST_FILE)",
+				"$(PROJECT_DIR)/Scripts/set_bundle_build_number.sh",
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Script: Set Build Number";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+				"$(SRCROOT)/Provenance/.version",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = ". Scripts/set_bundle_build_number.sh Provenance\n";
 		};
 		934BE9A5296F171E00FB9933 /* Code Sign libretro.h Cores */ = {
 			isa = PBXShellScriptBuildPhase;

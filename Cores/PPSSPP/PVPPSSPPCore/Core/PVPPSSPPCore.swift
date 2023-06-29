@@ -140,13 +140,24 @@ extension PVPPSSPPCore: CoreOptional {
                      ],
                      defaultValue: 10)
     }()
+    static var buttonPrefOption: CoreOption = {
+        .enumeration(.init(title: "Confirmation Button",
+                           description: "",
+                           requiresRestart: false),
+                     values: [
+                        .init(title: "Circle", description: "Circle", value: 0),
+                        .init(title: "Cross", description: "Cross", value: 1),
+                     ],
+                     defaultValue: 1)
+    }()
+
     public static var options: [CoreOption] {
         var options = [CoreOption]()
         let coreOptions: [CoreOption] = [
             resolutionOption, gsOption, textureAnisotropicOption,
             textureUpscaleTypeOption, textureUpscaleOption, textureFilterOption,
             msaaOption, fastMemoryOption, cpuOption,
-            stretchDisplayOption, volumeOption]
+            stretchDisplayOption, volumeOption, buttonPrefOption]
         let coreGroup:CoreOption = .group(.init(title: "PPSSPP! Core",
                                                 description: "Global options for PPSSPP!"),
                                           subOptions: coreOptions)
@@ -186,6 +197,9 @@ extension PVPPSSPPCore: CoreOptional {
     @objc var stretch: Bool{
         PVPPSSPPCore.valueForOption(PVPPSSPPCore.stretchDisplayOption).asBool
     }
+    @objc var buttonPrefOption: Int{
+        PVPPSSPPCore.valueForOption(PVPPSSPPCore.buttonPrefOption).asInt ?? 0
+    }
 	func parseOptions() {
 		self.gsPreference = NSNumber(value: gs).int8Value
 		self.resFactor = NSNumber(value: resolution).int8Value
@@ -198,6 +212,7 @@ extension PVPPSSPPCore: CoreOptional {
 		self.fastMemory = fastMemoryOption
         self.stretchOption = stretch
         self.volume = NSNumber(value: PVPPSSPPCore.valueForOption(PVPPSSPPCore.volumeOption).asInt ?? 0).int8Value
+        self.buttonPref = NSNumber(value: PVPPSSPPCore.valueForOption(PVPPSSPPCore.buttonPrefOption).asInt ?? 0).int8Value
 	}
 }
 

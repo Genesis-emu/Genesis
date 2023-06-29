@@ -69,6 +69,7 @@
 @property (nonatomic, assign) bool isPaused;
 @property (nonatomic, assign) bool isViewReady;
 @property (nonatomic, assign) bool isGFXReady;
+@property (nonatomic, assign) int8_t buttonPref;
 - (void) runVM;
 - (void) stopVM:(bool)deinitViews;
 - (void) setupVideo;
