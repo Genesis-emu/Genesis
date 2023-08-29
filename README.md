@@ -458,22 +458,6 @@ Genesis would not be possible without the great work of those who came before us
 </table>
 <!-- readme: JoeMatt/-,jasarien/-,sevdestruct/-,mrjschulte/-,contributors -end -->
 
-### Sponsors
-
-<!-- readme: sponsors -start -->
-<table>
-</table>
-<!-- readme: sponsors -end -->
-
-### Bots
-
-<!-- readme: bots -start -->
-<table>
-</table>
-<!-- readme: bots -end -->
-
-----
-
 #### Provenance License
 
 <sub>Copyright © 2021, Provenance-Emu Team. All rights reserved.</sub><br>
