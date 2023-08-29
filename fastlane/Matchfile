@@ -1,4 +1,4 @@
-git_url("https://github.com/Genesis-Emu/fastlane.git")
+git_url("https://github.com/fastlane/fastlane.git")
 # git_branch("Genesis")
 
 type("development") # The default type, can be: appstore, adhoc, enterprise or development
