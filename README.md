@@ -1,32 +1,11 @@
 <p align="center" style="text-align: center; align: center">
-<h1 align="center"><a href="http://www.provenance-emu.com" style="text-decoration:none;color:inherit;">Provenance</a></h1>
-<h4 align="center" style="text-align: center; align: center">An iOS & tvOS Frontend for Multiple Emulators</h4>
+<h1 align="center"><a href="http://www.provenance-emu.com" style="text-decoration:none;color:inherit;">Genesis</a></h1>
+<h4 align="center" style="text-align: center; align: center">An iOS & tvOS Emulator</h4>
 </p>
 
 <p align="center">
   <img height="512" src="https://user-images.githubusercontent.com/399864/140426554-fb786580-b36b-492d-b5f9-d806ca377508.jpeg" />
 </p>
-
-<div style="align:center" align="center">
-<a href="https://github.com/provenance-emu/Provenance/network">
-  <img src="https://img.shields.io/github/forks/provenance-emu/Provenance.svg?style=flat-square"/>
-</a>
-<a href="https://github.com/provenance-emu/Provenance/stargazers">
-<img src="https://img.shields.io/github/stars/provenance-emu/Provenance.svg?style=flat-square"/>
-</a>
-<a href="https://github.com/Provenance-Emu/Provenance/graphs/contributors">
-  <img src="https://img.shields.io/github/contributors/provenance-emu/Provenance.svg?style=flat-square"/>
-</a>
-<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/provenance-emu/provenance/total?logo=github&style=flat-square">
-</br>  
-<img src="https://img.shields.io/github/languages/count/provenance-emu/provenance.svg?style=flat-square"/>
-<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/provenance-emu/provenance?style=flat-square">
-<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/provenance-emu/provenance?style=flat-square">
-<img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/provenance-emu/provenance">
-<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/Provenance-EMU/Provenance">
-</div>
-
-</br>
 
 <p align="center">
 <a href="https://www.patreon.com/bePatron?u=8537745">
@@ -44,24 +23,6 @@
 
 ![Alt](https://repobeats.axiom.co/api/embed/19c0dec78befc395b346c14006c62ff964912fa9.svg "Repobeats analytics image")
 
-### Release Roadmap
-
-![GitHub Release](https://img.shields.io/github/release/provenance-emu/provenance.svg?style=flat-square) 
-![GitHub Release Date](https://img.shields.io/github/release-date/provenance-emu/provenance.svg?style=flat-square)
-![Github commits (since latest release)](https://img.shields.io/github/commits-since/provenance-emu/provenance/latest.svg?style=flat-square) 
-![GitHub milestone](https://img.shields.io/github/milestones/progress/provenance-emu/provenance/10?style=flat-square)
-![GitHub last commit](https://img.shields.io/github/last-commit/provenance-emu/provenance?style=flat-square)
-
-We track upcoming releases in our GitHub [Milestones](https://github.com/Provenance-Emu/Provenance/milestones?direction=asc&sort=title&state=open). Keep in mind they are subject to change.
-
-### Issues
-
-<span>
-<img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed-raw/provenance-emu/provenance">
-<img alt="GitHub closed pull requests" src="https://img.shields.io/github/issues-pr-closed-raw/provenance-emu/provenance?style=flat-square">
-<img alt="GitHub issues" src="https://img.shields.io/github/issues/provenance-emu/provenance?style=flat-square">
-<img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr-raw/provenance-emu/provenance?style=flat-square">
-</span>
 
 ### Community
 
