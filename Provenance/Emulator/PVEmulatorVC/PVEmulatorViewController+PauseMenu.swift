@@ -18,12 +18,14 @@ extension PVEmulatorViewController {
         isShowingMenu = true
 
         let actionSheet = UIAlertController(title: "Game Options", message: nil, preferredStyle: .actionSheet)
-        actionSheet.popoverPresentationController?.barButtonItem = self.navigationItem.leftBarButtonItem
+
         // only popup if sumoned from menuButton
         if let menuButton = menuButton {
             actionSheet.popoverPresentationController?.sourceView = menuButton
             actionSheet.popoverPresentationController?.sourceRect = menuButton.bounds
-        } 
+        } else {
+            return
+        }
 #if targetEnvironment(macCatalyst) || os(macOS)
         if let menuButton = menuButton, sender === menuButton {
             actionSheet.popoverPresentationController?.sourceView = menuButton
@@ -33,7 +35,7 @@ extension PVEmulatorViewController {
             actionSheet.popoverPresentationController?.sourceRect = self.view.bounds
         }
 #else
-        if let menuButton = menuButton {
+        if traitCollection.userInterfaceIdiom == .pad, let menuButton = menuButton, sender === menuButton {
             actionSheet.popoverPresentationController?.sourceView = menuButton
             actionSheet.popoverPresentationController?.sourceRect = menuButton.bounds
         }
@@ -138,7 +140,7 @@ extension PVEmulatorViewController {
 
         if let actionableCore = core as? CoreActions, let actions = actionableCore.coreActions {
             actions.forEach { coreAction in
-                actionSheet.addAction(UIAlertAction(title: coreAction.title, style: coreAction.style, handler: { action in
+                actionSheet.addAction(UIAlertAction(title: coreAction.title, style: .destructive, handler: { action in
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
                         actionableCore.selected(action: coreAction)
                         self.core.setPauseEmulation(false)

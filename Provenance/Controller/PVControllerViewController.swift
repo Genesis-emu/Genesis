@@ -376,9 +376,7 @@ class PVControllerViewController<T: ResponderClient> : UIViewController, Control
         } else {
             allButtons.forEach {
                 $0.isHidden = isHidden
-                $0.alpha = CGFloat(PVSettingsModel.shared.controllerOpacity)
             }
-            print("Controller Alpha Set ", CGFloat(PVSettingsModel.shared.controllerOpacity))
             dPad2?.isHidden = isHidden
             setupTouchControls()
         }
@@ -394,9 +392,7 @@ class PVControllerViewController<T: ResponderClient> : UIViewController, Control
 		} else {
 			allButtons.forEach {
 				$0.isHidden = false
-                $0.alpha = CGFloat(PVSettingsModel.shared.controllerOpacity)
 			}
-            print("Controller Alpha Set ", CGFloat(PVSettingsModel.shared.controllerOpacity))
 			dPad2?.isHidden = traitCollection.verticalSizeClass == .compact
 		}
 		setupTouchControls()
@@ -415,9 +411,7 @@ class PVControllerViewController<T: ResponderClient> : UIViewController, Control
 		} else {
 			allButtons.forEach {
 				$0.isHidden = false
-                $0.alpha = CGFloat(PVSettingsModel.shared.controllerOpacity)
 			}
-            print("Controller Alpha Set", CGFloat(PVSettingsModel.shared.controllerOpacity))
 			dPad2?.isHidden = traitCollection.verticalSizeClass == .compact
 		}
 		setupTouchControls()
@@ -1232,8 +1226,7 @@ class PVControllerViewController<T: ResponderClient> : UIViewController, Control
                 }
             }
             // Align Joypad Little more than halfway of Dpad Horizontally
-            joyPadFrame.origin.x = dPad.frame.maxX - joyPadFrame.size.width * joyPadScale + spacing * 6
-            joyPadFrame.origin.y -= spacing * 2
+            joyPadFrame.origin.x = dPad.frame.maxX - joyPadFrame.size.width * joyPadScale + spacing
         } else {
             // portrait joystick settings
             if joystickOverDPad {
@@ -1331,7 +1324,7 @@ class PVControllerViewController<T: ResponderClient> : UIViewController, Control
                 if joystickOverDPad {
                     joyPad2Frame.origin.x = (buttonGroup?.frame.minX)! - joyPad2Frame.size.width * joyPad2Scale
                 } else {
-                    joyPad2Frame.origin.x = (buttonGroup?.frame.minX)! - joyPad2Frame.size.width * joyPad2Scale - spacing * 6
+                    joyPad2Frame.origin.x = (buttonGroup?.frame.minX)! - joyPad2Frame.size.width * joyPad2Scale
                     if buttonGroup != nil, let buttonGroup = buttonGroup {
                         var buttonGroupFrame = buttonGroup.frame
                         buttonGroupFrame.origin.y = view.frame.height - buttonGroupFrame.size.height - joyPad2Frame.size.height * joyPad2Scale / 2 - spacing * 6

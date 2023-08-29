@@ -60,7 +60,6 @@ extern int g_gs_preference;
 	if (self = [super init]) {
         self.alwaysUseMetal = true;
         self.skipLayout = true;
-        self.extractArchive = false;
         PVRetroArchCore.systemName = self.systemIdentifier;
         PVRetroArchCore.className = self.coreIdentifier;
         [self parseOptions];
@@ -81,10 +80,7 @@ extern int g_gs_preference;
 	_current=self;
 	return self;
 }
-- (void)initialize {
-    [self parseOptions];
-    NSLog(@"RetroArch: Extract %d\n", self.extractArchive);
-}
+
 - (void)dealloc {
 	_current = nil;
 }
@@ -93,10 +89,6 @@ extern int g_gs_preference;
 - (BOOL)loadFileAtPath:(NSString *)path error:(NSError**)error {
     self.alwaysUseMetal = true;
     self.skipLayout = true;
-    self.extractArchive = false;
-    PVRetroArchCore.systemName = self.systemIdentifier;
-    PVRetroArchCore.className = self.coreIdentifier;
-    [self parseOptions];
 	NSBundle *coreBundle = [NSBundle bundleForClass:[self class]];
 	NSString *configPath = self.saveStatesPath;
 	const char * dataPath = [[coreBundle resourcePath] fileSystemRepresentation];
@@ -136,23 +128,10 @@ extern int g_gs_preference;
         ^{
             self.bindAnalogKeys=[value isEqualToString:@"true"];
         },
-        @ENABLE_NUM_KEY:
-        ^{
-            self.bindNumKeys=[value isEqualToString:@"true"];
-        },
-        @ENABLE_ANALOG_DPAD:
-        ^{
-            self.bindAnalogDpad=[value isEqualToString:@"true"];
-        },
-        @"Audio Volume":
-        ^{
-            [self setVolume];
-        },
         @USE_SECOND_SCREEN:
         ^{
             [value isEqualToString:@"true"] ? [self useSecondaryScreen] : [self usePrimaryScreen];
-        },
-       
+        }
     };
     Process action=[actions objectForKey:key];
     if (action)

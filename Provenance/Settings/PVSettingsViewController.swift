@@ -98,7 +98,6 @@ final class PVSettingsViewController: QuickTableViewController {
         }
         let themeRow = NavigationRow(text: NSLocalizedString("Theme", comment: "Theme"), detailText: .value1(PVSettingsModel.shared.theme.description), icon: .sfSymbol("paintbrush"), action: { row in
             let alert = UIAlertController(title: "Theme", message: "", preferredStyle: .actionSheet)
-            alert.popoverPresentationController?.barButtonItem = self.navigationItem.leftBarButtonItem
             ThemeOptions.themes.forEach { mode in
                 let modeLabel = mode == .auto ? mode.description + " (\(systemMode))" : mode.description
                 let action = UIAlertAction(title: modeLabel, style: .default, handler: { _ in
@@ -205,7 +204,7 @@ final class PVSettingsViewController: QuickTableViewController {
         var controllerRows = [TableRow]()
 
         #if os(iOS)
-        controllerRows.append(PVSettingsSliderRow(text: NSLocalizedString("Opacity", comment: "Opacity"), detailText: .subtitle("Transparency amount of on-screen controls overlays."), valueLimits: (min: 0.0, max: 1.0), valueImages: (.sfSymbol("sun.min"), .sfSymbol("sun.max")), key: \PVSettingsModel.controllerOpacity))
+        controllerRows.append(PVSettingsSliderRow(text: NSLocalizedString("Opacity", comment: "Opacity"), detailText: .subtitle("Transparency amount of on-screen controls overlays."), valueLimits: (min: 0.5, max: 1.0), valueImages: (.sfSymbol("sun.min"), .sfSymbol("sun.max")), key: \PVSettingsModel.controllerOpacity))
 
             controllerRows.append(contentsOf: [
                 PVSettingsSwitchRow(text: NSLocalizedString("Button Colors", comment: "Button Colors"), detailText: .subtitle("Color the on-screen controls to be similiar to their original system controller colors where applicable."), key: \PVSettingsModel.buttonTints, icon: .sfSymbol("paintpalette")),
@@ -631,15 +630,12 @@ final class PVSettingsViewController: QuickTableViewController {
             // start web transfer service
             if PVWebServer.shared.startServers() {
                 // show alert view
-                showServerActiveAlert(sender: self.tableView, barButtonItem: nil)
+                showServerActiveAlert()
             } else {
                 // Display error
                 let alert = UIAlertController(title: "Unable to start web server!",
                                               message: "Check your network connection or settings and free up ports: 80, 81.",
                                               preferredStyle: .alert)
-                alert.popoverPresentationController?.sourceView = tableView
-                alert.popoverPresentationController?.sourceRect = tableView.bounds ?? UIScreen.main.bounds
-                alert.preferredContentSize = CGSize(width: 500, height: 150)
                 alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_: UIAlertAction) -> Void in
                 }))
                 present(alert, animated: true) { () -> Void in }
@@ -648,9 +644,6 @@ final class PVSettingsViewController: QuickTableViewController {
             let alert = UIAlertController(title: "Unable to start web server!",
                                           message: "Your device needs to be connected to a WiFi network to continue!",
                                           preferredStyle: .alert)
-            alert.popoverPresentationController?.sourceView = tableView
-            alert.popoverPresentationController?.sourceRect = tableView.bounds ?? UIScreen.main.bounds
-            alert.preferredContentSize = CGSize(width: 500, height: 150)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_: UIAlertAction) -> Void in
             }))
             present(alert, animated: true) { () -> Void in }
@@ -661,20 +654,11 @@ final class PVSettingsViewController: QuickTableViewController {
         tableView.deselectRow(at: tableView.indexPathForSelectedRow ?? IndexPath(row: 0, section: 0), animated: true)
         let alert = UIAlertController(title: "Refresh Game Library?",
                                       message: """
-                                        Attempt to reload the artwork and title
-                                        information for your entire library.
-                                        This can be a slow process, especially for
-                                        large libraries.
-                                        Only do this if you really, really want to
-                                        try and get more artwork or update the information.
+Attempt to reload the artwork and title information for your entire library. This can be a slow process, especially for large libraries. Only do this if you really, really want to try and get more artwork or update the information.
 
-                                        You will need to completely relaunch the App to
-                                        start the library rebuild process.
-                                      """,
+You will need to completely relaunch the App to start the library rebuild process.
+""",
                                       preferredStyle: .alert)
-        alert.popoverPresentationController?.sourceView = tableView
-        alert.popoverPresentationController?.sourceRect = tableView.bounds ?? UIScreen.main.bounds
-        alert.preferredContentSize = CGSize(width: 500, height: 300)
         alert.addAction(UIAlertAction(title: "Yes",
                                       style: .default,
                                       handler: { (_: UIAlertAction) -> Void in
@@ -689,14 +673,8 @@ final class PVSettingsViewController: QuickTableViewController {
     func emptyImageCacheAction() {
         tableView.deselectRow(at: tableView.indexPathForSelectedRow ?? IndexPath(row: 0, section: 0), animated: true)
         let alert = UIAlertController(title: NSLocalizedString("Empty Image Cache?", comment: ""),
-                                      message: """
-                                      Empty the image cache to free up disk space.
-                                      Images will be redownloaded on demand.
-                                      """,
+                                      message: "Empty the image cache to free up disk space. Images will be redownloaded on demand.",
                                       preferredStyle: .alert)
-        alert.popoverPresentationController?.sourceView = tableView
-        alert.popoverPresentationController?.sourceRect = tableView.bounds ?? UIScreen.main.bounds
-        alert.preferredContentSize = CGSize(width: 500, height: 150)
         alert.addAction(UIAlertAction(title: NSLocalizedString("Yes", comment: ""),
                                       style: .default,
                                       handler: { (_: UIAlertAction) -> Void in

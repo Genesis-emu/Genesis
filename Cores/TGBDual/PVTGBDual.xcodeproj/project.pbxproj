@@ -590,7 +590,6 @@
 					"-fsingle-precision-constant",
 				);
 				SDKROOT = iphoneos;
-				SYMROOT = "${SRCROOT}/build";
 				TVOS_DEPLOYMENT_TARGET = 13.0;
 				VALIDATE_PRODUCT = YES;
 				VALIDATE_WORKSPACE_SKIPPED_SDK_FRAMEWORKS = OpenGLES;
@@ -700,7 +699,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
-				SYMROOT = "${SRCROOT}/build";
 				TVOS_DEPLOYMENT_TARGET = 13.0;
 				VALIDATE_WORKSPACE_SKIPPED_SDK_FRAMEWORKS = OpenGLES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -789,7 +787,6 @@
 					"-fsingle-precision-constant",
 				);
 				SDKROOT = iphoneos;
-				SYMROOT = "${SRCROOT}/build";
 				TVOS_DEPLOYMENT_TARGET = 13.0;
 				VALIDATE_PRODUCT = YES;
 				VALIDATE_WORKSPACE_SKIPPED_SDK_FRAMEWORKS = OpenGLES;

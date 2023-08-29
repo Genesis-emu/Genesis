@@ -365,56 +365,6 @@
                         <key>PVProjectVersion</key>
                         <string>v0.14.7</string>
                 </dict>
-		<dict>
-                        <key>PVCoreIdentifier</key>
-                        <string>mame2010_libretro_ios.dylib</string>
-                        <key>PVPrincipleClass</key>
-                        <string>PVRetroArchCore</string>
-                        <key>PVSupportedSystems</key>
-                        <array>
-                                <string>com.provenance.ngp</string>
-                                <string>com.provenance.ngpc</string>
-                                <string>com.provenance.neogeo</string>
-                        </array>
-                        <key>PVProjectName</key>
-                        <string>RetroArch - MAME 2010</string>
-                        <key>PVProjectURL</key>
-                        <string>https://github.com/libretro/mame2010-libretro</string>
-                        <key>PVProjectVersion</key>
-                        <string>v0.139</string>
-                </dict>
-		<dict>
-                        <key>PVCoreIdentifier</key>
-                        <string>pcsx_rearmed_libretro_ios.dylib</string>
-                        <key>PVPrincipleClass</key>
-                        <string>PVRetroArchCore</string>
-                        <key>PVProjectName</key>
-                        <string>RetroArch - PCSX ReARMed</string>
-                        <key>PVSupportedSystems</key>
-                        <array>
-                                <string>com.provenance.psx</string>
-                        </array>
-                        <key>PVProjectURL</key>
-                        <string>https://docs.libretro.com/library/pcsx_rearmed/</string>
-                        <key>PVProjectVersion</key>
-                        <string>r21</string>
-                </dict>
-		<dict>
-                        <key>PVCoreIdentifier</key>
-                        <string>ppsspp_libretro.dylib</string>
-                        <key>PVPrincipleClass</key>
-                        <string>PVRetroArchCore</string>
-                        <key>PVProjectName</key>
-                        <string>RetroArch - PPSSPP</string>
-                        <key>PVSupportedSystems</key>
-                        <array>
-                                <string>com.provenance.psp</string>
-                        </array>
-                        <key>PVProjectURL</key>
-                        <string>https://docs.libretro.com/library/ppsspp/</string>
-                        <key>PVProjectVersion</key>
-                        <string>Git</string>
-                </dict>
 	</array>
 </dict>
 </plist>

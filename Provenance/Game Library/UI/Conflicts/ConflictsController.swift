@@ -15,5 +15,4 @@ public protocol ConflictsController {
     typealias Conflict = (path: URL, candidates: [System])
     var conflicts: Observable<[Conflict]> { get }
     func resolveConflicts(withSolutions: [URL: System])
-    func deleteConflict(path: URL)
 }

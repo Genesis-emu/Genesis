@@ -12,7 +12,6 @@ import PVSupport
 import QuartzCore
 import RealmSwift
 import UIKit
-import ZipArchive
 
 private weak var staticSelf: PVEmulatorViewController?
 
@@ -85,8 +84,7 @@ final class PVEmulatorViewController: PVEmulatorViewControllerRootClass, PVAudio
 
         super.init(nibName: nil, bundle: nil)
         let app = UIApplication.shared as! PVApplication
-        app.core = core
-        app.emulator = self
+        app.core=core
         if let coreClass = type(of: core) as? CoreOptional.Type {
             coreClass.className = core.coreIdentifier ?? ""
             coreClass.systemName = core.systemIdentifier ?? ""
@@ -157,7 +155,6 @@ final class PVEmulatorViewController: PVEmulatorViewControllerRootClass, PVAudio
         
         let appDelegate = UIApplication.shared as! PVApplication
         appDelegate.core=nil
-        appDelegate.emulator=nil
     }
 
     private func initNotifcationObservers() {
@@ -186,8 +183,6 @@ final class PVEmulatorViewController: PVEmulatorViewControllerRootClass, PVAudio
         let md5Hash: String = game.md5Hash
         core.romMD5 = md5Hash
         core.romSerial = game.romSerial
-
-        core.initialize()
     }
 
     private func addControllerOverlay() {
@@ -330,10 +325,6 @@ final class PVEmulatorViewController: PVEmulatorViewControllerRootClass, PVAudio
         super.viewDidLoad()
         title = game.title
         view.backgroundColor = UIColor.black
-        
-        let app = UIApplication.shared as! PVApplication
-        app.core = core
-        app.emulator = self
 
         initNotifcationObservers()
         initCore()
@@ -341,40 +332,10 @@ final class PVEmulatorViewController: PVEmulatorViewControllerRootClass, PVAudio
         // Load now. Moved here becauase Mednafen needed to know what kind of game it's working with in order
         // to provide the correct data for creating views.
         let m3uFile: URL? = PVEmulatorConfiguration.m3uFile(forGame: game)
-        var romPathMaybe: URL? = m3uFile ?? game.file.url
+        let romPathMaybe: URL? = m3uFile ?? game.file.url
 
-        // Extract Zip before loading the ROM
-        if core.extractArchive, let filePath = romPathMaybe {
-            if (filePath.pathExtension.caseInsensitiveCompare("zip") == .orderedSame) {
-                var unzippedFiles = [URL]()
-                SSZipArchive.unzipFile(atPath: filePath.path, toDestination: self.batterySavesPath.path, overwrite: true, password: nil, progressHandler: { (entry: String, _: unz_file_info, entryNumber: Int, total: Int) in
-                    if !entry.isEmpty {
-                        let url = self.batterySavesPath.appendingPathComponent(entry)
-                        unzippedFiles.append(url)
-                    }
-                }, completionHandler: { [weak self] (_: String?, succeeded: Bool, error: Error?) in
-                    guard let self = self else { return }
-                    if succeeded {
-                        var hasCue:Bool=false;
-                        var cueFile:URL?
-                        for file in unzippedFiles {
-                            if self.game.system.supportedExtensions.contains( file.pathExtension.lowercased() ) {
-                                romPathMaybe = file;
-                                if (file.pathExtension.lowercased() == "cue") {
-                                    cueFile = file;
-                                    hasCue = true;
-                                }
-                            }
-                        }
-                        if hasCue, let file = cueFile {
-                            romPathMaybe = file;
-                        }
-                    }
-                })
-            }
-        }
         guard let romPath = romPathMaybe else {
-            presentingViewController?.presentError("Game has a nil rom path.", source: self.view)
+            presentingViewController?.presentError("Game has a nil rom path.")
             return
         }
 
@@ -383,13 +344,11 @@ final class PVEmulatorViewController: PVEmulatorViewControllerRootClass, PVAudio
         //			presentingViewController?.presentError("File doesn't exist at path \(romPath.absoluteString)")
         //			return
         //		}
-        print("Loading ROM %@", romPath.path)
+
         do {
             try core.loadFile(atPath: romPath.path)
         } catch {
             let alert = UIAlertController(title: error.localizedDescription, message: (error as NSError).localizedRecoverySuggestion, preferredStyle: .alert)
-            alert.popoverPresentationController?.barButtonItem = self.navigationItem.leftBarButtonItem
-            alert.popoverPresentationController?.sourceView = self.navigationItem.titleView ?? self.view
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_: UIAlertAction) -> Void in
                 self.dismiss(animated: true, completion: nil)
             }))
@@ -506,7 +465,7 @@ final class PVEmulatorViewController: PVEmulatorViewControllerRootClass, PVAudio
                 game.timeSpentInGame = totalTimeSpent
             }
         } catch {
-            presentError("\(error.localizedDescription)", source: self.view)
+            presentError("\(error.localizedDescription)")
         }
     }
 
@@ -517,7 +476,7 @@ final class PVEmulatorViewController: PVEmulatorViewControllerRootClass, PVAudio
                 game.lastPlayed = Date()
             }
         } catch {
-            presentError("\(error.localizedDescription)", source: self.view)
+            presentError("\(error.localizedDescription)")
         }
     }
 
@@ -687,7 +646,7 @@ final class PVEmulatorViewController: PVEmulatorViewControllerRootClass, PVAudio
                             game.screenShots.append(newFile)
                         }
                     } catch {
-                        presentError("Unable to write image to disk, error: \(error.localizedDescription)", source: self.view)
+                        presentError("Unable to write image to disk, error: \(error.localizedDescription)")
                     }
                 }
             }
@@ -698,14 +657,13 @@ final class PVEmulatorViewController: PVEmulatorViewControllerRootClass, PVAudio
     #endif
     @objc func showSpeedMenu(_ sender:AnyObject?) {
         let actionSheet = UIAlertController(title: "Game Speed", message: nil, preferredStyle: .actionSheet)
-        actionSheet.popoverPresentationController?.barButtonItem = self.navigationItem.leftBarButtonItem
-        actionSheet.popoverPresentationController?.sourceView = self.navigationItem.titleView ?? self.view
-        if let menuButton = menuButton {
+#if targetEnvironment(macCatalyst) || os(macOS)
+        if let menuButton = menuButton, sender === menuButton {
             actionSheet.popoverPresentationController?.sourceView = menuButton
             actionSheet.popoverPresentationController?.sourceRect = menuButton.bounds
         }
-#if targetEnvironment(macCatalyst) || os(macOS)
-        if let menuButton = menuButton, sender === menuButton {
+#else
+        if traitCollection.userInterfaceIdiom == .pad, let menuButton = menuButton, sender === menuButton {
             actionSheet.popoverPresentationController?.sourceView = menuButton
             actionSheet.popoverPresentationController?.sourceRect = menuButton.bounds
         }

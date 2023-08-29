@@ -63,18 +63,14 @@ final class PVSaveStatesViewController: UICollectionViewController {
             collectionView?.register(UINib(nibName: "PVSaveStateCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "SaveStateView")
         #endif
 
-        var allSaves: Results<PVSaveState>
+        let allSaves: Results<PVSaveState>
         if let coreID = coreID {
             let filter: String = "core.identifier == \"" + coreID + "\""
             allSaves = saveStates.filter(filter).sorted(byKeyPath: "date", ascending: false)
         } else {
             allSaves = saveStates.sorted(byKeyPath: "date", ascending: false)
         }
-        for save in allSaves {
-            if !FileManager.default.fileExists(atPath: save.file.url.path) {
-                allSaves = allSaves.filter("id != \"" + save.id + "\"" )
-            }
-        }
+
         autoSaves = allSaves.filter("isAutosave == true")
         manualSaves = allSaves.filter("isAutosave == false")
 
@@ -203,13 +199,13 @@ final class PVSaveStatesViewController: UICollectionViewController {
 
             let alert = UIAlertController(title: "Delete this save state?", message: nil, preferredStyle: .alert)
             alert.preferredContentSize = CGSize(width: 300, height: 150)
-            alert.popoverPresentationController?.sourceView = collectionView?.cellForItem(at: indexPath)?.contentView
-            alert.popoverPresentationController?.sourceRect = collectionView?.cellForItem(at: indexPath)?.contentView.bounds ?? UIScreen.main.bounds
+            alert.popoverPresentationController?.sourceView = self.view
+            alert.popoverPresentationController?.sourceRect = UIScreen.main.bounds
             alert.addAction(UIAlertAction(title: "Yes", style: .destructive) { [unowned self] _ in
                 do {
                     try PVSaveState.delete(saveState)
                 } catch {
-                    self.presentError("Error deleting save state: \(error.localizedDescription)", source: self.view)
+                    self.presentError("Error deleting save state: \(error.localizedDescription)")
                 }
             })
             alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
@@ -230,16 +226,16 @@ final class PVSaveStatesViewController: UICollectionViewController {
                 break
             case let .error(error):
                 let reason = (error as NSError).localizedFailureReason ?? ""
-                self.presentError("Error creating save state: \(error.localizedDescription) \(reason)", source: self.view)
+                self.presentError("Error creating save state: \(error.localizedDescription) \(reason)")
             }
         }
     }
 
-    func showSaveStateOptions(saveState: PVSaveState, source: UIView?) {
+    func showSaveStateOptions(saveState: PVSaveState) {
         let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         alert.preferredContentSize = CGSize(width: 300, height: 150)
-        alert.popoverPresentationController?.sourceView = source
-        alert.popoverPresentationController?.sourceRect = source?.bounds ?? UIScreen.main.bounds
+        alert.popoverPresentationController?.sourceView = self.view
+        alert.popoverPresentationController?.sourceRect = UIScreen.main.bounds
         alert.addAction(UIAlertAction(title: "Load", style: .default, handler: { (_: UIAlertAction) in
             self.delegate?.saveStatesViewController(self, load: saveState)
         }))
@@ -249,7 +245,7 @@ final class PVSaveStatesViewController: UICollectionViewController {
                 case .success:
                     break
                 case let .error(error):
-                    self.presentError("Error overwriting save state: \(error.localizedDescription)", source: self.view)
+                    self.presentError("Error overwriting save state: \(error.localizedDescription)")
                 }
             }
         }))
@@ -257,7 +253,7 @@ final class PVSaveStatesViewController: UICollectionViewController {
             do {
                 try PVSaveState.delete(saveState)
             } catch {
-                self.presentError("Error deleting save state: \(error.localizedDescription)", source: self.view)
+                self.presentError("Error deleting save state: \(error.localizedDescription)")
             }
         }))
         alert.addAction(UIAlertAction(title: NSLocalizedString("Cancel", comment: "Cancel"), style: .cancel, handler: nil))
@@ -327,7 +323,7 @@ final class PVSaveStatesViewController: UICollectionViewController {
                 ELOG("No save state at indexPath: \(indexPath)")
                 return
             }
-            showSaveStateOptions(saveState: state, source: collectionView?.cellForItem(at: indexPath)?.contentView)
+            showSaveStateOptions(saveState: state)
         default:
             break
         }

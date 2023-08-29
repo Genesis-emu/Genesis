@@ -381,7 +381,6 @@ extension GameLaunchingViewController where Self: UIViewController {
         ELOG(message)
 
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alertController.popoverPresentationController?.barButtonItem = navigationItem.leftBarButtonItem
         customActions?.forEach { alertController.addAction($0) }
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alertController, animated: true)
@@ -443,19 +442,19 @@ extension GameLaunchingViewController where Self: UIViewController {
                 }
         #endif
 
-                let thisTimeOnlyAction = UIAlertAction(title: "This time", style: .default, handler: { _ in self.presentEMU(withCore: core, forGame: game, source: sender as? UIView ?? self.view) })
+                let thisTimeOnlyAction = UIAlertAction(title: "This time", style: .default, handler: { _ in self.presentEMU(withCore: core, forGame: game) })
                 let alwaysThisGameAction = UIAlertAction(title: "Always for this game", style: .default, handler: { [unowned self] _ in
                     try! RomDatabase.sharedInstance.writeTransaction {
                         game.userPreferredCoreID = core.identifier
                     }
-                    self.presentEMU(withCore: core, forGame: game, source: sender as? UIView ?? self.view)
+                    self.presentEMU(withCore: core, forGame: game)
 
                 })
                 let alwaysThisSytemAction = UIAlertAction(title: "Always for this system", style: .default, handler: { [unowned self] _ in
                     try! RomDatabase.sharedInstance.writeTransaction {
                         system.userPreferredCoreID = core.identifier
                     }
-                    self.presentEMU(withCore: core, forGame: game, source: sender as? UIView ?? self.view)
+                    self.presentEMU(withCore: core, forGame: game)
                 })
 
                 alwaysUseAlert.addAction(thisTimeOnlyAction)
@@ -543,14 +542,14 @@ extension GameLaunchingViewController where Self: UIViewController {
                 if let userSelecion = game.userPreferredCoreID ?? system.userPreferredCoreID,
                     let chosenCore = cores.first(where: { $0.identifier == userSelecion }) {
                     ILOG("User has already selected core \(chosenCore.projectName) for \(system.shortName)")
-                    presentEMU(withCore: chosenCore, forGame: game, source: sender as? UIView ?? self.view)
+                    presentEMU(withCore: chosenCore, forGame: game)
                     return
                 }
 
                 // User has no core preference, present dialogue to pick
                 presentCoreSelection(forGame: game, sender: sender)
             } else {
-                presentEMU(withCore: selectedCore ?? cores.first!, forGame: game, fromSaveState: saveState, source: sender as? UIView ?? self.view)
+                presentEMU(withCore: selectedCore ?? cores.first!, forGame: game, fromSaveState: saveState)
 //                let contentId : String = "\(system.shortName):\(game.title)"
 //                let customAttributes : [String : Any] = ["timeSpent" : game.timeSpentInGame, "md5" : game.md5Hash]
 //                Answers.logContentView(withName: "Play ROM",
@@ -583,7 +582,7 @@ extension GameLaunchingViewController where Self: UIViewController {
         }
     }
 
-    private func presentEMU(withCore core: PVCore, forGame game: PVGame, fromSaveState saveState: PVSaveState? = nil, source: UIView?) {
+    private func presentEMU(withCore core: PVCore, forGame game: PVGame, fromSaveState saveState: PVSaveState? = nil) {
         guard let coreInstance = core.createInstance(forSystem: game.system) else {
             displayAndLogError(withTitle: "Cannot open game", message: "Failed to create instance of core '\(core.projectName)'.")
             ELOG("Failed to init core instance")
@@ -593,13 +592,15 @@ extension GameLaunchingViewController where Self: UIViewController {
         let emulatorViewController = PVEmulatorViewController(game: game, core: coreInstance)
 
         // Check if Save State exists
-        if saveState == nil, emulatorViewController.core.supportsSaveStates {
-            checkForSaveStateThenRun(withCore: core, forGame: game, source: source) { optionallyChosenSaveState in
+        /*
+         if saveState == nil, emulatorViewController.core.supportsSaveStates {
+            checkForSaveStateThenRun(withCore: core, forGame: game) { optionallyChosenSaveState in
                 self.presentEMUVC(emulatorViewController, withGame: game, loadingSaveState: optionallyChosenSaveState)
             }
         } else {
+         */
             presentEMUVC(emulatorViewController, withGame: game, loadingSaveState: saveState)
-        }
+        //}
     }
 
     // Used to just show and then optionally quickly load any passed in PVSaveStates
@@ -644,18 +645,8 @@ extension GameLaunchingViewController where Self: UIViewController {
         updateRecentGames(game)
     }
 
-    private func checkForSaveStateThenRun(withCore core: PVCore, forGame game: PVGame, source: UIView?, completion: @escaping (PVSaveState?) -> Void) {
-        var foundSave = false
-        var saveState : PVSaveState?
-        var saves = game.saveStates.filter("core.identifier == \"\(core.identifier)\"").sorted(byKeyPath: "date", ascending: false).toArray() + game.autoSaves.filter("core.identifier == \"\(core.identifier)\"").sorted(byKeyPath: "date", ascending: false).toArray()
-        saves = saves.sorted(by: { $0.date.compare($1.date) == .orderedDescending })
-        for save in saves {
-            if !foundSave && FileManager.default.fileExists(atPath: save.file.url.path) && save.core.identifier == core.identifier {
-                foundSave = true
-                saveState = save
-            }
-        }
-        if foundSave, let latestSaveState = saveState {
+    private func checkForSaveStateThenRun(withCore core: PVCore, forGame game: PVGame, completion: @escaping (PVSaveState?) -> Void) {
+        if let latestSaveState = game.saveStates.filter("core.identifier == \"\(core.identifier)\"").sorted(byKeyPath: "date", ascending: false).first {
             let shouldAskToLoadSaveState: Bool = PVSettingsModel.shared.askToAutoLoad
             let shouldAutoLoadSaveState: Bool = PVSettingsModel.shared.autoLoadSaves
 
@@ -666,8 +657,8 @@ extension GameLaunchingViewController where Self: UIViewController {
                 let alert = UIAlertController(title: "Save State Detected", message: nil, preferredStyle: .actionSheet)
                 // TODO: XCode15/iOS17 Requires actual source view here
                 alert.preferredContentSize = CGSize(width: 300, height: 150)
-                alert.popoverPresentationController?.sourceView = source
-                alert.popoverPresentationController?.sourceRect = source?.bounds ?? UIScreen.main.bounds
+                alert.popoverPresentationController?.sourceView = self.view
+                alert.popoverPresentationController?.sourceRect = UIScreen.main.bounds
                 #if os(iOS)
                     let switchControl = UISwitch()
                     switchControl.isOn = !PVSettingsModel.shared.askToAutoLoad
@@ -810,7 +801,7 @@ extension GameLaunchingViewController where Self: UIViewController {
                     let description = maybeError?.localizedDescription ?? "No reason given"
                     let reason = (maybeError as NSError?)?.localizedFailureReason
 
-                    self.presentError("Failed to load save state: \(description) \(reason ?? "")", source: self.view) {
+                    self.presentError("Failed to load save state: \(description) \(reason ?? "")") {
                         gameVC.core.setPauseEmulation(false)
                     }
 
@@ -820,7 +811,7 @@ extension GameLaunchingViewController where Self: UIViewController {
                 gameVC.core.setPauseEmulation(false)
             }
         } else {
-            presentWarning("No core loaded", source: self.view)
+            presentWarning("No core loaded")
         }
     }
 }

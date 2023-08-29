@@ -28,37 +28,20 @@ jobs:
       fail-fast: false
       matrix:
         target:
-          - Provenance-Release
-          - ProvenanceTV-Release
-          - "Provenance-XL Release"
-          - Provenance-UnderDevelopment
+          - Provenance
+          - ProvenanceTV
         include:
-          - target: Provenance-Release
+          - target: Provenance
             sdk: iphoneos
-            scheme: Provenance-Release
-            APP_NAME: Provenance
-            IPA_NAME: Provenance
-          - target: ProvenanceTV-Release
+            scheme: Provenance
+          - target: ProvenanceTV
             sdk: appletvos
-            scheme: ProvenanceTV-Release
-            APP_NAME: Provenance
-            IPA_NAME: ProvenanceTV
-          - target: "Provenance-XL Release"
-            sdk: iphoneos
-            scheme: "Provenance-XL Release"
-            APP_NAME: Provenance-XL
-            IPA_NAME: Provenance-XL
-          - target: Provenance-UnderDevelopment
-            sdk: iphoneos
-            scheme: Provenance-UnderDevelopment
-            APP_NAME: Provenance-UnderDevelopment
-            IPA_NAME: Provenance-UnderDevelopment
+            scheme: ProvenanceTV
           # - target: macOS
           #   sdk: macosx
           #   scheme: Provenance
 
     runs-on: 'macos-12'
-    timeout-minutes: 300
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -86,7 +69,7 @@ jobs:
 
       - name: Build Provenance
         run: |
-          xcodebuild -configuration Release -workspace Provenance.xcworkspace -scheme "${{ matrix.scheme }}" -sdk ${{ matrix.sdk }} archive -archivePath ./archive CODE_SIGNING_REQUIRED=NO AD_HOC_CODE_SIGNING_ALLOWED=YES CODE_SIGNING_ALLOWED=NO DEVELOPMENT_TEAM=S32Z3HMYVQ ORG_IDENTIFIER=org.provenance-emu | xcpretty && exit ${PIPESTATUS[0]}
+          xcodebuild -workspace Provenance.xcworkspace -scheme ${{ matrix.scheme }} -sdk ${{ matrix.sdk }} archive -archivePath ./archive CODE_SIGNING_REQUIRED=NO AD_HOC_CODE_SIGNING_ALLOWED=YES CODE_SIGNING_ALLOWED=NO DEVELOPMENT_TEAM=S32Z3HMYVQ ORG_IDENTIFIER=org.provenance-emu | xcpretty && exit ${PIPESTATUS[0]}
 
       # - name: Build Provenance
       #   run: |
@@ -97,17 +80,42 @@ jobs:
 
       - name: Fakesign app
         run: |
-          #rm -rf archive.xcarchive/Products/Applications/${{ matrix.APP_NAME }}.app/Frameworks/*.framework/Frameworks/
-          ldid -SProvenance/Provenance.entitlements archive.xcarchive/Products/Applications/${{ matrix.APP_NAME }}.app/${{ matrix.APP_NAME }}
+          rm -rf archive.xcarchive/Products/Applications/Provenance.app/Frameworks/*.framework/Frameworks/
+          ldid -SProvenance/Provenance.entitlements archive.xcarchive/Products/Applications/Provenance.app/Provenance
 
       - name: Convert to IPA
         run: |
           mkdir Payload
-          cp -pR "archive.xcarchive/Products/Applications/${{ matrix.APP_NAME }}.app" "Payload/${{ matrix.IPA_NAME }}.app"
-          zip -r "${{ matrix.IPA_NAME }}.ipa" Payload
+          mkdir Payload/${{ matrix.target }}.app
+          cp -R archive.xcarchive/Products/Applications/Provenance.app/ Payload/${{ matrix.target }}.app/
+          zip -r ${{ matrix.target }}.ipa Payload
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v3.1.0
         with:
+<<<<<<< HEAD
           name: "${{ matrix.IPA_NAME }}.ipa"
           path: "${{ matrix.IPA_NAME }}.ipa"
+=======
+          name: ${{ matrix.target }}.ipa
+          path: ${{ matrix.target }}.ipa
+
+      # - name: Upload IPA to S3
+      #   if: ${{ github.branch == 'develop' }}
+      #   uses: ebuckthal/s3-upload-artifact@v7
+      #   with:
+      #     bucket: 'sh-sysops'
+      #     key: ${AWS_SECRET_ACCESS_KEY}
+      #     path: 'Provenance.ipa'
+
+    # - name: Upload IPA to App Center
+    #   uses: wzieba/AppCenter-Github-Action@v1
+    #   if: ${{ github.branch == 'develop' }}
+    #   with:
+    #     appName: wzieba/Sample-App
+    #     token: ${{secrets.APP_CENTER_TOKEN}}
+    #     group: Testers
+    #     file: Provenance.ipa
+    #     notifyTesters: true
+    #     debug: false
+>>>>>>> parent of 87e13a4e3 (XCode15Beta6: Add 3DS Support through EmuThreeds / Update Play! to latest source code (#1))

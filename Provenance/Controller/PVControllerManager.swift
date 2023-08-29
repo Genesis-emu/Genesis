@@ -497,6 +497,8 @@ final class PVControllerManager: NSObject {
                         changed_state_pressed.forEach {
                             top.controllerButtonPress($0)
                         }
+                    } else {
+                        DLOG("topVC is not of type `ControllerButtonPress`")
                     }
                     // also send button press(s) to the top bannana's navigation controller
                     if let nav = topVC?.navigationController {
@@ -762,7 +764,6 @@ extension GCKeyboard {
 
         let controller = GCController.withExtendedGamepad()
         let gamepad = controller.extendedGamepad!
-        let app = UIApplication.shared as! PVApplication
 
         controller.setValue(self.vendorName ?? "Keyboard", forKey: "vendorName")
 
@@ -783,9 +784,9 @@ extension GCKeyboard {
             let left_y:Float = isPressed(.keyW) ? 1.0 : isPressed(.keyS) ? -1.0 : 0.0
             gamepad.leftThumbstick.setValueForXAxis(left_x, yAxis:left_y)
 
-            // =[], || L;OK
-            let right_x:Float = (isPressed(.closeBracket) || isPressed(.semicolon)) ? 1.0 : (isPressed(.openBracket) || isPressed(.keyK)) ? -1.0 : 0.0
-            let right_y:Float = (isPressed(.equalSign) || isPressed(.keyO)) ? 1.0 : (isPressed(.hyphen) || isPressed(.keyL)) ? -1.0 : 0.0
+            // -,=,[,] || YGHJ
+            let right_x:Float = (isPressed(.closeBracket) || isPressed(.keyG)) ? 1.0 : (isPressed(.openBracket) || isPressed(.keyJ)) ? -1.0 : 0.0
+            let right_y:Float = (isPressed(.equalSign) || isPressed(.keyY)) ? 1.0 : (isPressed(.hyphen) || isPressed(.keyH)) ? -1.0 : 0.0
             gamepad.rightThumbstick.setValueForXAxis(right_x, yAxis:right_y)
 
             // ABXY
@@ -812,24 +813,6 @@ extension GCKeyboard {
 
             // the system does not call this handler in setValue, so call it with the dpad
             gamepad.valueChangedHandler?(gamepad, gamepad.dpad)
-            
-            // Bind / to select, rightShift to start
-            if let emulator = app.emulator, let core = app.core, core.isOn, core.isRunning {
-                if (isPressed(.slash)) {
-                    print("Select Pressed\n")
-                    emulator.controllerViewController?.pressSelect(forPlayer: 0)
-                    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5, execute: { () -> Void in
-                        emulator.controllerViewController?.releaseSelect(forPlayer: 0)
-                    })
-                }
-                if (isPressed(.rightShift)) {
-                    print("Start Pressed\n")
-                    emulator.controllerViewController?.pressStart(forPlayer: 0)
-                    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5, execute: { () -> Void in
-                        emulator.controllerViewController?.releaseStart(forPlayer: 0)
-                    })
-                }
-            }
         }
 
         return controller

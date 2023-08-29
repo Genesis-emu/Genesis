@@ -723,7 +723,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/build";
 				VALIDATE_WORKSPACE_SKIPPED_SDK_FRAMEWORKS = OpenGLES;
 			};
 			name = Debug;
@@ -776,7 +775,6 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/build";
 				VALIDATE_PRODUCT = YES;
 				VALIDATE_WORKSPACE_SKIPPED_SDK_FRAMEWORKS = OpenGLES;
 			};
@@ -829,7 +827,6 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/build";
 				VALIDATE_PRODUCT = YES;
 				VALIDATE_WORKSPACE_SKIPPED_SDK_FRAMEWORKS = OpenGLES;
 			};

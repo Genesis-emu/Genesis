@@ -14,8 +14,6 @@
  *  If not, see <http://www.gnu.org/licenses/>.
  */
 // Updates swift includes / apple platform
-// Update small keyboard setting on hide/show keyboard
-
 #import <PVRetroArch/RetroArch-Swift.h>
 #import "PVRetroArchCore.h"
 #import <UIKit/UIKit.h>
@@ -170,11 +168,7 @@ void *glkitview_init(void);
 }
 
 -(void)toggleCustomKeyboard {
-    bool isHidden=!self.keyboardController.view.isHidden;
-    settings_t *settings         = config_get_ptr();
-    settings->bools.input_small_keyboard_enable = !isHidden;
-
-    [self.keyboardController.view setHidden:isHidden];
+    [self.keyboardController.view setHidden:!self.keyboardController.view.isHidden];
     [self updateOverlayAndFocus];
 }
 #endif
@@ -183,18 +177,11 @@ void *glkitview_init(void);
 {
 #ifdef HAVE_IOS_CUSTOMKEYBOARD
     int cmdData = self.keyboardController.view.isHidden ? 0 : 1;
-    settings_t *settings         = config_get_ptr();
-    if (!settings->bools.gamemode_enable)
-        command_event(CMD_EVENT_GAME_FOCUS_TOGGLE, &cmdData);
-    if (self.keyboardController.view.isHidden) {
-        settings_t *settings         = config_get_ptr();
-        settings->bools.input_small_keyboard_enable = false;
+    command_event(CMD_EVENT_GAME_FOCUS_TOGGLE, &cmdData);
+    if (self.keyboardController.view.isHidden)
         command_event(CMD_EVENT_OVERLAY_INIT, NULL);
-    } else {
-        settings_t *settings         = config_get_ptr();
-        settings->bools.input_small_keyboard_enable = true;
+    else
         command_event(CMD_EVENT_OVERLAY_DEINIT, NULL);
-    }
 #endif
 }
 

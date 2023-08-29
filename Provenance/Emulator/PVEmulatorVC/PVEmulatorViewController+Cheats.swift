@@ -51,7 +51,7 @@ extension PVEmulatorViewController: PVCheatsViewControllerDelegate {
     func setCheatState(code: String, type: String, codeType: String, cheatIndex: UInt8, enabled: Bool, completion: @escaping CheatsCompletion) {
         if let gameWithCheat = core as? GameWithCheat {
             // convert space to +
-            var regex = try! NSRegularExpression(pattern: "[^a-zA-Z0-9-\\[\\]:+]+|[\\s]+", options: NSRegularExpression.Options.caseInsensitive)
+            var regex = try! NSRegularExpression(pattern: "[^a-zA-Z0-9-:+]+|[\\s]+", options: NSRegularExpression.Options.caseInsensitive)
             var range = NSRange(location: 0, length: code.count)
             var modString = regex.stringByReplacingMatches(in: code.uppercased(), options: [], range: range, withTemplate: "+")
             // clean +++

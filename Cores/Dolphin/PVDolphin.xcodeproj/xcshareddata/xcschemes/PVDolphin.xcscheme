@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "49318C94EA5D453AA16C3407"
-               BuildableName = "libzstdDolphin.a"
-               BlueprintName = "zstdDolphin"
+               BuildableName = "libzstd-dolphin.a"
+               BlueprintName = "zstd"
                ReferencedContainer = "container:cmake/dolphin-emu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0424D5B451D54E0A9CBB3EF1"
-               BuildableName = "libxxhashDolphin.a"
-               BlueprintName = "xxhashDolphin"
+               BuildableName = "libxxhash-dolphin.a"
+               BlueprintName = "xxhash"
                ReferencedContainer = "container:cmake/dolphin-emu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,8 +43,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "904647FC2D314066B9F04905"
-               BuildableName = "libglslangDolphin.a"
-               BlueprintName = "glslangDolphin"
+               BuildableName = "libglslang-dolphin.a"
+               BlueprintName = "glslang"
                ReferencedContainer = "container:cmake/dolphin-emu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -57,8 +57,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6D06739B76F94BA58C0C241A"
-               BuildableName = "libminizipDolphin.a"
-               BlueprintName = "minizipDolphin"
+               BuildableName = "libminizip.a"
+               BlueprintName = "minizip"
                ReferencedContainer = "container:cmake/dolphin-emu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -71,8 +71,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "12EF7DC7FA03454FA4C38BBF"
-               BuildableName = "libpngDolphin.a"
-               BlueprintName = "pngDolphin"
+               BuildableName = "libpng-dolphin.a"
+               BlueprintName = "png"
                ReferencedContainer = "container:cmake/dolphin-emu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -85,8 +85,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7FD26A8923E048C185776846"
-               BuildableName = "liblzma-dolphinDolphin.a"
-               BlueprintName = "lzmaDolphin"
+               BuildableName = "liblzma-dolphin.a"
+               BlueprintName = "lzma"
                ReferencedContainer = "container:cmake/dolphin-emu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

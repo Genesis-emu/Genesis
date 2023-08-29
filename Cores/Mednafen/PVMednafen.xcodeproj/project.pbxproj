@@ -8050,7 +8050,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/build";
 				TVOS_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Debug;
@@ -8126,7 +8125,6 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/build";
 				TVOS_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Release;
@@ -8202,7 +8200,6 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/build";
 				TVOS_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Archive;

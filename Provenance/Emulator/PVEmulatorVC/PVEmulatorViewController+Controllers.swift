@@ -32,8 +32,8 @@ extension PVEmulatorViewController {
             return true
         }
 
-        // don't hide menu button
-        menuButton?.isHidden = false; //controllers.count != 0
+        // and hide menu button if we have zero
+        menuButton?.isHidden = controllers.count != 0
 
         #if os(iOS)
             setNeedsUpdateOfHomeIndicatorAutoHidden()

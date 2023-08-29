@@ -29,12 +29,10 @@ public struct CoreAction {
     public let title: String
     public let requiresReset: Bool
     public let options: [CoreActionOption]?
-    public let style: UIAlertAction.Style
 
-    public init(title: String, requiresReset: Bool = false, options: [CoreActionOption]? = nil, style: UIAlertAction.Style = .destructive) {
+    public init(title: String, requiresReset: Bool = false, options: [CoreActionOption]? = nil) {
         self.title = title
         self.requiresReset = requiresReset
         self.options = options
-        self.style = style
     }
 }

@@ -789,12 +789,7 @@ final class PVGameLibraryCollectionViewCell: UICollectionViewCell {
         #endif
 
         let height: CGFloat = CGFloat(PVThumbnailMaxResolution)
-        var ratio: CGFloat = 1.0
-        do {
-            ratio = try game?.boxartAspectRatio.rawValue ?? 1.0
-        } catch {
-            ratio = 1.0
-        }
+        let ratio: CGFloat = game?.boxartAspectRatio.rawValue ?? 1.0
         let width: CGFloat = height * ratio
         let size = CGSize(width: width, height: height)
         let missingArtworkImage = UIImage.image(withSize: size, color: backgroundColor, text: attributedText)

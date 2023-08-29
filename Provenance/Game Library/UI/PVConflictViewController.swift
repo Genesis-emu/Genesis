@@ -109,8 +109,27 @@ final class PVConflictViewController: UITableViewController {
             })
             .bind(onNext: { conflict, indexPath in
                 let showsUnsupportedSystems = PVSettingsModel.shared.debugOptions.unsupportedCores
-                let systemsVC = PVSystemsViewController(size: self.view.frame.size, conflictsController: self.conflictsController, path: conflict.path, candidates: conflict.candidates)
-                self.present(systemsVC, animated: true) { () -> Void in
+                let alertController = UIAlertController(title: "Choose a System", message: nil, preferredStyle: .actionSheet)
+                alertController.popoverPresentationController?.sourceView = self.view
+                alertController.popoverPresentationController?.sourceRect = self.tableView.rectForRow(at: indexPath)
+                conflict.candidates.filter { $0.supported || showsUnsupportedSystems }.forEach { system in
+                    alertController.addAction(.init(title: system.name, style: .default, handler: { _ in
+                        self.conflictsController.resolveConflicts(withSolutions: [conflict.path: system])
+                    }))
+                }
+
+				alertController.addAction(.init(title: NSLocalizedString("Delete", comment: "Delete file"), style: .destructive, handler: { _ in
+					let fm = FileManager.default
+					do {
+						try fm.removeItem(at: conflict.path)
+						self.tableView.reloadData()
+					} catch {
+						ELOG("\(error.localizedDescription)")
+					}
+				}))
+
+                alertController.addAction(UIAlertAction(title: NSLocalizedString("Cancel", comment: "Cancel"), style: .cancel, handler: nil))
+                self.present(alertController, animated: true) { () -> Void in
                     self.tableView.reloadData()
                 }
             })

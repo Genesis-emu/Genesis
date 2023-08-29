@@ -18,7 +18,7 @@ import Foundation
 }
 
 @objc public protocol JoystickResponder {
-    func didMoveJoystick(_ button: Int, withXValue xValue: CGFloat, withYValue yValue: CGFloat, forPlayer player: Int)
+    func didMoveJoystick(_ button: Int, withValue value: CGFloat, forPlayer player: Int)
 }
 
 @objc public protocol KeyboardResponder {
@@ -124,14 +124,13 @@ import Foundation
     case analogDown
     case analogLeft
     case analogRight
-    case leftAnalog
     case count
 }
 
 // FIXME: analog stick (x,y), memory pack, rumble pack
 @objc public protocol PVN64SystemResponderClient: ResponderClient, ButtonResponder, JoystickResponder {
-    @objc(didMoveN64JoystickDirection:withXValue:withYValue:forPlayer:)
-    func didMoveJoystick(_ button: PVN64Button, withXValue xValue: CGFloat, withYValue yValue: CGFloat, forPlayer player: Int)
+    @objc(didMoveN64JoystickDirection:withValue:forPlayer:)
+    func didMoveJoystick(_ button: PVN64Button, withValue value: CGFloat, forPlayer player: Int)
     @objc(didPushN64Button:forPlayer:)
     func didPush(_ button: PVN64Button, forPlayer player: Int)
     @objc(didReleaseN64Button:forPlayer:)
@@ -181,16 +180,12 @@ import Foundation
     case cDown
     case cLeft
     case cRight
-    @objc(PVGCLeftAnalog)
-    case leftAnalog
-    @objc(PVGCRightAnalog)
-    case rightAnalog
 }
 
 // FIXME: analog stick (x,y), memory pack, rumble pack
 @objc public protocol PVGameCubeSystemResponderClient: ResponderClient, ButtonResponder, JoystickResponder {
-    @objc(didMoveGameCubeJoystickDirection:withXValue:withYValue:forPlayer:)
-    func didMoveJoystick(_ button: PVGCButton, withXValue xValue: CGFloat, withYValue yValue: CGFloat, forPlayer player: Int)
+	@objc(didMoveGameCubeJoystickDirection:withValue:forPlayer:)
+	func didMoveJoystick(_ button: PVGCButton, withValue value: CGFloat, forPlayer player: Int)
 	@objc(didPushGameCubeButton:forPlayer:)
 	func didPush(_ button: PVGCButton, forPlayer player: Int)
 	@objc(didReleaseGameCubeButton:forPlayer:)
@@ -278,15 +273,13 @@ import Foundation
     case classicTriggerR
     case start
     case select
-    case leftAnalog
-    case rightAnalog
     case count
 }
 
 // FIXME: analog stick (x,y), memory pack, rumble pack
 @objc public protocol PVWiiSystemResponderClient: ResponderClient, ButtonResponder, JoystickResponder {
-    @objc(didMoveWiiJoystickDirection:withXValue:withYValue:forPlayer:)
-    func didMoveJoystick(_ button: PVWiiMoteButton, withXValue xValue: CGFloat, withYValue yValue: CGFloat, forPlayer player: Int)
+    @objc(didMoveWiiJoystickDirection:withValue:forPlayer:)
+    func didMoveJoystick(_ button: PVWiiMoteButton, withValue value: CGFloat, forPlayer player: Int)
     @objc(didPushWiiButton:forPlayer:)
     func didPush(_ button: PVWiiMoteButton, forPlayer player: Int)
     @objc(didReleaseWiiButton:forPlayer:)
@@ -478,7 +471,6 @@ import Foundation
     case analogDown
     case analogLeft
     case analogRight
-    case leftAnalog
     case count
 }
 
@@ -488,8 +480,8 @@ import Foundation
     @objc(didReleaseDreamcastButton:forPlayer:)
     func didRelease(_ button: PVDreamcastButton, forPlayer player: Int)
 
-    @objc(didMoveDreamcastJoystickDirection:withXValue:withYValue:forPlayer:)
-    func didMoveJoystick(_ button: PVDreamcastButton, withXValue xValue: CGFloat, withYValue yValue: CGFloat, forPlayer player: Int)
+    @objc(didMoveDreamcastJoystickDirection:withValue:forPlayer:)
+    func didMoveJoystick(_ button: PVDreamcastButton, withValue value: CGFloat, forPlayer player: Int)
 }
 
 // MARK: - Master System
@@ -571,7 +563,6 @@ import Foundation
     case start
     case select
     case screenSwap
-    case rotate
     case count
 }
 
@@ -580,49 +571,6 @@ import Foundation
     func didPush(_ button: PVDSButton, forPlayer player: Int)
     @objc(didReleaseDSButton:forPlayer:)
     func didRelease(_ button: PVDSButton, forPlayer player: Int)
-}
-
-
-// MARK: - Nintendo 3DS
-
-@objc public enum PV3DSButton: Int {
-    case up
-    case down
-    case left
-    case right
-    case a
-    case b
-    case x
-    case y
-    case l
-    case r
-    case zl
-    case zr
-    case start
-    case select
-    case rightAnalogUp
-    case rightAnalogDown
-    case rightAnalogLeft
-    case rightAnalogRight
-    case rightAnalog
-    case leftAnalogUp
-    case leftAnalogDown
-    case leftAnalogLeft
-    case leftAnalogRight
-    case leftAnalog
-    case swap
-    case rotate
-    case analogMode
-    case count
-}
-
-@objc public protocol PV3DSSystemResponderClient: ResponderClient, ButtonResponder, JoystickResponder {
-    @objc(didPush3DSButton:forPlayer:)
-    func didPush(_ button: PV3DSButton, forPlayer player: Int)
-    @objc(didRelease3DSButton:forPlayer:)
-    func didRelease(_ button: PV3DSButton, forPlayer player: Int)
-    @objc(didMove3DSJoystickDirection:withXValue:withYValue:forPlayer:)
-    func didMoveJoystick(_ button: PV3DSButton, withXValue xValue: CGFloat, withYValue yValue: CGFloat, forPlayer player: Int)
 }
 
 // MARK: - Atari 5200
@@ -711,8 +659,6 @@ import Foundation
     case rightAnalogDown
     case rightAnalogLeft
     case rightAnalogRight
-    case leftAnalog
-    case rightAnalog
     case count
 }
 
@@ -723,8 +669,8 @@ import Foundation
     @objc(didReleasePSXButton:forPlayer:)
     func didRelease(_ button: PVPSXButton, forPlayer player: Int)
 
-    @objc(didMovePSXJoystickDirection:withXValue:withYValue:forPlayer:)
-    func didMoveJoystick(_ button: PVPSXButton, withXValue xValue: CGFloat, withYValue yValue: CGFloat, forPlayer player: Int)
+    @objc(didMovePSXJoystickDirection:withValue:forPlayer:)
+    func didMoveJoystick(_ button: PVPSXButton, withValue value: CGFloat, forPlayer player: Int)
 }
 
 // MARK: - PS2
@@ -755,8 +701,6 @@ import Foundation
     case rightAnalogDown
     case rightAnalogLeft
     case rightAnalogRight
-    case leftAnalog
-    case rightAnalog
     case count
 }
 
@@ -767,8 +711,8 @@ import Foundation
     @objc(didReleasePS2Button:forPlayer:)
     func didRelease(_ button: PVPS2Button, forPlayer player: Int)
 
-    @objc(didMovePS2JoystickDirection:withXValue:withYValue:forPlayer:)
-    func didMoveJoystick(_ button: PVPS2Button, withXValue xValue: CGFloat, withYValue yValue: CGFloat, forPlayer player: Int)
+    @objc(didMovePS2JoystickDirection:withValue:forPlayer:)
+    func didMoveJoystick(_ button: PVPS2Button, withValue value: CGFloat, forPlayer player: Int)
 }
 
 // MARK: - PSP
@@ -795,7 +739,6 @@ import Foundation
     case leftAnalogDown
     case leftAnalogLeft
     case leftAnalogRight
-    case leftAnalog
     case count
 }
 
@@ -806,8 +749,8 @@ import Foundation
     @objc(didReleasePSPButton:forPlayer:)
     func didRelease(_ button: PVPSPButton, forPlayer player: Int)
 
-    @objc(didMovePSPJoystickDirection:withXValue:withYValue:forPlayer:)
-    func didMoveJoystick(_ button: PVPSPButton, withXValue xValue: CGFloat, withYValue yValue: CGFloat, forPlayer player: Int)
+    @objc(didMovePSPJoystickDirection:withValue:forPlayer:)
+    func didMoveJoystick(_ button: PVPSPButton, withValue value: CGFloat, forPlayer player: Int)
 }
 
 // MARK: - WonderSwan
@@ -1045,17 +988,14 @@ import Foundation
     case l
     case r
     case start
-    case leftAnalog
     case count
 }
 
-@objc public protocol PVSaturnSystemResponderClient: ResponderClient, ButtonResponder, JoystickResponder {
+@objc public protocol PVSaturnSystemResponderClient: ResponderClient, ButtonResponder {
     @objc(didPushSSButton:forPlayer:)
     func didPush(_ button: PVSaturnButton, forPlayer player: Int)
     @objc(didReleaseSSButton:forPlayer:)
     func didRelease(_ button: PVSaturnButton, forPlayer player: Int)
-    @objc(didMoveSaturnJoystickDirection:withXValue:withYValue:forPlayer:)
-    func didMoveJoystick(_ button: PVSaturnButton, withXValue xValue: CGFloat, withYValue yValue: CGFloat, forPlayer player: Int)
 }
 
 // MARK: - Magnavox Odyssey2/Videopac+

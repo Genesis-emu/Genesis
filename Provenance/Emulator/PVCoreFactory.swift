@@ -290,13 +290,6 @@ public final class PVCoreFactory: NSObject {
                 fatalError("Core doesn't implement PVDSSystemResponderClient")
             }
             break;
-        case ._3DS:
-            if let core = core as? PV3DSSystemResponderClient {
-                return PV3DSControllerViewController(controlLayout: controllerLayout, system: system, responder: core)
-            } else if (!skipError) {
-                fatalError("Core doesn't implement PV3DSSystemResponderClient")
-            }
-            break;
         case .DOS:
             if let core = core as? PVDOSSystemResponderClient {
                 return PVDOSControllerViewController(controlLayout: controllerLayout, system: system, responder: core)
