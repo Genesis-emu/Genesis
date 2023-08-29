@@ -9,9 +9,8 @@
 
 ## Installation
 
-To get started, please follow the [Installation](https://wiki.provenance-emu.com/installation-and-usage/installing-provenance) instructions on the wiki.
+To get started, please go to Releases and grab the latest IPA and install into a signing service of your choice for example [SideStore](https://sidestore.io)
 
-<sup>If you run into trouble, check the [Frequently Asked Questions](https://wiki.provenance-emu.com/faqs) and please read up on our [Issues Usage](https://github.com/Provenance-Emu/Provenance/wiki/Issues-Usage) first, before posting any new issues.</sup>
 
 
 ### Why 'Genesis'?
