@@ -1,5 +1,5 @@
 <p align="center" style="text-align: center; align: center">
-<h1 align="center"><a href="http://www.provenance-emu.com" style="text-decoration:none;color:inherit;">Genesis</a></h1>
+<h1 align="center"><a href="about:blank" style="text-decoration:none;color:inherit;">Genesis</a></h1>
 <h4 align="center" style="text-align: center; align: center">An iOS & tvOS Emulator</h4>
 </p>
 
@@ -21,17 +21,7 @@
   </div>
 </br>
 
-![Alt](https://repobeats.axiom.co/api/embed/19c0dec78befc395b346c14006c62ff964912fa9.svg "Repobeats analytics image")
 
-### Community
-
-[![Discord Widget](https://img.shields.io/discord/421819941835243520.svg?style=flat-square)](https://discord.gg/4TK7PU5)
-<a href="https://www.twitch.tv/joe__codes"><img alt="Twitch Status" src="https://img.shields.io/twitch/status/joe__codes?style=flat-square"></a>
-![Twitter Follow](https://img.shields.io/twitter/follow/provenanceapp.svg?style=social&logo=twitter&label=Follow)
-<img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UCKeN6unYKdayfgLWulXgB1w?style=social">
-
-💬 Join us and the rest of the community on the [Provenence-Emu Discord](https://discord.gg/4TK7PU5).<br><br>
-  
 ## Installation
 
 To get started, please follow the [Installation](https://wiki.provenance-emu.com/installation-and-usage/installing-provenance) instructions on the wiki.
@@ -39,9 +29,9 @@ To get started, please follow the [Installation](https://wiki.provenance-emu.com
 <sup>If you run into trouble, check the [Frequently Asked Questions](https://wiki.provenance-emu.com/faqs) and please read up on our [Issues Usage](https://github.com/Provenance-Emu/Provenance/wiki/Issues-Usage) first, before posting any new issues.</sup>
 
 
-### Why 'Provenance'?
+### Why 'Genesis'?
 
-_Provenance_ is our origin story. The word has a similar meaning to _Genesis_, which is actually where the project started: Sega Genesis—our early beginnings as humble emulator on iOS.
+The reason why we forked Provenace was to try to upstream most PRs from Provenance into one IPA rather than a bunch of scattered IPAs.
 
 <sup> prov·e·nance &nbsp; _/ˈprävənəns/_ &nbsp; n. </sup><br>
 <sup> ¹ place of origin &nbsp; ² the beginning of something's existence </sup>
@@ -94,7 +84,7 @@ _Provenance_ is our origin story. The word has a similar meaning to _Genesis_, w
 
 ## Upstream projects:
 
-Provenance would be nothing without these projects.
+Genesis would be nothing without these projects.
 Please consider supporting those you love or want to see improved!
 
 ### Cores
@@ -194,31 +184,10 @@ Please consider supporting those you love or want to see improved!
 
 ----
 
-### Importing ROMs
-
-Visit our wiki on [Importing ROMs](https://wiki.provenance-emu.com/installation-and-usage/roms/importing-roms) to learn how to load ROMs into Provenance.
-
-### <a id="contributions-footnote"></a>Contributions
-
-[![GitHub open issues](https://img.shields.io/github/issues-raw/provenance-emu/Provenance.svg?style=flat-square)](https://github.com/provenance-emu/Provenance/issues)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/provenance-emu/Provenance.svg?style=flat-square)](https://github.com/provenance-emu/Provenance/issues)
-![GitHub open pull requests](https://img.shields.io/github/issues-pr-raw/provenance-emu/provenance.svg?style=flat-square)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/provenance-emu/provenance.svg?style=flat-square)
-
-![GitHub last commit](https://img.shields.io/github/last-commit/provenance-emu/provenance.svg?style=flat-square)
-![GitHub commit activity the past week, 4 weeks, year](https://img.shields.io/github/commit-activity/y/provenance-emu/provenance.svg?style=flat-square)
-
-To contribute to the Provenance project please take look at the [open issues](https://github.com/Provenance-Emu/Provenance/issues). If you see something you can help with: bugfixing, testing, implementation or relevant suggestions, discussion and research.[°](#contributions-footnote)
-
-Before posting new issues, we ask you to please read up on [Issues Usage](https://github.com/Provenance-Emu/Provenance/wiki/Issues-Usage). If you just want to give us a a shout out,  twitter: [@provenanceapp](https://twitter.com/provenanceapp), and of course, new GitHub contributors are always welcome. _Thank you._
-
-<sup>° Please note that Issues _is not_ a discussion board _nor_ a help desk. Please help us keep it focused on improving Provenance. </sup><br> 
-
-----
 
 ### Attributions
 
-Provenance would not be possible without the great work of those who came before us and the ongoing develeopment of open-source projects that makeup the foundations of our emulation cores.
+Genesis would not be possible without the great work of those who came before us and the ongoing develeopment of open-source projects that makeup the foundations of our emulation cores.
 
 <sub>Atari 2600: [Stella](http://stella.sourceforge.net/) | Atari 5200: [Atari 800](http://atari800.sourceforge.net) | Atari 7800: [ProSystem](http://gstanton.github.io/ProSystem1_3/) | Atari Jaguar: [Virtual Jaguar](https://icculus.org/virtualjaguar/) | Nintendo Entertainment System/Famicom (NES/FC), Famicom Disk System (FDS): [FCEUX](http://www.fceux.com/web/home.html) | Super Nintendo Entertainment System/Super Famicom (SNES/SFC): [SNES9x](http://www.snes9x.com) | Game Boy / Game Boy Color: [Gambatte](http://gambatte.sourceforge.net/) | Nintendo 64 (N64): [Mupen64Plus](https://github.com/mupen64plus) | Game Boy Advance (GBA): [VisualBoyAdvance](http://sourceforge.net/projects/vba/) | Pokémon mini: [PokiMini](https://sourceforge.net/projects/pokemini/) | Sega Master System, Game Gear, Genesis/MegaDrive, SG-1000: [Genesis Plus GX](https://bitbucket.org/eke/genesis-plus-gx/) | Sega 32X: [PicoDrive](https://github.com/notaz/picodrive) | Atari Lynx, Bandai WonderSwan + WonderSwan Color, NEC TurboGrafx-16/PC Engine / TurboGrafx-CD/Super CD-ROM² System / SuperGrafx / PC-FX, Nintendo Entertainment System/Famicom (NES/FC) / Game Boy / Game Boy Color / Game Boy Advance / Super Nintendo Entertainment System/Super Famicom (SNES/SFC) / VirtualBoy, SNK Neo Geo Pocket / Neo Geo Pocket Color, Sony PlayStation: [Mednafen](https://mednafen.github.io)</sub><br>
 
