@@ -1237,7 +1237,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = PV;
 				LastUpgradeCheck = 1300;
-				ORGANIZATIONNAME = "Provenance Emu";
+				ORGANIZATIONNAME = "Genesis Emu";
 				TargetAttributes = {
 					9396AEEB297305F700B1EA1C = {
 						CreatedOnToolsVersion = 14.2;
@@ -1566,7 +1566,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PVDosBox";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PVDosBox";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
@@ -1745,7 +1745,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PVDosBox";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PVDosBox";
 				PRODUCT_NAME = PVDosBox;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;

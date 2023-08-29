@@ -19,13 +19,13 @@ extension LocationManager {
 
         var failureReason: String? {
             switch self {
-            case .requiresAlwaysAuthorization: return NSLocalizedString("Provenance requires “Always” location permission.", comment: "")
+            case .requiresAlwaysAuthorization: return NSLocalizedString("Genesis requires “Always” location permission.", comment: "")
             }
         }
 
         var recoverySuggestion: String? {
             switch self {
-            case .requiresAlwaysAuthorization: return NSLocalizedString("Please grant Provenance “Always” location permission in Settings so it can run in the background indefinitely.", comment: "")
+            case .requiresAlwaysAuthorization: return NSLocalizedString("Please grant Genesis “Always” location permission in Settings so it can run in the background indefinitely.", comment: "")
             }
         }
 

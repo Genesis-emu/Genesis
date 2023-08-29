@@ -1,9 +1,9 @@
 //
 //  Services.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Joseph Mattiello on 11/24/18.
-//  Copyright © 2018 Provenance Emu. All rights reserved.
+//  Copyright © 2018 Genesis Emu. All rights reserved.
 //
 
 import Foundation
@@ -25,7 +25,7 @@ struct ServicesOptions: OptionSet {
 
     static let iOSOnly: ServicesOptions = all.subtracting(.tvOS)
 
-    static var isOfficialBuild: Bool = Bundle.main.bundleIdentifier!.contains("org.provenance-emu.provenance")
+    static var isOfficialBuild: Bool = Bundle.main.bundleIdentifier!.contains("org.Genesis-emu.Genesis")
 }
 
 enum ServicePlatforms {

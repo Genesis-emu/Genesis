@@ -1,4 +1,4 @@
-# Install script for directory: /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/dolphin-ios
+# Install script for directory: /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/dolphin-ios
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,7 +37,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/Applications/Xcode-14.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
 endif()
 
-set(CMAKE_BINARY_DIR "/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake")
+set(CMAKE_BINARY_DIR "/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake")
 
 if(NOT PLATFORM_NAME)
   if(NOT "$ENV{PLATFORM_NAME}" STREQUAL "")
@@ -66,7 +66,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/share/dolphin-emu/sys" TYPE DIRECTORY FILES "/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/dolphin-ios/Data/Sys/")
+  file(INSTALL DESTINATION "/usr/local/share/dolphin-emu/sys" TYPE DIRECTORY FILES "/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/dolphin-ios/Data/Sys/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -78,30 +78,30 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/share/dolphin-emu" TYPE FILE FILES "/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/dolphin-ios/Data/license.txt")
+  file(INSTALL DESTINATION "/usr/local/share/dolphin-emu" TYPE FILE FILES "/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/dolphin-ios/Data/license.txt")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Externals/cpp-optparse/cmake_install.cmake")
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Externals/imgui/cmake_install.cmake")
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Externals/glslang/cmake_install.cmake")
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Externals/pugixml/cmake_install.cmake")
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Externals/enet/cmake_install.cmake")
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Externals/xxhash/cmake_install.cmake")
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Externals/liblzma/cmake_install.cmake")
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Externals/zstd/cmake_install.cmake")
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Externals/minizip/cmake_install.cmake")
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Externals/LZO/cmake_install.cmake")
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Externals/libpng/cmake_install.cmake")
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Externals/FreeSurround/cmake_install.cmake")
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Externals/ed25519/cmake_install.cmake")
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Externals/soundtouch/cmake_install.cmake")
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Externals/SFML/cmake_install.cmake")
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Externals/curl/cmake_install.cmake")
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Externals/libiconv-1.14/cmake_install.cmake")
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Externals/rangeset/cmake_install.cmake")
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Source/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Externals/cpp-optparse/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Externals/imgui/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Externals/glslang/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Externals/pugixml/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Externals/enet/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Externals/xxhash/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Externals/liblzma/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Externals/zstd/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Externals/minizip/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Externals/LZO/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Externals/libpng/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Externals/FreeSurround/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Externals/ed25519/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Externals/soundtouch/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Externals/SFML/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Externals/curl/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Externals/libiconv-1.14/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Externals/rangeset/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Source/cmake_install.cmake")
 
 endif()
 
@@ -113,5 +113,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,4 +1,4 @@
-name: Provenance-SPM
+name: Genesis-SPM
 
 # include:
 #   - base_spec.yml
@@ -8,7 +8,7 @@ name: Provenance-SPM
 ############
 
 options:
-  bundleIdPrefix: com.provenance
+  bundleIdPrefix: com.Genesis
   createIntermediateGroups: true # If the folders are nested, also nest the groups in Xcode
   defaultConfig: Release
   deploymentTarget:
@@ -126,30 +126,30 @@ packages:
 
 targets:
   ############
-  # Provenance
+  # Genesis
   ############
-  Provenance:
+  Genesis:
     type: application
     platform: [iOS, tvOS]
     
     # sources
-    sources: [Provenance]
+    sources: [Genesis]
     
     # settings
     base:
-      PRODUCT_BUNDLE_IDENTIFIER: com.bundleident.provenance
-      INFOPLIST_FILE: Provenance/Provenance-Info.plist
-      CODE_SIGN_ENTITLEMENTS: Provenance/Provenance.entitlements # Provenance/Provenance-Free.entitlements
+      PRODUCT_BUNDLE_IDENTIFIER: com.bundleident.Genesis
+      INFOPLIST_FILE: Genesis/Genesis-Info.plist
+      CODE_SIGN_ENTITLEMENTS: Genesis/Genesis.entitlements # Genesis/Genesis-Free.entitlements
       ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
-      #SWIFT_OBJC_BRIDGING_HEADER: Provenance/Provenance-Bridging-Header.h
-      GCC_PREFIX_HEADER: Provenance/Provenance-Prefix.pch
+      #SWIFT_OBJC_BRIDGING_HEADER: Genesis/Genesis-Bridging-Header.h
+      GCC_PREFIX_HEADER: Genesis/Genesis-Prefix.pch
     configs:
       Debug:
         CODE_SIGN_IDENTITY: "iPhone Developer"
-        PROVISIONING_PROFILE_SPECIFIER: "match Development org.provenance-emu.provenance"
+        PROVISIONING_PROFILE_SPECIFIER: "match Development org.Genesis-emu.Genesis"
       Release:
         CODE_SIGN_IDENTITY: "iPhone Distribution"
-        PROVISIONING_PROFILE_SPECIFIER: "match AdHoc org.provenance-emu.provenance"
+        PROVISIONING_PROFILE_SPECIFIER: "match AdHoc org.Genesis-emu.Genesis"
         SWIFT_OPTIMIZATION_LEVEL: "-Owholemodule"
 
     # scheme

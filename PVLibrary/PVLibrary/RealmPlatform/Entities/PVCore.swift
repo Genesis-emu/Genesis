@@ -1,6 +1,6 @@
 //
 //  PVCore.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Joseph Mattiello on 3/11/18.
 //  Copyright © 2018 James Addyman. All rights reserved.
@@ -73,7 +73,7 @@ internal extension Core {
         principleClass = core.principleClass
         disabled = core.disabled
         // TODO: Supported systems
-        let url = URL(string: core.projectURL) ?? URL(string: "https://provenance-emu.com")!
+        let url = URL(string: core.projectURL) ?? URL(string: "https://Genesis-emu.com")!
 		print("loadcore: \(core.projectName) class: \(core.principleClass) identifier: \(identifier) disable: \(disabled)")
         project = CoreProject(name: core.projectName, url: url, version: core.projectVersion)
     }

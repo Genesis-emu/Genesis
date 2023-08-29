@@ -1,7 +1,7 @@
 private_lane :publish_wordpress do |options|
   file = options.fetch(:file)
 
-  url = URI.parse('https://provenance-emu.com/wp/v2/media')
+  url = URI.parse('https://Genesis-emu.com/wp/v2/media')
   filename = File.basename(file)
   File.open(file) do |ipa|
     req = Net::HTTP::Post::Multipart.new url.path,
@@ -15,9 +15,9 @@ end
 
 desc 'Upload to S3'
 private_lane :publish_s3 do |options|
-  ipa_name = options.fetch(:ipa_name, 'Provenance.ipa')
-  dsym_name = options.fetch(:dsym_name, 'Provenance.app.dSYM.zip')
-  bucket = options.fetch(:bucket, 'Pprovenance-builds')
+  ipa_name = options.fetch(:ipa_name, 'Genesis.ipa')
+  dsym_name = options.fetch(:dsym_name, 'Genesis.app.dSYM.zip')
+  bucket = options.fetch(:bucket, 'PGenesis-builds')
   region = options.fetch(:region, 'us-east-1')
 
   access_key = ENV['S3_ACCESS_KEY']
@@ -31,7 +31,7 @@ private_lane :publish_s3 do |options|
    # Optional but nice if you want to put multiple apps in same bucket
   app_directory = 'iOS'
 
-  endpoint = 'http://provenance.joemattiello.com:9002'
+  endpoint = 'http://Genesis.joemattiello.com:9002'
 
   # Upload version.json, plist and HTML.
   upload_metadata = false
@@ -75,10 +75,10 @@ private_lane :publish_hockey do |options|
   api_token = ENV['HOCKEY_APP_TOKEN'] || defaultAPIToken
   public_identifier = ENV['HOCKEY_BETA_APP_ID'] || defaultAppID
   notify = '1'
-  repository_url = 'https://github.com/Provenance-Emu/Provenance/'
+  repository_url = 'https://github.com/Genesis-Emu/Genesis/'
 
   change_log = default_changelog
-  notes = "The Official Provenance Beta\n\n#{change_log}"
+  notes = "The Official Genesis Beta\n\n#{change_log}"
 
   hockey(
     api_token: api_token,
@@ -105,11 +105,11 @@ private_lane :scp_upload do |options|
 
   filename = File.basename(source)
 
-  host = 'provenance.joemattiello.com'
+  host = 'Genesis.joemattiello.com'
   port = '22'
 
-  destination = "/usr/share/nginx/provenance.joemattiello.com/www/TravisBuilds/#{git_branch}/#{subfolder}/#{filename}"
-  username = ENV['FASTLANE_USER'] || 'provenance'
+  destination = "/usr/share/nginx/Genesis.joemattiello.com/www/TravisBuilds/#{git_branch}/#{subfolder}/#{filename}"
+  username = ENV['FASTLANE_USER'] || 'Genesis'
 
   UI.message "SCP'ing from #{source} to #{host}:#{destination}"
 
@@ -127,5 +127,5 @@ end
 
 private_lane :submit_appstore do
   load_keys
-  pilot(app_identifier: "#{$dev_domain}.provenance")
+  pilot(app_identifier: "#{$dev_domain}.Genesis")
 end

@@ -1,6 +1,6 @@
 //
 //  PVGenesisEmulatorCore.m
-//  Provenance
+//  Genesis
 //
 //  Created by James Addyman on 07/08/2013.
 //  Copyright (c) 2013 James Addyman. All rights reserved.
@@ -285,7 +285,7 @@ static void video_callback(const void *data, unsigned width, unsigned height, si
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         dispatch_queue_attr_t queueAttributes = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_CONCURRENT, QOS_CLASS_USER_INTERACTIVE, 0);
-        memory_queue = dispatch_queue_create("com.provenance.video", queueAttributes);
+        memory_queue = dispatch_queue_create("com.Genesis.video", queueAttributes);
     });
         
     dispatch_apply(height, memory_queue, ^(size_t y){
@@ -688,7 +688,7 @@ static bool environment_callback(unsigned cmd, void *data)
 - (CGRect)screenRect {
     float ratio = 8.0/7.0;
 
-    if([[self systemIdentifier] isEqualToString:@"com.provenance.gamegear"]) {
+    if([[self systemIdentifier] isEqualToString:@"com.Genesis.gamegear"]) {
         return config.gg_extra ? CGRectMake(0, 0, 256, 192): CGRectMake(0, 0, 160, 144);
     } else {
         return CGRectMake(0, 0, _videoWidth, _videoHeight);
@@ -701,12 +701,12 @@ static bool environment_callback(unsigned cmd, void *data)
     int height = bitmap.viewport.h;
 
     // GameGear
-    if([[self systemIdentifier] isEqualToString:@"com.provenance.gamegear"]) {
+    if([[self systemIdentifier] isEqualToString:@"com.Genesis.gamegear"]) {
         
         return config.gg_extra ? CGSizeMake(256.0, 192.0): CGSizeMake(160.0, 144.0);
     }
     // Master System
-    else if([[self systemIdentifier] isEqualToString:@"com.provenance.mastersystem"] || [[self systemIdentifier] isEqualToString:@"com.provenance.sg1000"]) {
+    else if([[self systemIdentifier] isEqualToString:@"com.Genesis.mastersystem"] || [[self systemIdentifier] isEqualToString:@"com.Genesis.sg1000"]) {
         float ratio = 8.0 / 7.0;
         return CGSizeMake(256.0 * ratio, 192.0);
     }
@@ -780,7 +780,7 @@ static bool environment_callback(unsigned cmd, void *data)
     }
 
     // Sega SG-1000…
-    if ([[self systemIdentifier] isEqualToString:@"com.provenance.sg1000"]) {
+    if ([[self systemIdentifier] isEqualToString:@"com.Genesis.sg1000"]) {
         
         if ([controller extendedGamepad]) {
             GCExtendedGamepad *gamepad = [controller extendedGamepad];
@@ -855,7 +855,7 @@ static bool environment_callback(unsigned cmd, void *data)
 #endif
         
     // Sega Master System…
-    } else if ([[self systemIdentifier] isEqualToString:@"com.provenance.mastersystem"]) {
+    } else if ([[self systemIdentifier] isEqualToString:@"com.Genesis.mastersystem"]) {
        
        if ([controller extendedGamepad]) {
            GCExtendedGamepad *gamepad = [controller extendedGamepad];
@@ -935,7 +935,7 @@ static bool environment_callback(unsigned cmd, void *data)
 #endif
     
         // Game Gear…
-    } else if ([[self systemIdentifier] isEqualToString:@"com.provenance.gamegear"]) {
+    } else if ([[self systemIdentifier] isEqualToString:@"com.Genesis.gamegear"]) {
         
         if ([controller extendedGamepad]) {
             GCExtendedGamepad *gamepad = [controller extendedGamepad];

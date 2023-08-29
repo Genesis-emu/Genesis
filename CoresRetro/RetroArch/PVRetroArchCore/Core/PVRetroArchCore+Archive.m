@@ -14,7 +14,7 @@
 @implementation PVRetroArchCore (Archive)
 - (NSString *)checkROM:(NSString*)romFile {
     NSLog(@"Core %@ System %@ Rom %@\n", [self coreIdentifier], [self systemIdentifier], romFile);
-    if([[self systemIdentifier] containsString:@"com.provenance.pc98"]) {
+    if([[self systemIdentifier] containsString:@"com.Genesis.pc98"]) {
         NSString *file=[self checkROM_PC98:romFile];
         NSLog(@"Core Rom %@\n", file);
         return file;

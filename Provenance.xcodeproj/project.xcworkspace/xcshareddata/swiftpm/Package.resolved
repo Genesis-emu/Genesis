@@ -48,7 +48,7 @@
       },
       {
         "package": "SteamController",
-        "repositoryURL": "https://github.com/Provenance-Emu/SteamController.git",
+        "repositoryURL": "https://github.com/Genesis-Emu/SteamController.git",
         "state": {
           "branch": "master",
           "revision": "55d2fe0484f4cc5ed3535033af6b0218621e37b2",

@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.GME</string>
+	<string>com.Genesis.core.GME</string>
 	<key>PVPrincipleClass</key>
 	<string>PVGMECore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.music</string>
+		<string>com.Genesis.music</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>GME</string>

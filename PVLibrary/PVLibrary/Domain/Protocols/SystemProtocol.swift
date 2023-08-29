@@ -3,7 +3,7 @@
 //  PVLibrary
 //
 //  Created by Joseph Mattiello on 11/12/18.
-//  Copyright © 2018 Provenance Emu. All rights reserved.
+//  Copyright © 2018 Genesis Emu. All rights reserved.
 //
 
 import Foundation

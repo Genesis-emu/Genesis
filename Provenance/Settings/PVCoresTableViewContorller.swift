@@ -1,6 +1,6 @@
 //
 //  PVCoresTableViewController
-//  Provenance
+//  Genesis
 //
 //  Created by Joe Mattiello on 16.03.18.
 //  Copyright © 2018 Joe Mattiello. All rights reserved.

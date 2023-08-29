@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.ppsspp</string>
+	<string>com.Genesis.core.ppsspp</string>
 	<key>PVPrincipleClass</key>
 	<string>PVPPSSPPCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.psp</string>
+		<string>com.Genesis.psp</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>PPSSPP</string>

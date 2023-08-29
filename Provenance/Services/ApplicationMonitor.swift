@@ -12,12 +12,12 @@ import UserNotifications
 import Combine
 
 private enum UserNotification: String {
-    case appStoppedRunning = "org.provenance-emu.provenance.AppStoppedRunning"
+    case appStoppedRunning = "org.Genesis-emu.Genesis.AppStoppedRunning"
 }
 
 private extension CFNotificationName {
-    static let altstoreRequestAppState: CFNotificationName = CFNotificationName("com.altstore.RequestAppState.org.provenance-emu.provenance" as CFString)
-    static let altstoreAppIsRunning: CFNotificationName = CFNotificationName("com.altstore.AppState.Running.org.provenance-emu.provenance" as CFString)
+    static let altstoreRequestAppState: CFNotificationName = CFNotificationName("com.altstore.RequestAppState.org.Genesis-emu.Genesis" as CFString)
+    static let altstoreAppIsRunning: CFNotificationName = CFNotificationName("com.altstore.AppState.Running.org.Genesis-emu.Genesis" as CFString)
 }
 
 private let ReceivedApplicationState: @convention(c) (CFNotificationCenter?, UnsafeMutableRawPointer?, CFNotificationName?, UnsafeRawPointer?, CFDictionary?) -> Void = { (center, observer, name, object, userInfo) in

@@ -5,7 +5,7 @@ empty:=
 space:= $(empty) $(empty)
 spaceplus:= $(empty)\ $(empty)
 
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/dolphin-ios/Externals/ed25519/CMakeLists.txt))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/dolphin-ios/Externals/ed25519/CMakeLists.txt))
 
-/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/CMakeFiles/cmake.check_cache: $(TARGETS)
-	/opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -H/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/dolphin-ios -B/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake
+/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/CMakeFiles/cmake.check_cache: $(TARGETS)
+	/opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -H/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/dolphin-ios -B/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake

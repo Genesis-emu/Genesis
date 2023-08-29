@@ -1,6 +1,6 @@
 //
 //  GameLaunchingViewController.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Joseph Mattiello on 2/13/18.
 //  Copyright © 2018 James Addyman. All rights reserved.
@@ -12,7 +12,7 @@ import RealmSwift
 import UIKit
 import ZipArchive
 
-private let WIKI_BIOS_URL = "https://wiki.provenance-emu.com/installation-and-usage/bios-requirements"
+private let WIKI_BIOS_URL = "https://wiki.Genesis-emu.com/installation-and-usage/bios-requirements"
 
 public func PVMaxRecentsCount() -> Int {
     #if os(tvOS)
@@ -49,7 +49,7 @@ extension GameSharingViewController where Self: UIViewController {
     func share(for game: PVGame, sender: Any?) {
         /*
          TODO:
-         Add native share action for sharing to other provenance devices
+         Add native share action for sharing to other Genesis devices
          Add metadata files to shares so they can cleanly re-import
          Well, then also need a way to import save states
          */

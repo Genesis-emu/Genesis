@@ -1,9 +1,9 @@
 //
 //  RecentlyPlayedCollectionCell.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Joseph Mattiello on 5/15/18.
-//  Copyright © 2018 Provenance. All rights reserved.
+//  Copyright © 2018 Genesis. All rights reserved.
 //
 
 import Foundation

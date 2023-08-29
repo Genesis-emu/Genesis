@@ -1,6 +1,6 @@
 //
 //  PVSearchViewController.m
-//  Provenance
+//  Genesis
 //
 //  Created by James Addyman on 12/06/2016.
 //  Copyright © 2016 James Addyman. All rights reserved.
@@ -15,7 +15,7 @@
 #import "PVEmulatorConfiguration.h"
 #import "PVRecentGame.h"
 #import "PVControllerManager.h"
-#import "Provenance-Swift.h"
+#import "Genesis-Swift.h"
 
 @interface PVSearchViewController ()
 

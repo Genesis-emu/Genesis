@@ -1,6 +1,6 @@
 //
 //  PVGameMoreInfoViewController.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Joseph Mattiello on 2/13/18.
 //  Copyright © 2018 James Addyman. All rights reserved.
@@ -162,7 +162,7 @@ final class GameMoreInfoPageViewController: UIPageViewController, UIPageViewCont
             return nil
         }
 
-        let storyboard = UIStoryboard(name: "Provenance", bundle: nil)
+        let storyboard = UIStoryboard(name: "Genesis", bundle: nil)
         let nextViewController = storyboard.instantiateViewController(withIdentifier: "gameMoreInfoVC") as! PVGameMoreInfoViewController
 
         let nextGame = games[nextGameIndex]

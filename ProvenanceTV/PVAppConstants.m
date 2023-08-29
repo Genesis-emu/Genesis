@@ -1,6 +1,6 @@
 //
 //  PVAppConstants.m
-//  Provenance
+//  Genesis
 //
 //  Created by David Muzi on 2015-12-16.
 //  Copyright © 2015 James Addyman. All rights reserved.
@@ -10,12 +10,12 @@
 
 NSInteger const PVMaxRecentsShortcutCount = 4;
 
-NSString *const PVAppGroupId = @"group.provenance-emu.provenance";
+NSString *const PVAppGroupId = @"group.Genesis-emu.Genesis";
 NSString *const kInterfaceDidChangeNotification = @"kInterfaceDidChangeNotification";
 
 NSString *const PVGameControllerKey = @"PlayController";
 NSString *const PVGameMD5Key = @"md5";
-NSString *const PVAppURLKey = @"provenance";
+NSString *const PVAppURLKey = @"Genesis";
 
 #if TARGET_OS_TV
     float const PVThumbnailMaxResolution = 400.0;

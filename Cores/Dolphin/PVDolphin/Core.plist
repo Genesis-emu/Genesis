@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.dolphin</string>
+	<string>com.Genesis.dolphin</string>
 	<key>PVPrincipleClass</key>
 	<string>PVDolphinCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.gamecube</string>
-		<string>com.provenance.wii</string>
+		<string>com.Genesis.gamecube</string>
+		<string>com.Genesis.wii</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>Dolphin</string>

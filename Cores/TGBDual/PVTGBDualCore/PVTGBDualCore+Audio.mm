@@ -3,7 +3,7 @@
 //  PVTGBDual
 //
 //  Created by error404-na on 12/31/18.
-//  Copyright © 2018 Provenance. All rights reserved.
+//  Copyright © 2018 Genesis. All rights reserved.
 //
 
 #import "PVTGBDualCore+Audio.h"

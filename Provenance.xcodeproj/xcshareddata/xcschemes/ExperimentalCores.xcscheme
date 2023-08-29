@@ -17,7 +17,7 @@
                BlueprintIdentifier = "B3C7CCBC27DCB0B90003F9D2"
                BuildableName = "ExperimentalCores.framework"
                BlueprintName = "ExperimentalCores"
-               ReferencedContainer = "container:Provenance.xcodeproj">
+               ReferencedContainer = "container:Genesis.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -53,7 +53,7 @@
             BlueprintIdentifier = "B3C7CCBC27DCB0B90003F9D2"
             BuildableName = "ExperimentalCores.framework"
             BlueprintName = "ExperimentalCores"
-            ReferencedContainer = "container:Provenance.xcodeproj">
+            ReferencedContainer = "container:Genesis.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

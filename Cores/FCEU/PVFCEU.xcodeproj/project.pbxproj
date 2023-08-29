@@ -3717,7 +3717,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = PV;
 				LastUpgradeCheck = 1300;
-				ORGANIZATIONNAME = "Provenance Emu";
+				ORGANIZATIONNAME = "Genesis Emu";
 				TargetAttributes = {
 					B3341F4F27C1B18C00E001C6 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -4546,7 +4546,7 @@
 					"-DLSB_FIRST",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.fceu";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.fceu";
 				PRODUCT_NAME = PVFCEU;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -4741,7 +4741,7 @@
 					"-DLSB_FIRST",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.fceu";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.fceu";
 				PRODUCT_NAME = PVFCEU;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -4804,7 +4804,7 @@
 					"-DLSB_FIRST",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.fceu";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.fceu";
 				PRODUCT_NAME = PVFCEU;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;

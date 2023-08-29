@@ -3,7 +3,7 @@
 //  PVFBNeo
 //
 //  Created by Joseph Mattiello on 1/13/23.
-//  Copyright © 2023 Provenance Emu. All rights reserved.
+//  Copyright © 2023 Genesis Emu. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

@@ -1,9 +1,9 @@
 //
 //  ContentView.swift
-//  Provenance Watch WatchKit Extension
+//  Genesis Watch WatchKit Extension
 //
 //  Created by Joseph Mattiello on 12/16/21.
-//  Copyright © 2021 Provenance Emu. All rights reserved.
+//  Copyright © 2021 Genesis Emu. All rights reserved.
 //
 
 import SwiftUI

@@ -4,8 +4,8 @@
 # In general, you can use the options available
 # fastlane gym --help
 
-scheme("Provenance-Release") # ie target
-workspace("Provenance.xcworkspace")
+scheme("Genesis-Release") # ie target
+workspace("Genesis.xcworkspace")
 include_bitcode(false)
 clean(false)
 

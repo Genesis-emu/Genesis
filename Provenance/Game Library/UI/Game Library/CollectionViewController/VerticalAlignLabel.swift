@@ -1,9 +1,9 @@
 //
 //  UILabel+Theming.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Sev Gerk on 5/19/18.
-//  Copyright © 2018 Provenance. All rights reserved.
+//  Copyright © 2018 Genesis. All rights reserved.
 //
 
 @IBDesignable public final class VerticalAlignLabel: UILabel {

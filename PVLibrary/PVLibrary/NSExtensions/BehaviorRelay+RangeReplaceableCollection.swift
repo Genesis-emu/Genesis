@@ -3,7 +3,7 @@
 //  BehaviorRelay+RangeReplaceableCollection
 //
 //  Created by Joseph Mattiello on 9/5/21.
-//  Copyright © 2021 Provenance Emu. All rights reserved.
+//  Copyright © 2021 Genesis Emu. All rights reserved.
 //
 
 import Foundation

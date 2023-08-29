@@ -1,9 +1,9 @@
 //
 //  PVRootViewController+DelegateMethods.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Ian Clawson on 1/30/22.
-//  Copyright © 2022 Provenance Emu. All rights reserved.
+//  Copyright © 2022 Genesis Emu. All rights reserved.
 //
 
 import Foundation
@@ -85,7 +85,7 @@ extension PVRootViewController: PVMenuDelegate {
         #if os(iOS)
 
         guard
-            let settingsNav = UIStoryboard(name: "Provenance", bundle: nil).instantiateViewController(withIdentifier: "settingsNavigationController") as? UINavigationController,
+            let settingsNav = UIStoryboard(name: "Genesis", bundle: nil).instantiateViewController(withIdentifier: "settingsNavigationController") as? UINavigationController,
             let settingsVC = settingsNav.topViewController as? PVSettingsViewController
         else { return }
 

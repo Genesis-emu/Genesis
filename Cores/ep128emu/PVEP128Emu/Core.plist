@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.EP128Emu</string>
+	<string>com.Genesis.core.EP128Emu</string>
 	<key>PVPrincipleClass</key>
 	<string>PVEP128EmuCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.ep128</string>
-		<string>com.provenance.zxspectrum</string>
+		<string>com.Genesis.ep128</string>
+		<string>com.Genesis.zxspectrum</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>EP128Emu</string>

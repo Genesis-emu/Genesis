@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.opera</string>
+	<string>com.Genesis.core.opera</string>
 	<key>PVPrincipleClass</key>
 	<string>PVOperaCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.3DO</string>
+		<string>com.Genesis.3DO</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>Opera</string>

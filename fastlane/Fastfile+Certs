@@ -53,8 +53,8 @@ private_lane :match_private do |options|
 
   match(
     app_identifier: [
-      "#{$dev_domain}.provenance",
-      "#{$dev_domain}.provenance.extension.spotlight"
+      "#{$dev_domain}.Genesis",
+      "#{$dev_domain}.Genesis.extension.spotlight"
     ],
     type: type,
     readonly: readonly,
@@ -64,8 +64,8 @@ private_lane :match_private do |options|
 
   match(
     app_identifier: [
-      "#{$dev_domain}.provenance",
-      "#{$dev_domain}.provenance.topshelf-extension"
+      "#{$dev_domain}.Genesis",
+      "#{$dev_domain}.Genesis.topshelf-extension"
     ],
     type: type,
     readonly: readonly,

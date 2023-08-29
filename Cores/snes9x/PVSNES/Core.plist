@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.snes9x</string>
+	<string>com.Genesis.core.snes9x</string>
 	<key>PVPrincipleClass</key>
 	<string>PVSNESEmulatorCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.snes</string>
+		<string>com.Genesis.snes</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>Snes9x</string>

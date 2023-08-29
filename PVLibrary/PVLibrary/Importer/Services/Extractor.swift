@@ -3,7 +3,7 @@
 //  PVLibrary
 //
 //  Created by Joseph Mattiello on 12/26/18.
-//  Copyright © 2018 Provenance Emu. All rights reserved.
+//  Copyright © 2018 Genesis Emu. All rights reserved.
 //
 
 import Foundation
@@ -60,7 +60,7 @@ extension SWCompression.CompressionMethod {
 public final class Extractor {
     static let shared: Extractor = Extractor()
 
-    let dispatchQueue = DispatchQueue(label: "com.provenance.extractor", qos: .utility)
+    let dispatchQueue = DispatchQueue(label: "com.Genesis.extractor", qos: .utility)
     let queue: OperationQueueScheduler = {
         let operationQueue = OperationQueue()
         operationQueue.maxConcurrentOperationCount = 1

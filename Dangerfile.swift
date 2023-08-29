@@ -65,7 +65,7 @@ if github.pr_body.length < 5 {
   fail("PR body is too short")
 }
 
-let has_app_changes = !git.modified_files.any { $0.contains("Provenance") }
+let has_app_changes = !git.modified_files.any { $0.contains("Genesis") }
 let has_support_changes = !git.modified_files.any { $0.contains("PVSupport") }
 let has_support_test_changes = !git.modified_files.any { $0.contains("PVSupport Tests") }
 let has_library_changes = !git.modified_files.any { $0.contains("PVLibrary") }

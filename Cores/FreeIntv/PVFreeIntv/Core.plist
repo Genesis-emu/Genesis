@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.FreeIntv</string>
+	<string>com.Genesis.FreeIntv</string>
 	<key>PVPrincipleClass</key>
 	<string>PVFreeIntvCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.intellivision</string>
+		<string>com.Genesis.intellivision</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>FreeIntv</string>

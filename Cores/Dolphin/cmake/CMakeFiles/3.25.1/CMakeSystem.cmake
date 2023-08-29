@@ -3,7 +3,7 @@ set(CMAKE_HOST_SYSTEM_NAME "Darwin")
 set(CMAKE_HOST_SYSTEM_VERSION "22.2.0")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "arm64")
 
-include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/dolphin-ios/Source/iOS/ios.toolchain.cmake")
+include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/dolphin-ios/Source/iOS/ios.toolchain.cmake")
 
 set(CMAKE_SYSTEM "iOS-16.2")
 set(CMAKE_SYSTEM_NAME "iOS")

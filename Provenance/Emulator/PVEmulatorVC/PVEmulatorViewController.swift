@@ -1,7 +1,7 @@
 //  Converted to Swift 4 by Swiftify v4.1.6640 - https://objectivec2swift.com/
 //
 //  PVEmulatorViewController.swift
-//  Provenance
+//  Genesis
 //
 //  Created by James Addyman on 14/08/2013.
 //  Copyright (c) 2013 James Addyman. All rights reserved.
@@ -741,7 +741,7 @@ final class PVEmulatorViewController: PVEmulatorViewControllerRootClass, PVAudio
     }
 
     func showMoreInfo() {
-        guard let moreInfoViewController = UIStoryboard(name: "Provenance", bundle: nil).instantiateViewController(withIdentifier: "gameMoreInfoVC") as? PVGameMoreInfoViewController else { return }
+        guard let moreInfoViewController = UIStoryboard(name: "Genesis", bundle: nil).instantiateViewController(withIdentifier: "gameMoreInfoVC") as? PVGameMoreInfoViewController else { return }
         moreInfoViewController.game = self.game
         moreInfoViewController.showsPlayButton = false
         let newNav = UINavigationController(rootViewController: moreInfoViewController)

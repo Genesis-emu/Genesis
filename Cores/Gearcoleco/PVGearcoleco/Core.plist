@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.gearcoleco</string>
+	<string>com.Genesis.core.gearcoleco</string>
 	<key>PVPrincipleClass</key>
 	<string>PVGearcolecoCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.colecovision</string>
+		<string>com.Genesis.colecovision</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>Gearcoleco</string>

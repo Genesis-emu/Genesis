@@ -1,6 +1,6 @@
 //
 //  PVLogViewController.m
-//  Provenance
+//  Genesis
 //
 //  Created by Joseph Mattiello on 8/11/15.
 //  Copyright © 2015 Joe Mattiello. All rights reserved.
@@ -9,7 +9,7 @@
 #import "PVLogViewController.h"
 @import QuartzCore;
 @import ZipArchive;
-#import "Provenance-Swift.h"
+#import "Genesis-Swift.h"
 @import PVSupport;
 @import CocoaLumberjack;
 @import PVLogging;
@@ -362,7 +362,7 @@
 														   options:0
 															locale:[NSLocale currentLocale]];
 
-	NSString *fileName = [NSString stringWithFormat:@"Provenance %@ Logs", [formatter stringFromDate:[NSDate date]]];
+	NSString *fileName = [NSString stringWithFormat:@"Genesis %@ Logs", [formatter stringFromDate:[NSDate date]]];
 
 	NSString *zipDestination = [self tmpFileWithName:fileName
 										   extension:@".zip"];
@@ -373,7 +373,7 @@
 //	// much larger - JOe M
 //	if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
 //		NSError *error;
-//		NSString *systemLogDestination = [self tmpFileWithName:[NSString stringWithFormat:@"Provenance System"]
+//		NSString *systemLogDestination = [self tmpFileWithName:[NSString stringWithFormat:@"Genesis System"]
 //													 extension:@".log"];
 //		NSString *systemLog = [self systemLogAsString];
 //		BOOL success =

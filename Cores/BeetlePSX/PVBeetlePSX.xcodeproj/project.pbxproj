@@ -2888,7 +2888,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = PV;
 				LastUpgradeCheck = 1300;
-				ORGANIZATIONNAME = "Provenance Emu";
+				ORGANIZATIONNAME = "Genesis Emu";
 				TargetAttributes = {
 					937EAAF2296C2022003D89EB = {
 						CreatedOnToolsVersion = 14.2;
@@ -3351,7 +3351,7 @@
 					"@loader_path/Frameworks",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PVBeetlePSX";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PVBeetlePSX";
 				PRODUCT_NAME = PVBeetlePSX;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;

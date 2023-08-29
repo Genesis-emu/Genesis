@@ -242,7 +242,7 @@
 		546A2AE5E6D74BEA840E1542 /* gameinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = gameinfo.c; path = src/gameinfo.c; sourceTree = SOURCE_ROOT; };
 		54A65BE08EB5441AA3CB6141 /* titan.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = titan.h; path = src/titan/titan.h; sourceTree = SOURCE_ROOT; };
 		5568EABC2940453DB20719F7 /* cd_drive.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cd_drive.h; path = src/cd_drive.h; sourceTree = SOURCE_ROOT; };
-		571194DCDE6E4BEB80033EA5 /* m68kopac.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = m68kopac.c; path = /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi/m68kopac.c; sourceTree = "<absolute>"; };
+		571194DCDE6E4BEB80033EA5 /* m68kopac.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = m68kopac.c; path = /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi/m68kopac.c; sourceTree = "<absolute>"; };
 		5D67585901DD4B6BB9D29EAF /* scsp.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = scsp.c; path = src/scsp.c; sourceTree = SOURCE_ROOT; };
 		603E30E72E16404E8985F0D0 /* OpenGL.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		60752FA9BF80441593A5E0F8 /* scspdsp.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = scspdsp.c; path = src/scspdsp.c; sourceTree = SOURCE_ROOT; };
@@ -262,7 +262,7 @@
 		6E3A4EC7DC0D4C06870AA237 /* YabauseGLView.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = YabauseGLView.m; path = src/cocoa/YabauseGLView.m; sourceTree = SOURCE_ROOT; };
 		6F1C4DC631514B8A96EAC4B5 /* vidsoft.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vidsoft.h; path = src/vidsoft.h; sourceTree = SOURCE_ROOT; };
 		7071F897017B41BEBCB619DC /* cd-macosx.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "cd-macosx.c"; path = "src/cd-macosx.c"; sourceTree = SOURCE_ROOT; };
-		70F975A9444A4B499554FACB /* m68kops.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = m68kops.h; path = /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi/m68kops.h; sourceTree = "<absolute>"; };
+		70F975A9444A4B499554FACB /* m68kops.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = m68kops.h; path = /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi/m68kops.h; sourceTree = "<absolute>"; };
 		749A4C7F39F4495D93603A8D /* mpeg_card.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mpeg_card.h; path = src/mpeg_card.h; sourceTree = SOURCE_ROOT; };
 		74EF9683ADCD4EF18BB93F7B /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/cocoa/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 		76117DD815F049DCB260FED4 /* cs1.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cs1.h; path = src/cs1.h; sourceTree = SOURCE_ROOT; };
@@ -292,7 +292,7 @@
 		966775544F1E4EC7BF21ED7D /* sndmac.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sndmac.h; path = src/sndmac.h; sourceTree = SOURCE_ROOT; };
 		98C9A3EBAAB74786A1B5F0BE /* sh2cache.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sh2cache.h; path = src/sh2cache.h; sourceTree = SOURCE_ROOT; };
 		9A55BE9E4A1646EF892212CA /* sh2int.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = sh2int.c; path = src/sh2int.c; sourceTree = SOURCE_ROOT; };
-		9E5632D778FB4F9D87C571E0 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/cocoa/CMakeFiles/yabause-cocoa.dir/Info.plist"; sourceTree = "<absolute>"; };
+		9E5632D778FB4F9D87C571E0 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/cocoa/CMakeFiles/yabause-cocoa.dir/Info.plist"; sourceTree = "<absolute>"; };
 		A2638580732A491D951EB973 /* movie.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = movie.c; path = src/movie.c; sourceTree = SOURCE_ROOT; };
 		A26F1F6D2EBB4668ABB7031F /* Tsunami.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = Tsunami.c; path = src/tsunami/Tsunami.c; sourceTree = SOURCE_ROOT; };
 		A2A111E0AA8D42CEA8743EE9 /* osdcore.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = osdcore.c; path = src/osdcore.c; sourceTree = SOURCE_ROOT; };
@@ -301,7 +301,7 @@
 		A41F20B5F7574F1282E6486E /* peripheral.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = peripheral.h; path = src/peripheral.h; sourceTree = SOURCE_ROOT; };
 		A67F48A2E96D4E6284174F09 /* m68kdasm.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = m68kdasm.c; path = src/musashi/m68kdasm.c; sourceTree = SOURCE_ROOT; };
 		A97556E421164A90B04C01A9 /* permacjoy.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = permacjoy.h; path = src/permacjoy.h; sourceTree = SOURCE_ROOT; };
-		A9CF0B9B510E45C2B998477F /* m68kops.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = m68kops.c; path = /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi/m68kops.c; sourceTree = "<absolute>"; };
+		A9CF0B9B510E45C2B998477F /* m68kops.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = m68kops.c; path = /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi/m68kops.c; sourceTree = "<absolute>"; };
 		AB0AC5106E764AE08AFB3D03 /* sh2int.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sh2int.h; path = src/sh2int.h; sourceTree = SOURCE_ROOT; };
 		AD337DF04F364B1DA189B95A /* sh7034.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = sh7034.c; path = src/sh7034.c; sourceTree = SOURCE_ROOT; };
 		AD6FE4D7400A4D269C70D07B /* scu.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = scu.c; path = src/scu.c; sourceTree = SOURCE_ROOT; };
@@ -318,7 +318,7 @@
 		C05C6C3251504ED0A176C325 /* peripheral.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = peripheral.c; path = src/peripheral.c; sourceTree = SOURCE_ROOT; };
 		C2B67F1F71094B8E84F56440 /* sh2core.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = sh2core.c; path = src/sh2core.c; sourceTree = SOURCE_ROOT; };
 		C2E8756D4DEE466885FE88CA /* ygr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ygr.c; path = src/ygr.c; sourceTree = SOURCE_ROOT; };
-		C5FAC788D34D41F39164A2F2 /* m68kopnz.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = m68kopnz.c; path = /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi/m68kopnz.c; sourceTree = "<absolute>"; };
+		C5FAC788D34D41F39164A2F2 /* m68kopnz.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = m68kopnz.c; path = /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi/m68kopnz.c; sourceTree = "<absolute>"; };
 		C7C5FBD1F27A467CA4B52D29 /* PerCocoa.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = PerCocoa.m; path = src/cocoa/PerCocoa.m; sourceTree = SOURCE_ROOT; };
 		C885F16C18B24A248261EC83 /* vidshared.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vidshared.h; path = src/vidshared.h; sourceTree = SOURCE_ROOT; };
 		C9F6B9494E7E4297B2B529C5 /* vidgcd.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vidgcd.h; path = src/cocoa/vidgcd.h; sourceTree = SOURCE_ROOT; };
@@ -334,7 +334,7 @@
 		D739A1A4F66A48DF8436C609 /* yglshaderes.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = yglshaderes.c; path = src/yglshaderes.c; sourceTree = SOURCE_ROOT; };
 		D76321F0C99E4C97A0C31215 /* sock-dummy.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "sock-dummy.c"; path = "src/sock-dummy.c"; sourceTree = SOURCE_ROOT; };
 		D7DEB2EEC5C0462DB1A8667B /* Cocoa.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		DB0E3C0702914E7AB13FF4E2 /* m68kopdm.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = m68kopdm.c; path = /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi/m68kopdm.c; sourceTree = "<absolute>"; };
+		DB0E3C0702914E7AB13FF4E2 /* m68kopdm.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = m68kopdm.c; path = /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi/m68kopdm.c; sourceTree = "<absolute>"; };
 		DBD9E56A563747269DA1B69E /* macjoy.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = macjoy.c; path = src/macjoy.c; sourceTree = SOURCE_ROOT; };
 		DEF4FF6BF04046618FCF2CC5 /* coffelf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = coffelf.h; path = src/coffelf.h; sourceTree = SOURCE_ROOT; };
 		E38AEDA5B4AE421BAACE3A91 /* m68k.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = m68k.h; path = src/musashi/m68k.h; sourceTree = SOURCE_ROOT; };
@@ -673,7 +673,7 @@
 				Base,
 			);
 			mainGroup = 4BA1F14D2C4643B081EEF5F1;
-			projectDirPath = /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/yabause/yabause;
+			projectDirPath = /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/yabause/yabause;
 			projectRoot = "";
 			targets = (
 				E0AE020ED20E4096AA414346 /* ALL_BUILD */,
@@ -694,15 +694,15 @@
 			files = (
 			);
 			inputPaths = (
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-build",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-build",
 			);
 			name = "Generate src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-install";
 			outputPaths = (
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-install",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-install",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-install\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-install\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-install\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-install\nfi\n";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-install\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-install\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-install\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-install\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		2A1116BE69FFB1EB50B77C6E /* Generate src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-build */ = {
@@ -711,15 +711,15 @@
 			files = (
 			);
 			inputPaths = (
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-configure",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-configure",
 			);
 			name = "Generate src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-build";
 			outputPaths = (
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-build",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-build",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake --build . --config Debug\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-build\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake --build . --config Release\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-build\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake --build . --config MinSizeRel\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-build\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake --build . --config RelWithDebInfo\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-build\nfi\n";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake --build . --config Debug\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-build\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake --build . --config Release\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-build\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake --build . --config MinSizeRel\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-build\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake --build . --config RelWithDebInfo\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-build\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		3E7E93E2405C17C65F25C2ED /* Generate doc/CMakeFiles/doc */ = {
@@ -732,11 +732,11 @@
 			);
 			name = "Generate doc/CMakeFiles/doc";
 			outputPaths = (
-				/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/doc/CMakeFiles/doc,
+				/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/doc/CMakeFiles/doc,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/doc\n  /opt/homebrew/bin/doxygen /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/doc/Doxyfile\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/doc\n  /opt/homebrew/bin/doxygen /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/doc/Doxyfile\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/doc\n  /opt/homebrew/bin/doxygen /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/doc/Doxyfile\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/doc\n  /opt/homebrew/bin/doxygen /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/doc/Doxyfile\nfi\n";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/doc\n  /opt/homebrew/bin/doxygen /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/doc/Doxyfile\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/doc\n  /opt/homebrew/bin/doxygen /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/doc/Doxyfile\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/doc\n  /opt/homebrew/bin/doxygen /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/doc/Doxyfile\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/doc\n  /opt/homebrew/bin/doxygen /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/doc/Doxyfile\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */ = {
@@ -750,7 +750,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake\nfi\n";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		59539EC570D031E0066729C3 /* Generate src/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-complete */ = {
@@ -759,21 +759,21 @@
 			files = (
 			);
 			inputPaths = (
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-build",
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-configure",
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-download",
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-install",
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-mkdir",
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-patch",
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-update",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-build",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-configure",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-download",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-install",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-mkdir",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-patch",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-update",
 			);
 			name = "Generate src/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-complete";
 			outputPaths = (
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-complete",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-complete",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E make_directory /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-complete\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-done\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E make_directory /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-complete\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-done\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E make_directory /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-complete\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-done\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E make_directory /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-complete\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-done\nfi\n";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E make_directory /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-complete\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-done\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E make_directory /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-complete\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-done\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E make_directory /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-complete\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-done\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E make_directory /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-complete\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-done\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		59F00EB9E1EF9CC0F7B7B348 /* Generate src/CMakeFiles/m68kmake */ = {
@@ -783,15 +783,15 @@
 			files = (
 			);
 			inputPaths = (
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-complete",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-complete",
 			);
 			name = "Generate src/CMakeFiles/m68kmake";
 			outputPaths = (
-				/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/CMakeFiles/m68kmake,
+				/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/CMakeFiles/m68kmake,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src\nfi\n";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		786C79EEA49E7825FF0E0204 /* Generate src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-configure */ = {
@@ -800,16 +800,16 @@
 			files = (
 			);
 			inputPaths = (
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-patch",
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/tmp/m68kmake-cfgcmd.txt",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-patch",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/tmp/m68kmake-cfgcmd.txt",
 			);
 			name = "Generate src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-configure";
 			outputPaths = (
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-configure",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-configure",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -GXcode /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/yabause/yabause/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-configure\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -GXcode /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/yabause/yabause/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-configure\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -GXcode /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/yabause/yabause/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-configure\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -GXcode /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/yabause/yabause/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-configure\nfi\n";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -GXcode /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/yabause/yabause/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-configure\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -GXcode /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/yabause/yabause/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-configure\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -GXcode /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/yabause/yabause/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-configure\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -GXcode /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/yabause/yabause/src/musashi\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-configure\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
@@ -823,7 +823,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\n";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A77366540DA077ECE1D00284 /* Generate CMakeFiles/ALL_BUILD */ = {
@@ -836,11 +836,11 @@
 			);
 			name = "Generate CMakeFiles/ALL_BUILD";
 			outputPaths = (
-				/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/CMakeFiles/ALL_BUILD,
+				/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/CMakeFiles/ALL_BUILD,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake\n  echo Build\\ all\\ projects\nfi\n";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake\n  echo Build\\ all\\ projects\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A9F5136E28034F3E33FA09CA /* Generate src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-download */ = {
@@ -849,16 +849,16 @@
 			files = (
 			);
 			inputPaths = (
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-mkdir",
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/m68kmake-custominfo.txt",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-mkdir",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/m68kmake-custominfo.txt",
 			);
 			name = "Generate src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-download";
 			outputPaths = (
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-download",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-download",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-download\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-download\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-download\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-download\nfi\n";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-download\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-download\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-download\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-download\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		AB72F75B11D6D42DB0F6D608 /* Generate src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-patch */ = {
@@ -867,15 +867,15 @@
 			files = (
 			);
 			inputPaths = (
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-update",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-update",
 			);
 			name = "Generate src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-patch";
 			outputPaths = (
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-patch",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-patch",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-patch\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-patch\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-patch\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-patch\nfi\n";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-patch\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-patch\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-patch\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-patch\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D17F6C5C6236A659AFE80748 /* Generate src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-mkdir */ = {
@@ -887,11 +887,11 @@
 			);
 			name = "Generate src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-mkdir";
 			outputPaths = (
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-mkdir",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-mkdir",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -Dcfgdir=/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/tmp/m68kmake-mkdirs.cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-mkdir\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -Dcfgdir=/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/tmp/m68kmake-mkdirs.cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-mkdir\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -Dcfgdir=/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/tmp/m68kmake-mkdirs.cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-mkdir\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -Dcfgdir=/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/tmp/m68kmake-mkdirs.cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-mkdir\nfi\n";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -Dcfgdir=/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/tmp/m68kmake-mkdirs.cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-mkdir\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -Dcfgdir=/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/tmp/m68kmake-mkdirs.cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-mkdir\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -Dcfgdir=/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/tmp/m68kmake-mkdirs.cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-mkdir\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -Dcfgdir=/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/tmp/m68kmake-mkdirs.cmake\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-mkdir\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D58DD42AE006FCE3FDC5FDEB /* Generate src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-update */ = {
@@ -900,15 +900,15 @@
 			files = (
 			);
 			inputPaths = (
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-download",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-download",
 			);
 			name = "Generate src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-update";
 			outputPaths = (
-				"/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-update",
+				"/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/m68kmake-update",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-update\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-update\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-update\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-update\nfi\n";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-update\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-update\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-update\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E echo_append\n  /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/m68kmake-prefix/src/m68kmake-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/m68kmake-update\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D999660E616CFA131BD927FB /* Generate CMakeFiles/ZERO_CHECK */ = {
@@ -921,11 +921,11 @@
 			);
 			name = "Generate CMakeFiles/ZERO_CHECK";
 			outputPaths = (
-				/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/CMakeFiles/ZERO_CHECK,
+				/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/CMakeFiles/ZERO_CHECK,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake\n  make -f /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake\n  make -f /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake\n  make -f /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake\n  make -f /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/CMakeScripts/ReRunCMake.make\nfi\n";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake\n  make -f /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake\n  make -f /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake\n  make -f /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake\n  make -f /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/CMakeScripts/ReRunCMake.make\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1049,7 +1049,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "iOS Team Provisioning Profile: *";
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos appletvsimulator appletvos";
 				SUPPORTS_MACCATALYST = YES;
-				SYMROOT = /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/build;
+				SYMROOT = /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/build;
 			};
 			name = MinSizeRel;
 		};
@@ -1106,7 +1106,7 @@
 			buildSettings = {
 				ARCHS = arm64;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/Debug;
+				CONFIGURATION_BUILD_DIR = /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/Debug;
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -1138,10 +1138,10 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
 					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/GLUT.framework/Headers,
-					/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/yabause/yabause/src/gllibs/include,
+					/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/yabause/yabause/src/gllibs/include,
 					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenAL.framework/Headers,
-					/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi,
-					/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/yabause/yabause/src/musashi,
+					/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi,
+					/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/yabause/yabause/src/musashi,
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
@@ -1152,7 +1152,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = yabause;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/build/yabause.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/build/yabause.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1167,7 +1167,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "iOS Team Provisioning Profile: *";
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos appletvsimulator appletvos";
 				SUPPORTS_MACCATALYST = YES;
-				SYMROOT = /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/build;
+				SYMROOT = /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/build;
 			};
 			name = Debug;
 		};
@@ -1320,7 +1320,7 @@
 			buildSettings = {
 				ARCHS = arm64;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/Release;
+				CONFIGURATION_BUILD_DIR = /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/Release;
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -1352,10 +1352,10 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
 					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/GLUT.framework/Headers,
-					/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/yabause/yabause/src/gllibs/include,
+					/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/yabause/yabause/src/gllibs/include,
 					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenAL.framework/Headers,
-					/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi,
-					/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/yabause/yabause/src/musashi,
+					/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi,
+					/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/yabause/yabause/src/musashi,
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
@@ -1369,7 +1369,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = yabause;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/build/yabause.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/build/yabause.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1548,7 +1548,7 @@
 			buildSettings = {
 				ARCHS = arm64;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/MinSizeRel;
+				CONFIGURATION_BUILD_DIR = /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/MinSizeRel;
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -1580,10 +1580,10 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
 					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/GLUT.framework/Headers,
-					/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/yabause/yabause/src/gllibs/include,
+					/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/yabause/yabause/src/gllibs/include,
 					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenAL.framework/Headers,
-					/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi,
-					/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/yabause/yabause/src/musashi,
+					/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi,
+					/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/yabause/yabause/src/musashi,
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
@@ -1597,7 +1597,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = yabause;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/build/yabause.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/build/yabause.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1608,7 +1608,7 @@
 			buildSettings = {
 				ARCHS = arm64;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/RelWithDebInfo;
+				CONFIGURATION_BUILD_DIR = /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/RelWithDebInfo;
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -1640,10 +1640,10 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
 					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/GLUT.framework/Headers,
-					/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/yabause/yabause/src/gllibs/include,
+					/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/yabause/yabause/src/gllibs/include,
 					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenAL.framework/Headers,
-					/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/src/musashi,
-					/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/yabause/yabause/src/musashi,
+					/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/src/musashi,
+					/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/yabause/yabause/src/musashi,
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
@@ -1657,7 +1657,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = yabause;
 				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/build/yabause.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				TARGET_TEMP_DIR = "/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/build/yabause.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = "$(inherited)";
 			};
@@ -1792,7 +1792,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "iOS Team Provisioning Profile: *";
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos appletvsimulator appletvos";
 				SUPPORTS_MACCATALYST = YES;
-				SYMROOT = /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/build;
+				SYMROOT = /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/build;
 			};
 			name = Release;
 		};
@@ -1805,7 +1805,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "iOS Team Provisioning Profile: *";
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos appletvsimulator appletvos";
 				SUPPORTS_MACCATALYST = YES;
-				SYMROOT = /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Yabause/cmake/build;
+				SYMROOT = /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Yabause/cmake/build;
 			};
 			name = RelWithDebInfo;
 		};

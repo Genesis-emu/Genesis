@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.dosbox</string>
+	<string>com.Genesis.core.dosbox</string>
 	<key>PVPrincipleClass</key>
 	<string>PVDosBoxCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.dos</string>
+		<string>com.Genesis.dos</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>DosBox</string>

@@ -6,7 +6,7 @@
 
 # Remove the # in front of the line to enable the option
 
-scheme("Provenance")
+scheme("Genesis")
 devices(["iPhone X","iPad Air 2"])
 
 open_report(true)

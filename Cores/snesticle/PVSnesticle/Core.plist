@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.snesticle</string>
+	<string>com.Genesis.core.snesticle</string>
 	<key>PVPrincipleClass</key>
 	<string>PVSnesticleCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.snes</string>
+		<string>com.Genesis.snes</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>Snesticle</string>

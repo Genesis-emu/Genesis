@@ -19,11 +19,11 @@
 # Global Variables
 #
 
-PROJECT_NAME = "Provenance.xcworkspace"
+PROJECT_NAME = "Genesis.xcworkspace"
 COMMIT_MSG = "fastlane build bump [ci skip]"
 
 # Building
-SCHEMES =  ["Provenance-Release", "ProvenanceTV-Release"]
+SCHEMES =  ["Genesis-Release", "GenesisTV-Release"]
 
 # Testing
 TEST_SCHEMES = []
@@ -32,11 +32,11 @@ TEST_DEVICES = ["iPad Air"]
 REQUIRED_XCODE_VERSION = '12.0'.freeze
 
 default_platform(:ios)
-$dev_domain = ENV['DEV_DOMAIN'] || 'org.provenance-emu'
+$dev_domain = ENV['DEV_DOMAIN'] || 'org.Genesis-emu'
 
 ## Fastlane imports
 # The URL of the repository to import the Fastfile from.
-FASTLANE_GIT_URL = 'git@github.com:Provenance/ios-scripts.git'
+FASTLANE_GIT_URL = 'git@github.com:Genesis/ios-scripts.git'
 # The branch to checkout on the repository
 FASTLANE_GIT_BRANCH = 'HEAD'
 # The directory of the Fastfile's in the repository

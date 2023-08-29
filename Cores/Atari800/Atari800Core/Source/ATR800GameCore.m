@@ -127,7 +127,7 @@ __weak static ATR800GameCore * _currentCore;
 
 // TODO: Make me real
 -(NSString*)systemIdentifier {
-    return @"com.provenance.5200";
+    return @"com.Genesis.5200";
 }
 
 -(NSString*)biosDirectoryPath {
@@ -149,7 +149,7 @@ __weak static ATR800GameCore * _currentCore;
 
     Colours_PreInitialise();
 
-    if([[self systemIdentifier] isEqualToString:@"com.provenance.5200"])
+    if([[self systemIdentifier] isEqualToString:@"com.Genesis.5200"])
     {
         // Set 5200.rom BIOS path
         char biosFileName[2048];
@@ -164,7 +164,7 @@ __weak static ATR800GameCore * _currentCore;
         Atari800_SetMachineType(Atari800_MACHINE_5200);
         MEMORY_ram_size = 16;
     }
-    else if([[self systemIdentifier] isEqualToString:@"com.provenance.atari8bit"])
+    else if([[self systemIdentifier] isEqualToString:@"com.Genesis.atari8bit"])
     {
         char basicFileName[2048], osbFileName[2048], xlFileName[2048];
         NSString *biosPath = [self biosDirectoryPath];
@@ -819,7 +819,7 @@ int UI_SelectCartType(int k)
 {
     NSLog(@"Cart size: %d", k);
 
-    if([[_currentCore systemIdentifier] isEqualToString:@"com.provenance.atari8bit"])
+    if([[_currentCore systemIdentifier] isEqualToString:@"com.Genesis.atari8bit"])
     {
         // TODO: improve detection using MD5 lookup
         switch (k)
@@ -840,7 +840,7 @@ int UI_SelectCartType(int k)
         }
     }
 
-	if([[_currentCore systemIdentifier] isEqualToString:@"com.provenance.atari8bit"])
+	if([[_currentCore systemIdentifier] isEqualToString:@"com.Genesis.atari8bit"])
 	{
 		// TODO: improve detection using MD5 lookup
 		switch (k)
@@ -861,7 +861,7 @@ int UI_SelectCartType(int k)
 		}
 	}
 
-    if([[_currentCore systemIdentifier] isEqualToString:@"com.provenance.5200"])
+    if([[_currentCore systemIdentifier] isEqualToString:@"com.Genesis.5200"])
     {
         NSArray *One_Chip_16KB = @[@"a47fcb4eedab9418ea098bb431a407aa", // A.E. (Proto)
                                    @"45f8841269313736489180c8ec3e9588", // Activision Decathlon, The

@@ -581,7 +581,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = PV;
 				LastUpgradeCheck = 1300;
-				ORGANIZATIONNAME = "Provenance Emu";
+				ORGANIZATIONNAME = "Genesis Emu";
 				TargetAttributes = {
 					B3C9D4391DEA6AFB0068D057 = {
 						CreatedOnToolsVersion = 8.1;
@@ -868,7 +868,7 @@
 					"@loader_path/Frameworks",
 				);
 				OTHER_CFLAGS = "-DHAVE_STDINT_H";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PVGB";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PVGB";
 				PRODUCT_NAME = PVGB;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -916,7 +916,7 @@
 					"@loader_path/Frameworks",
 				);
 				OTHER_CFLAGS = "-DHAVE_STDINT_H";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PVGB";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PVGB";
 				PRODUCT_NAME = PVGB;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -965,7 +965,7 @@
 					"@loader_path/Frameworks",
 				);
 				OTHER_CFLAGS = "-DHAVE_STDINT_H";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PVGB";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PVGB";
 				PRODUCT_NAME = PVGB;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;

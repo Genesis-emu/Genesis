@@ -1,9 +1,9 @@
 //
 //  PVPCFXControllerViewController.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Sev Gerk on 6/17/18.
-//  Copyright © 2018 Provenance. All rights reserved.
+//  Copyright © 2018 Genesis. All rights reserved.
 //
 
 import Foundation

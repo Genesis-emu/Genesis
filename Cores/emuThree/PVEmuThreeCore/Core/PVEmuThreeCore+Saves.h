@@ -1,5 +1,5 @@
 //  PVEmuThree+Saves.h
-//  Copyright © 2023 Provenance. All rights reserved.
+//  Copyright © 2023 Genesis. All rights reserved.
 
 #import <PVEmuThree/PVEmuThreeCore.h>
 

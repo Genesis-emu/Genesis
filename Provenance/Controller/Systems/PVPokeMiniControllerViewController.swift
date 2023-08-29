@@ -1,7 +1,7 @@
 //  Converted to Swift 4 by Swiftify v4.1.6640 - https://objectivec2swift.com/
 //
 //  PVPokeMiniControllerViewController.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Joe Mattiello on 10/04/2017.
 //  Copyright (c) 2017 Joe Mattiello. All rights reserved.

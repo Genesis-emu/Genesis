@@ -564,7 +564,7 @@ void MDFN_FinalizeSettings(void)
    if(!strcmp(CurrentSettings[i].name, CurrentSettings[j].name))
    {
 //    printf("Duplicate setting name %s\n", CurrentSettings[j].name); // Stops the log spamming.
-//    abort(); //TODO investigate why we need to ignore this in Provenance and the Mednafen settings aren't cleared out correctly
+//    abort(); //TODO investigate why we need to ignore this in Genesis and the Mednafen settings aren't cleared out correctly
    }
   }
  }

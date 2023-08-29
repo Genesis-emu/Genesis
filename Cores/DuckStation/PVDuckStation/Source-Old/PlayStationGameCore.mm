@@ -55,7 +55,7 @@
 #include <memory>
 #include <os/log.h>
 
-#define OEGameCoreErrorDomain @"org.provenance.core"
+#define OEGameCoreErrorDomain @"org.Genesis.core"
 #define OEGameCoreCouldNotLoadStateError 420
 #define OEGameCoreCouldNotLoadROMError 69
 #define OEGameCoreCouldNotSaveStateError 42069

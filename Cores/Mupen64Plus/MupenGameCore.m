@@ -382,7 +382,7 @@ static void *dlopen_myself()
     BOOL (^LoadPlugin)(m64p_plugin_type, NSString *) = ^(m64p_plugin_type pluginType, NSString *pluginName){
         m64p_dynlib_handle rsp_handle;
         NSString *frameworkPath = [NSString stringWithFormat:@"%@.framework/%@", pluginName,pluginName];
-        NSBundle *frameworkBundle = [NSBundle mainBundle]; //[NSBundle bundleWithIdentifier:@"org.provenance-emu.Cores"];
+        NSBundle *frameworkBundle = [NSBundle mainBundle]; //[NSBundle bundleWithIdentifier:@"org.Genesis-emu.Cores"];
         NSString *rspPath = [frameworkBundle.privateFrameworksPath stringByAppendingPathComponent:frameworkPath];
         
         rsp_handle = dlopen([rspPath fileSystemRepresentation], RTLD_LAZY | RTLD_LOCAL);
@@ -436,7 +436,7 @@ static void *dlopen_myself()
         NSDictionary *userInfo = @{
                                    NSLocalizedDescriptionKey: @"Failed to load game.",
                                    NSLocalizedFailureReasonErrorKey: @"Mupen64Plus failed to load GFX Plugin.",
-                                   NSLocalizedRecoverySuggestionErrorKey: @"Provenance may not be compiled correctly."
+                                   NSLocalizedRecoverySuggestionErrorKey: @"Genesis may not be compiled correctly."
                                    };
         
         NSError *newError = [NSError errorWithDomain:PVEmulatorCoreErrorDomain
@@ -486,7 +486,7 @@ static void *dlopen_myself()
         NSDictionary *userInfo = @{
                                    NSLocalizedDescriptionKey: @"Failed to load game.",
                                    NSLocalizedFailureReasonErrorKey: @"Mupen64Plus failed to load RSP Plugin.",
-                                   NSLocalizedRecoverySuggestionErrorKey: @"Provenance may not be compiled correctly."
+                                   NSLocalizedRecoverySuggestionErrorKey: @"Genesis may not be compiled correctly."
                                    };
         
         NSError *newError = [NSError errorWithDomain:PVEmulatorCoreErrorDomain

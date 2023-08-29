@@ -4067,7 +4067,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = PV;
 				LastUpgradeCheck = 1300;
-				ORGANIZATIONNAME = "Provenance Emu";
+				ORGANIZATIONNAME = "Genesis Emu";
 				TargetAttributes = {
 					B38FB4BF1C839BE500CD73BE = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -4487,7 +4487,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.Stella";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.Stella";
 				PRODUCT_NAME = PVStella;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
@@ -4542,7 +4542,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.Stella";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.Stella";
 				PRODUCT_NAME = PVStella;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
@@ -4593,7 +4593,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.Stella";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.Stella";
 				PRODUCT_NAME = PVStella;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";

@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.mupen64plusnx</string>
+	<string>com.Genesis.mupen64plusnx</string>
 	<key>PVPrincipleClass</key>
 	<string>PVMupen64PlusNXCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.n64</string>
+		<string>com.Genesis.n64</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>Mupen64Plus-Next

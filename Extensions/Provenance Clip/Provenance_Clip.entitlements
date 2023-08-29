@@ -4,15 +4,15 @@
 <dict>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
-		<string>appclips:provenance.app</string>
+		<string>appclips:Genesis.app</string>
 	</array>
 	<key>com.apple.developer.parent-application-identifiers</key>
 	<array>
-		<string>$(AppIdentifierPrefix)org.provenance-emu.provenance</string>
+		<string>$(AppIdentifierPrefix)org.Genesis-emu.Genesis</string>
 	</array>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.org.provenance-emu.provenance</string>
+		<string>group.org.Genesis-emu.Genesis</string>
 	</array>
 </dict>
 </plist>

@@ -3,7 +3,7 @@
 //  PVPPSSPP
 //
 //  Created by Joseph Mattiello on 4/6/18.
-//  Copyright © 2021 Provenance. All rights reserved.
+//  Copyright © 2021 Genesis. All rights reserved.
 //
 #import "PVPPSSPPCore.h"
 #import "PVPPSSPPCore+Controls.h"
@@ -114,7 +114,7 @@
         sampleRate = 44100;
 		isNTSC = YES;
 		dispatch_queue_attr_t queueAttributes = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, QOS_CLASS_USER_INTERACTIVE, 0);
-		_callbackQueue = dispatch_queue_create("org.provenance-emu.PPSSPP.CallbackHandlerQueue", queueAttributes);
+		_callbackQueue = dispatch_queue_create("org.Genesis-emu.PPSSPP.CallbackHandlerQueue", queueAttributes);
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(optionUpdated:) name:@"OptionUpdated" object:nil];
 		[self parseOptions];
 	}

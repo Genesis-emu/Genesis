@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.fbneo</string>
+	<string>com.Genesis.fbneo</string>
 	<key>PVPrincipleClass</key>
 	<string>PVFBNeoCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.neogeo</string>
-		<string>com.provenance.msx</string>
-		<string>com.provenance.cps</string>
-		<string>com.provenance.colecovision</string>
+		<string>com.Genesis.neogeo</string>
+		<string>com.Genesis.msx</string>
+		<string>com.Genesis.cps</string>
+		<string>com.Genesis.colecovision</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>FBNeo</string>

@@ -1,9 +1,9 @@
 //
 //  PVGameLibraryViewController+PeekPop.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Joseph Mattiello on 5/26/18.
-//  Copyright © 2018 Provenance. All rights reserved.
+//  Copyright © 2018 Genesis. All rights reserved.
 //
 
 import Foundation
@@ -15,7 +15,7 @@ import UIKit
     extension PVGameLibraryViewController: UIViewControllerPreviewingDelegate {
         func previewingContext(_: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
             if let moreInfoVC = viewControllerToCommit as? PVGameMoreInfoViewController {
-                let moreInfoGamePageVC = UIStoryboard(name: "Provenance", bundle: nil).instantiateViewController(withIdentifier: "gameMoreInfoPageVC") as! GameMoreInfoPageViewController
+                let moreInfoGamePageVC = UIStoryboard(name: "Genesis", bundle: nil).instantiateViewController(withIdentifier: "gameMoreInfoPageVC") as! GameMoreInfoPageViewController
                 moreInfoGamePageVC.setViewControllers([moreInfoVC], direction: .forward, animated: false, completion: nil)
                 navigationController!.show(moreInfoGamePageVC, sender: self)
             } else if let saveSaveInfoVC = viewControllerToCommit as? PVSaveStateInfoViewController {
@@ -32,7 +32,7 @@ import UIKit
 
 			switch item {
             case .game(let game):
-                let storyBoard = UIStoryboard(name: "Provenance", bundle: nil)
+                let storyBoard = UIStoryboard(name: "Genesis", bundle: nil)
                 let moreInfoViewController = storyBoard.instantiateViewController(withIdentifier: "gameMoreInfoVC") as! PVGameMoreInfoViewController
                 moreInfoViewController.game = game
                 moreInfoViewController.showsPlayButton = true
@@ -41,7 +41,7 @@ import UIKit
                 guard let game: PVGame = (collectionView!.cellForItem(at: indexPath) as? CollectionViewInCollectionViewCell)?.item(at: location)
                     else { return nil }
 
-                let storyBoard = UIStoryboard(name: "Provenance", bundle: nil)
+                let storyBoard = UIStoryboard(name: "Genesis", bundle: nil)
                 let moreInfoViewController = storyBoard.instantiateViewController(withIdentifier: "gameMoreInfoVC") as! PVGameMoreInfoViewController
                 moreInfoViewController.game = game
                 moreInfoViewController.showsPlayButton = true
@@ -57,7 +57,7 @@ import UIKit
                 guard let game: PVRecentGame = (collectionView!.cellForItem(at: indexPath) as? CollectionViewInCollectionViewCell)?.item(at: location)
                     else { return nil }
 
-                let storyBoard = UIStoryboard(name: "Provenance", bundle: nil)
+                let storyBoard = UIStoryboard(name: "Genesis", bundle: nil)
                 let moreInfoViewController = storyBoard.instantiateViewController(withIdentifier: "gameMoreInfoVC") as! PVGameMoreInfoViewController
                 moreInfoViewController.game = game.game
                 moreInfoViewController.showsPlayButton = true

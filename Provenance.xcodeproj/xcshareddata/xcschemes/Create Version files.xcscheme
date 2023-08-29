@@ -17,7 +17,7 @@
                BlueprintIdentifier = "B3B29D3F2156177100903290"
                BuildableName = "Create Version files"
                BlueprintName = "Create Version files"
-               ReferencedContainer = "container:Provenance.xcodeproj">
+               ReferencedContainer = "container:Genesis.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,7 +46,7 @@
             BlueprintIdentifier = "B3B29D3F2156177100903290"
             BuildableName = "Create Version files"
             BlueprintName = "Create Version files"
-            ReferencedContainer = "container:Provenance.xcodeproj">
+            ReferencedContainer = "container:Genesis.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </LaunchAction>
@@ -62,7 +62,7 @@
             BlueprintIdentifier = "B3B29D3F2156177100903290"
             BuildableName = "Create Version files"
             BlueprintName = "Create Version files"
-            ReferencedContainer = "container:Provenance.xcodeproj">
+            ReferencedContainer = "container:Genesis.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

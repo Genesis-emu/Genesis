@@ -527,8 +527,8 @@
 		B37937F81D6BDF4E00EBAE81 /* PVSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PVSupport.framework; path = "../PVSupport/build/Debug-iphoneos/PVSupport.framework"; sourceTree = "<group>"; };
 		B37937FA1D6BDF5A00EBAE81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B37937FC1D6BDF5F00EBAE81 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
-		B3A3E9D61D6BFFEC00CCD7C8 /* PVSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PVSupport.framework; path = "../../../Library/Developer/Xcode/DerivedData/Provenance-cqyrqlnsqskspscgaptpbmkqmvze/Build/Products/Debug-appletvsimulator/PVSupport.framework"; sourceTree = "<group>"; };
-		B3D2E3891D6E7E5C0058544D /* PVSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PVSupport.framework; path = "../../../Library/Developer/Xcode/DerivedData/Provenance-cqyrqlnsqskspscgaptpbmkqmvze/Build/Products/Debug-iphonesimulator/PVSupport.framework"; sourceTree = "<group>"; };
+		B3A3E9D61D6BFFEC00CCD7C8 /* PVSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PVSupport.framework; path = "../../../Library/Developer/Xcode/DerivedData/Genesis-cqyrqlnsqskspscgaptpbmkqmvze/Build/Products/Debug-appletvsimulator/PVSupport.framework"; sourceTree = "<group>"; };
+		B3D2E3891D6E7E5C0058544D /* PVSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PVSupport.framework; path = "../../../Library/Developer/Xcode/DerivedData/Genesis-cqyrqlnsqskspscgaptpbmkqmvze/Build/Products/Debug-iphonesimulator/PVSupport.framework"; sourceTree = "<group>"; };
 		C604DF5025C7C7E500E1FBE5 /* eeprom_spi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eeprom_spi.h; sourceTree = "<group>"; };
 		C604DF5125C7C7E500E1FBE5 /* eeprom_spi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = eeprom_spi.c; sourceTree = "<group>"; };
 		C604DF7425C7CB6B00E1FBE5 /* libretro.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libretro.c; sourceTree = "<group>"; };
@@ -1473,7 +1473,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = PV;
 				LastUpgradeCheck = 1300;
-				ORGANIZATIONNAME = "Provenance Emu";
+				ORGANIZATIONNAME = "Genesis Emu";
 				TargetAttributes = {
 					B3411B5B276B312C00D85327 = {
 						CreatedOnToolsVersion = 13.2;
@@ -1810,7 +1810,7 @@
 					"-falign-functions=2",
 					"-Wall",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PicoDrive";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PicoDrive";
 				PRODUCT_NAME = PVPicoDrive;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -2029,7 +2029,7 @@
 					"-DEMU_F68K",
 					"-D_USE_CZ80",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PicoDrive";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PicoDrive";
 				PRODUCT_NAME = PVPicoDrive;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -2092,7 +2092,7 @@
 					"-falign-functions=2",
 					"-Wall",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PicoDrive";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PicoDrive";
 				PRODUCT_NAME = PVPicoDrive;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;

@@ -1,6 +1,6 @@
 //
 //  RealTimeThread
-//  Provenance
+//  Genesis
 //
 //  Created by Raf Cabezas on 10/26/2016.
 //  From Apple's Tech Note 2169

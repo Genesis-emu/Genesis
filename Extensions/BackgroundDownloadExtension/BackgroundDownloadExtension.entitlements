@@ -4,9 +4,9 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.org.provenance-emu.provenance</string>
+		<string>group.org.Genesis-emu.Genesis</string>
 	</array>
 	<key>com.apple.developer.team-identifier</key>
-	<string>org.provenance-emu</string>
+	<string>org.Genesis-emu</string>
 </dict>
 </plist>

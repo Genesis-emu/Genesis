@@ -3,7 +3,7 @@
 //  MupenGameCore
 //
 //  Created by Joseph Mattiello on 1/26/22.
-//  Copyright © 2022 Provenance. All rights reserved.
+//  Copyright © 2022 Genesis. All rights reserved.
 //
 
 #import <PVMupen64Plus/MupenGameCore.h>

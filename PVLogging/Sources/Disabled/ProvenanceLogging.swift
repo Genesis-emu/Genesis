@@ -1,5 +1,5 @@
 //
-//  PVProvenanceLogging.swift
+//  PVGenesisLogging.swift
 //  PVLogging
 //
 //  Created by Mattiello, Joseph R on 1/4/23.
@@ -9,8 +9,8 @@
 import Foundation.NSPathUtilities
 let LOGGING_STACK_SIZE = 1024
 
-public final class ProvenanceLogging {
-    public static let shared = ProvenanceLogging()
+public final class GenesisLogging {
+    public static let shared = GenesisLogging()
     fileprivate var history: [PVLogEntry] = []
 
     public var directoryForLogs: String {

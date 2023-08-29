@@ -14,10 +14,10 @@ lane :reset_checkout do
   end
 
   # clean xcode's build enviroment with xcodebuild
-  UI.message "Cleaning target Provenance."
-  xcclean(scheme: "Provenance")
-  UI.message "Cleaning target Provenance TV."
-  xcclean(scheme: "ProvenanceTV")
+  UI.message "Cleaning target Genesis."
+  xcclean(scheme: "Genesis")
+  UI.message "Cleaning target Genesis TV."
+  xcclean(scheme: "GenesisTV")
 
   if UI.confirm("Clear XCode's derived data?")
     clear_derived_data
@@ -55,8 +55,8 @@ lane :updatePlistForBranch do
   else
     UI.message "Setting plist values for Normal build"
   end
-  backup_file(path: "Provenance/Provenance-Info.plist")
-  backup_file(path: "ProvenanceTV/Info.plist")
+  backup_file(path: "Genesis/Genesis-Info.plist")
+  backup_file(path: "GenesisTV/Info.plist")
   backup_file(path: "Spotlight/Info.plist")
   backup_file(path: "TopShelf/Info.plist")
 
@@ -65,8 +65,8 @@ end
 
 desc "Resets the bundle id and app name after build"
 lane :plist_reset do
-  restore_file(path: "Provenance/Provenance-Info.plist")
-  restore_file(path: "ProvenanceTV/Info.plist")
+  restore_file(path: "Genesis/Genesis-Info.plist")
+  restore_file(path: "GenesisTV/Info.plist")
   restore_file(path: "Spotlight/Info.plist")
   restore_file(path: "TopShelf/Info.plist")
   # plist_set(normal: true)
@@ -84,19 +84,19 @@ private_lane :codesign_toggle do |options|
 
   automatic = options[:automatic]
   team_id = CredentialsManager::AppfileConfig.try_fetch_value(:team_id)
-  disable_automatic_code_signing(path: "Provenance.xcodeproj",
-    targets: ["Provenance"],
+  disable_automatic_code_signing(path: "Genesis.xcodeproj",
+    targets: ["Genesis"],
     code_sign_identity: "iPhone Distribution",
-    profile_name: "match AdHoc #{$dev_domain}.provenance",
-    bundle_identifier: "#{$dev_domain}.provenance",
+    profile_name: "match AdHoc #{$dev_domain}.Genesis",
+    bundle_identifier: "#{$dev_domain}.Genesis",
     use_automatic_signing: automatic,
     team_id: team_id)
 
-  disable_automatic_code_signing(path: "Provenance.xcodeproj",
+  disable_automatic_code_signing(path: "Genesis.xcodeproj",
     targets: ["Spotlight"],
     code_sign_identity: "iPhone Distribution",
-    profile_name: "match AdHoc #{$dev_domain}.provenance.extension.spotlight",
-    bundle_identifier: "#{$dev_domain}.provenance.extension.spotlight",
+    profile_name: "match AdHoc #{$dev_domain}.Genesis.extension.spotlight",
+    bundle_identifier: "#{$dev_domain}.Genesis.extension.spotlight",
     use_automatic_signing: automatic,
     team_id: team_id)
 end
@@ -111,30 +111,30 @@ private_lane :plist_set do |options|
   # -- Update bundle names and ids
   # - iOS
   update_info_plist(
-    plist_path: "Provenance/Provenance-Info.plist",
+    plist_path: "Genesis/Genesis-Info.plist",
     display_name: display_name,
-    app_identifier: "#{$dev_domain}.provenance#{suffix}"
+    app_identifier: "#{$dev_domain}.Genesis#{suffix}"
   )
 
   # - Spotlight
   update_info_plist(
     plist_path: "Spotlight/Info.plist",
     display_name: display_name,
-    app_identifier: "#{$dev_domain}.provenance#{suffix}.extension.spotlight"
+    app_identifier: "#{$dev_domain}.Genesis#{suffix}.extension.spotlight"
   )
 
   # - tvOS
   # Use the same bundle ID as iOS so it's 'universal install'
   update_info_plist(
-    plist_path: "ProvenanceTV/Info.plist",
+    plist_path: "GenesisTV/Info.plist",
     display_name: display_name,
-    app_identifier: "#{$dev_domain}.provenance#{suffix}"
+    app_identifier: "#{$dev_domain}.Genesis#{suffix}"
   )
 
   # - Top Shelf
   update_info_plist(
     plist_path: "TopShelf/Info.plist",
     display_name: display_name,
-    app_identifier: "#{$dev_domain}.provenance#{suffix}.topshelf-extension"
+    app_identifier: "#{$dev_domain}.Genesis#{suffix}.topshelf-extension"
   )
 end

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1AD481B31BA350A400FDA50A"
-               BuildableName = "Provenance.app"
-               BlueprintName = "ProvenanceTV"
-               ReferencedContainer = "container:Provenance.xcodeproj">
+               BuildableName = "Genesis.app"
+               BlueprintName = "GenesisTV"
+               ReferencedContainer = "container:Genesis.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,9 +31,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1AD481B31BA350A400FDA50A"
-            BuildableName = "Provenance.app"
-            BlueprintName = "ProvenanceTV"
-            ReferencedContainer = "container:Provenance.xcodeproj">
+            BuildableName = "Genesis.app"
+            BlueprintName = "GenesisTV"
+            ReferencedContainer = "container:Genesis.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -59,9 +59,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1AD481B31BA350A400FDA50A"
-            BuildableName = "Provenance.app"
-            BlueprintName = "ProvenanceTV"
-            ReferencedContainer = "container:Provenance.xcodeproj">
+            BuildableName = "Genesis.app"
+            BlueprintName = "GenesisTV"
+            ReferencedContainer = "container:Genesis.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -89,9 +89,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1AD481B31BA350A400FDA50A"
-            BuildableName = "Provenance.app"
-            BlueprintName = "ProvenanceTV"
-            ReferencedContainer = "container:Provenance.xcodeproj">
+            BuildableName = "Genesis.app"
+            BlueprintName = "GenesisTV"
+            ReferencedContainer = "container:Genesis.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

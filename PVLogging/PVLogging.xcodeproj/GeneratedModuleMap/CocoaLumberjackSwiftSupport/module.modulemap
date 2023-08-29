@@ -1,4 +1,4 @@
 module CocoaLumberjackSwiftSupport {
-    umbrella "/Users/jmattiello/Workspace/Provenance/Provenance/PVLogging/.build/checkouts/CocoaLumberjack/Sources/CocoaLumberjackSwiftSupport/include"
+    umbrella "/Users/jmattiello/Workspace/Genesis/Genesis/PVLogging/.build/checkouts/CocoaLumberjack/Sources/CocoaLumberjackSwiftSupport/include"
     export *
 }

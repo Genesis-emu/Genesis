@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B305EEF9276B4C71003AE510"
-               BuildableName = "Provenance Watch WatchKit App.app"
-               BlueprintName = "Provenance Watch WatchKit App"
-               ReferencedContainer = "container:Provenance.xcodeproj">
+               BuildableName = "Genesis Watch WatchKit App.app"
+               BlueprintName = "Genesis Watch WatchKit App"
+               ReferencedContainer = "container:Genesis.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B305EEF6276B4C71003AE510"
-               BuildableName = "Provenance Watch.app"
-               BlueprintName = "Provenance Watch"
-               ReferencedContainer = "container:Provenance.xcodeproj">
+               BuildableName = "Genesis Watch.app"
+               BlueprintName = "Genesis Watch"
+               ReferencedContainer = "container:Genesis.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -59,9 +59,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B305EEF9276B4C71003AE510"
-            BuildableName = "Provenance Watch WatchKit App.app"
-            BlueprintName = "Provenance Watch WatchKit App"
-            ReferencedContainer = "container:Provenance.xcodeproj">
+            BuildableName = "Genesis Watch WatchKit App.app"
+            BlueprintName = "Genesis Watch WatchKit App"
+            ReferencedContainer = "container:Genesis.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B305EEF9276B4C71003AE510"
-            BuildableName = "Provenance Watch WatchKit App.app"
-            BlueprintName = "Provenance Watch WatchKit App"
-            ReferencedContainer = "container:Provenance.xcodeproj">
+            BuildableName = "Genesis Watch WatchKit App.app"
+            BlueprintName = "Genesis Watch WatchKit App"
+            ReferencedContainer = "container:Genesis.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

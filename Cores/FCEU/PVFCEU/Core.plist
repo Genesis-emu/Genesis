@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.fceu</string>
+	<string>com.Genesis.core.fceu</string>
 	<key>PVPrincipleClass</key>
 	<string>PVFCEUEmulatorCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.nes</string>
-		<string>com.provenance.fds</string>
+		<string>com.Genesis.nes</string>
+		<string>com.Genesis.fds</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>FCEUX</string>

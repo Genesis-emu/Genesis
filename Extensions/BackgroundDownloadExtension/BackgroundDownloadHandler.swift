@@ -3,7 +3,7 @@
 //  BackgroundDownloadExtension
 //
 //  Created by Joseph Mattiello on 11/13/22.
-//  Copyright © 2022 Provenance Emu. All rights reserved.
+//  Copyright © 2022 Genesis Emu. All rights reserved.
 //
 
 import BackgroundAssets
@@ -21,7 +21,7 @@ struct BackgroundDownloadHandler: BADownloaderExtension
         // encouraged to use this file to determine what assets need to be downloaded.
         // The manifest that is downloaded is determined by `BAManifestURL` defined in the
         // application's `Info.plist`.
-        let appGroupIdentifier = "group.org.provenance-emu.provenance"
+        let appGroupIdentifier = "group.org.Genesis-emu.Genesis"
         var downloadsToSchedule: Set<BADownload> = []
         
         // Parse the `manifestURL` to determine what assets are available that might need

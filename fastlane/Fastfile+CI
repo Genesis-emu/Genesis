@@ -71,7 +71,7 @@ private_lane :ci_upload do |options|
 
   # Push to Hockeyapp as Alpha release "2" alpha, "0" beta, "3" release
   begin
-    UI.message "Upload to hockey-app with id #{$dev_domain}.provenance"
+    UI.message "Upload to hockey-app with id #{$dev_domain}.Genesis"
     publish_hockey(release_type: '2', platform: platform)
   rescue StandardError => ex
     # re-raise the exception unless it's something we're OK with ignoring
@@ -107,9 +107,9 @@ private_lane :ci_upload do |options|
   # uploadToWordpress(lane_context[SharedValues::IPA_OUTPUT_PATH])
 
   # Build tvOS app
-  # match(app_identifier: ["#{$dev_domain}.provenance", "#{$dev_domain}.provenance.topshelf-extension"], type: "adhoc", platform: "tvos")
-  # ipa_name = "ProvenanceTV-#{git_branch}-#{build_number}.ipa"
-  # build_app(workspace: "Provenance.xcworkspace", scheme: "ProvenanceTV-Release", output_name: ipa_name, include_bitcode: false)
+  # match(app_identifier: ["#{$dev_domain}.Genesis", "#{$dev_domain}.Genesis.topshelf-extension"], type: "adhoc", platform: "tvos")
+  # ipa_name = "GenesisTV-#{git_branch}-#{build_number}.ipa"
+  # build_app(workspace: "Genesis.xcworkspace", scheme: "GenesisTV-Release", output_name: ipa_name, include_bitcode: false)
 
   # uploadToWordpress("./build/#{ipa_name}")
   # user = CredentialsManager::AppfileConfig.try_fetch_value(:apple_id)

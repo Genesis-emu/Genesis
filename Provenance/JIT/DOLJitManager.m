@@ -11,14 +11,14 @@
 #import <dlfcn.h>
 
 #import <sys/sysctl.h>
-#import "Provenance-Swift.h"
+#import "Genesis-Swift.h"
 
 #import "CodeSignatureUtils.h"
 #import "DebuggerUtils.h"
 #import "StringUtils.h"
 
-NSString* const DOLJitAcquiredNotification = @"org.provenance-emu.provenance.jit-acquired";
-NSString* const DOLJitAltJitFailureNotification = @"org.provenance-emu.provenance.jit-altjit-failure";
+NSString* const DOLJitAcquiredNotification = @"org.Genesis-emu.Genesis.jit-acquired";
+NSString* const DOLJitAltJitFailureNotification = @"org.Genesis-emu.Genesis.jit-altjit-failure";
 
 @implementation DOLJitManager
 {

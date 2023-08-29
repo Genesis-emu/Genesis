@@ -175,7 +175,7 @@ is_interactive_shell() {
 
 ui_prompt() {
   local MESSAGE=${1:-"Would you like to continue?"}
-  local TITLE=${2:-"Provenance"}
+  local TITLE=${2:-"Genesis"}
   local OKBUTTON_TITLE=${3:-"OK"}
   local ICON="note"
 
@@ -223,7 +223,7 @@ Warning Homebrew is not installed!
 
 Homebrew is a command line based software package manager and as is required to install and run 'Fastlane'.
 
-These tools are required to build Provenance from source.
+These tools are required to build Genesis from source.
 
 Would you like to install Homebrew now?
 EOM
@@ -289,7 +289,7 @@ fastlane_install() {
   read -r -d '' local MSG << EOM
   Warning Fastlane is not installed. 
   
-  Fastlane is an open source tool required to build and sign Provenance. 
+  Fastlane is an open source tool required to build and sign Genesis. 
   ${NEED_ROOT_MESSAGE}
   Would you like to install it?
 EOM
@@ -370,7 +370,7 @@ lockfile_waithold()
 
 lockfile_release()
  {
-  local LOCK_NAME=${1:-"provenance"}
+  local LOCK_NAME=${1:-"Genesis"}
   local LOCK_FILE="/tmp/$LOCK_NAME.lock"
 
   echo "🔑 : Releasing lock $LOCK_FILE"

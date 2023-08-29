@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # #########
-# https://github.com/Provenance-Emu/MoltenVK#building-from-the-command-line
+# https://github.com/Genesis-Emu/MoltenVK#building-from-the-command-line
 # Build script for MoltenVK
 #
 # This script will build MoltenVK for macOS and iOS.

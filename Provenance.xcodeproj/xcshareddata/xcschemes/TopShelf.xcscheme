@@ -31,7 +31,7 @@
                BlueprintIdentifier = "BE9FDCB61C210B9E0046DF0E"
                BuildableName = "TopShelf.appex"
                BlueprintName = "TopShelf"
-               ReferencedContainer = "container:Provenance.xcodeproj">
+               ReferencedContainer = "container:Genesis.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -61,7 +61,7 @@
             BlueprintIdentifier = "BE9FDCB61C210B9E0046DF0E"
             BuildableName = "TopShelf.appex"
             BlueprintName = "TopShelf"
-            ReferencedContainer = "container:Provenance.xcodeproj">
+            ReferencedContainer = "container:Genesis.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -85,7 +85,7 @@
             BlueprintIdentifier = "BE9FDCB61C210B9E0046DF0E"
             BuildableName = "TopShelf.appex"
             BlueprintName = "TopShelf"
-            ReferencedContainer = "container:Provenance.xcodeproj">
+            ReferencedContainer = "container:Genesis.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </LaunchAction>
@@ -103,7 +103,7 @@
             BlueprintIdentifier = "BE9FDCB61C210B9E0046DF0E"
             BuildableName = "TopShelf.appex"
             BlueprintName = "TopShelf"
-            ReferencedContainer = "container:Provenance.xcodeproj">
+            ReferencedContainer = "container:Genesis.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

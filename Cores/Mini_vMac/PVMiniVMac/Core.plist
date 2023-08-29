@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.minivmac</string>
+	<string>com.Genesis.core.minivmac</string>
 	<key>PVPrincipleClass</key>
 	<string>PVMiniVMacCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.macintosh</string>
+		<string>com.Genesis.macintosh</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>Mini vMac</string>

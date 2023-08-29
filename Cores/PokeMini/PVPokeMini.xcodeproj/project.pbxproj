@@ -93,7 +93,7 @@
 		081A45981B95604700565444 /* PVPokeMiniEmulatorCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PVPokeMiniEmulatorCore.m; path = PokeMini/PVPokeMiniEmulatorCore.m; sourceTree = SOURCE_ROOT; };
 		081A46191B95660100565444 /* freebios.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = freebios.c; sourceTree = "<group>"; };
 		081A461A1B95660100565444 /* freebios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = freebios.h; sourceTree = "<group>"; };
-		B311B1C027A52EE800D1DE41 /* PVPokeMini-iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PVPokeMini-iOS copy-Info.plist"; path = "/Users/jmattiello/Workspace/Provenance/Provenance/Cores/PokeMini/PVPokeMini-iOS copy-Info.plist"; sourceTree = "<absolute>"; };
+		B311B1C027A52EE800D1DE41 /* PVPokeMini-iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PVPokeMini-iOS copy-Info.plist"; path = "/Users/jmattiello/Workspace/Genesis/Genesis/Cores/PokeMini/PVPokeMini-iOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		B34AB5632106D5EB00C45F09 /* PVSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PVSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B34AB5652106D5F700C45F09 /* PVSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PVSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3532B5621A919F1006CDA0F /* MinxTimers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MinxTimers.c; sourceTree = "<group>"; };
@@ -432,7 +432,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = PV;
 				LastUpgradeCheck = 1300;
-				ORGANIZATIONNAME = "Provenance Emu";
+				ORGANIZATIONNAME = "Genesis Emu";
 				TargetAttributes = {
 					B3CB85481E9BECBF009155A6 = {
 						CreatedOnToolsVersion = 8.3;
@@ -708,7 +708,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PVPokeMini";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PVPokeMini";
 				PRODUCT_NAME = PVPokeMini;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -765,7 +765,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PVPokeMini";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PVPokeMini";
 				PRODUCT_NAME = PVPokeMini;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -813,7 +813,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PVPokeMini";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PVPokeMini";
 				PRODUCT_NAME = PVPokeMini;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;

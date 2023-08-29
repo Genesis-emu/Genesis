@@ -1,6 +1,6 @@
 //
 //  RomDatabase.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Joseph Mattiello on 2/9/18.
 //  Copyright © 2018 James Addyman. All rights reserved.

@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.fbneo</string>
+	<string>com.Genesis.core.fbneo</string>
 	<key>PVPrincipleClass</key>
 	<string>PVFBNeoCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.neogeo</string>
-		<string>com.provenance.msx</string>
-		<string>com.provenance.msx2</string>
-		<string>com.provenance.arcade</string>
-		<string>com.provenance.nes</string>
-		<string>com.provenance.colecovision</string>
+		<string>com.Genesis.neogeo</string>
+		<string>com.Genesis.msx</string>
+		<string>com.Genesis.msx2</string>
+		<string>com.Genesis.arcade</string>
+		<string>com.Genesis.nes</string>
+		<string>com.Genesis.colecovision</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>Final Burn Neo</string>

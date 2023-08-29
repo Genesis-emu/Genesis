@@ -3,7 +3,7 @@
 //  PVPlay
 //
 //  Created by Joseph Mattiello on 4/6/18.
-//  Copyright © 2021 Provenance. All rights reserved.
+//  Copyright © 2021 Genesis. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -36,13 +36,13 @@
 #include "../../tools/PsfPlayer/Source/SH_OpenAL.h"
 #include "../ui_shared/StatsManager.h"
 #include "PS2VM.h"
-#include "CGSH_Provenance_OGL.h"
+#include "CGSH_Genesis_OGL.h"
 #include "Iop_SpuBase.h"
 #include "../../tools/PsfPlayer/Source/SH_OpenAL.h"
 
 #define SAMPLE_RATE_DEFAULT 44100
 
-CGSH_Provenance_OGL *gsHandler = nullptr;
+CGSH_Genesis_OGL *gsHandler = nullptr;
 CPH_Generic *padHandler = nullptr;
 UIView *m_view = nullptr;
 CPS2VM *_ps2VM = nullptr;
@@ -136,7 +136,7 @@ private:
         sampleRate = SAMPLE_RATE_DEFAULT;
         isNTSC = YES;
         dispatch_queue_attr_t queueAttributes = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, QOS_CLASS_USER_INTERACTIVE, 0);
-        _callbackQueue = dispatch_queue_create("org.provenance-emu.play.CallbackHandlerQueue", queueAttributes);
+        _callbackQueue = dispatch_queue_create("org.Genesis-emu.play.CallbackHandlerQueue", queueAttributes);
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(optionUpdated:) name:@"OptionUpdated" object:nil];
         if (!_ps2VM)
             _ps2VM = new CPS2VM();
@@ -207,7 +207,7 @@ private:
     if(self.gsPreference == PREFERENCE_VALUE_VIDEO_GS_HANDLER_VULKAN)
         _ps2VM->CreateGSHandler(CGSH_VulkaniOS::GetFactoryFunction(((CAMetalLayer*)m_metal_layer)));
     else if(self.gsPreference == PREFERENCE_VALUE_VIDEO_GS_HANDLER_OPENGL)
-        _ps2VM->CreateGSHandler(CGSH_Provenance_OGL::GetFactoryFunction(
+        _ps2VM->CreateGSHandler(CGSH_Genesis_OGL::GetFactoryFunction(
             ((CAEAGLLayer *)m_gl_layer),
             self.videoWidth,
             self.videoHeight,
@@ -222,7 +222,7 @@ private:
     {
         _ps2VM->DestroySoundHandler();
     }
-    gsHandler = (CGSH_Provenance_OGL *)_ps2VM->GetGSHandler();
+    gsHandler = (CGSH_Genesis_OGL *)_ps2VM->GetGSHandler();
     padHandler = (CPH_Generic *)_ps2VM->GetPadHandler();
     gsHandler->Reset();
     CGSHandler::PRESENTATION_PARAMS presentationParams;

@@ -6,11 +6,11 @@
 
 #include "PH_Generic.h"
 #include "PS2VM.h"
-#include "CGSH_Provenance_OGL.h"
+#include "CGSH_Genesis_OGL.h"
 
 #include "big_int_full.h"
 
-extern CGSH_Provenance_OGL *gsHandler;
+extern CGSH_Genesis_OGL *gsHandler;
 extern CPH_Generic *padHandler;
 extern UIView *m_view;
 extern CPS2VM *_ps2VM;

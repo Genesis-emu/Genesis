@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>org.provenance.core.flycast</string>
+	<string>org.Genesis.core.flycast</string>
 	<key>PVPrincipleClass</key>
 	<string>PVFlycastCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.dreamcast</string>
+		<string>com.Genesis.dreamcast</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>Flycast</string>

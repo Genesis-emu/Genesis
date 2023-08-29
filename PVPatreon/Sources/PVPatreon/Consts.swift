@@ -3,7 +3,7 @@
 //  PVPatreon
 //
 //  Created by Joseph Mattiello on 12/17/22.
-//  Copyright © 2022 Provenance Emu. All rights reserved.
+//  Copyright © 2022 Genesis Emu. All rights reserved.
 //
 
 import Foundation
@@ -35,7 +35,7 @@ internal enum Const {
     }()
     
     internal enum Patreon {
-        internal enum Provenance {
+        internal enum Genesis {
             static internal let clientID = "nSNDsv4K_SHF_kLfNgjTi52cU2bTuwunxu9g6j61WtQxoaGEHy1aNAZydM4VcMiz"
             static internal let clientSecret = "QkHx9MirO0QYvVcJzrsoRU5IO9qusihvbwaXVQRlUohnS631CQKunSkDDVAnJbkZ"
             static internal let campaignID = "2198356"

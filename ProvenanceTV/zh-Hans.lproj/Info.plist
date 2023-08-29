@@ -24,10 +24,10 @@
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>com.provenance</string>
+			<string>com.Genesis</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>provenance</string>
+				<string>Genesis</string>
 			</array>
 		</dict>
 	</array>
@@ -66,16 +66,16 @@
 		<true/>
 	</dict>
 	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>Provenance uses Bluetooth to support game controllers.</string>
+	<string>Genesis uses Bluetooth to support game controllers.</string>
 	<key>NSUserActivityTypes</key>
 	<array>
-		<string>org.provenance-emu.webserver</string>
-		<string>org.provenance-emu.game.play</string>
+		<string>org.Genesis-emu.webserver</string>
+		<string>org.Genesis-emu.game.play</string>
 	</array>
 	<key>Revision</key>
 	<string>f9c61252</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Provenance</string>
+	<string>Genesis</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>arm64</string>

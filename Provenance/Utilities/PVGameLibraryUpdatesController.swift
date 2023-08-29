@@ -1,9 +1,9 @@
 //
 //  PVGameLibraryUpdatesController.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Dan Berglund on 2020-06-11.
-//  Copyright © 2020 Provenance Emu. All rights reserved.
+//  Copyright © 2020 Genesis Emu. All rights reserved.
 //
 
 import Foundation
@@ -103,7 +103,7 @@ struct PVGameLibraryUpdatesController {
                 return nil
             })
             .compactMap { database.realm.object(ofType: PVGame.self, forPrimaryKey: $0) }
-            .map { game in CSSearchableItem(uniqueIdentifier: game.spotlightUniqueIdentifier, domainIdentifier: "org.provenance-emu.game", attributeSet: game.spotlightContentSet) }
+            .map { game in CSSearchableItem(uniqueIdentifier: game.spotlightUniqueIdentifier, domainIdentifier: "org.Genesis-emu.game", attributeSet: game.spotlightContentSet) }
             .observe(on: SerialDispatchQueueScheduler(qos: .background))
             .subscribe(onNext: { item in
                 spotlightIndex.indexSearchableItems([item]) { error in

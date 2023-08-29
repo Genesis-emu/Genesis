@@ -430,7 +430,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = PV;
 				LastUpgradeCheck = 1300;
-				ORGANIZATIONNAME = "Provenance Emu";
+				ORGANIZATIONNAME = "Genesis Emu";
 				TargetAttributes = {
 					B36DE7471D6AB19C002EE3ED = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -719,7 +719,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PVAtari800";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PVAtari800";
 				PRODUCT_NAME = PVAtari800;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -764,7 +764,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PVAtari800";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PVAtari800";
 				PRODUCT_NAME = PVAtari800;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -807,7 +807,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PVAtari800";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PVAtari800";
 				PRODUCT_NAME = PVAtari800;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

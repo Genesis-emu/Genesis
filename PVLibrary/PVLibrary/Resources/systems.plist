@@ -16,7 +16,7 @@
 		<key>PVBit</key>
 		<string>32</string>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.psp</string>
+		<string>com.Genesis.psp</string>
 		<key>PVDatabaseID</key>
 		<string>39</string>
 		<key>PVSupportsRumble</key>
@@ -181,7 +181,7 @@
 		<key>PVBit</key>
 		<string>128</string>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.gamecube</string>
+		<string>com.Genesis.gamecube</string>
 		<key>PVDatabaseID</key>
 		<string>22</string>
 		<key>PVSupportsRumble</key>
@@ -446,7 +446,7 @@
 		<key>PVBit</key>
 		<string>64</string>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.wii</string>
+		<string>com.Genesis.wii</string>
 		<key>PVDatabaseID</key>
 		<string>28</string>
 		<key>PVSupportsRumble</key>
@@ -599,7 +599,7 @@
 		<key>PVBit</key>
 		<string>64</string>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.n64</string>
+		<string>com.Genesis.n64</string>
 		<key>PVScreenType</key>
 		<string>CRT</string>
 		<key>PVDatabaseID</key>
@@ -751,7 +751,7 @@
 		<key>PVScreenType</key>
 		<string>CRT</string>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.psx</string>
+		<string>com.Genesis.psx</string>
 		<key>PVDatabaseID</key>
 		<string>38</string>
 		<key>PVSupportsRumble</key>
@@ -958,7 +958,7 @@
 		<key>PVBit</key>
 		<string>128</string>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.ps2</string>
+		<string>com.Genesis.ps2</string>
 		<key>PVDatabaseID</key>
 		<string>0</string>
 		<key>PVSupportsRumble</key>
@@ -1220,7 +1220,7 @@
 		<key>PVBit</key>
 		<string>8</string>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.lynx</string>
+		<string>com.Genesis.lynx</string>
 		<key>PVDatabaseID</key>
 		<string>6</string>
 		<key>PVPortable</key>
@@ -1307,7 +1307,7 @@
 		<key>PVBit</key>
 		<string>8</string>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.ngp</string>
+		<string>com.Genesis.ngp</string>
 		<key>PVDatabaseID</key>
 		<string>36</string>
 		<key>PVScreenType</key>
@@ -1377,7 +1377,7 @@
 		<key>PVBit</key>
 		<string>24</string>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.neogeo</string>
+		<string>com.Genesis.neogeo</string>
 		<key>PVScreenType</key>
 		<string>MonoLCD</string>
 		<key>PVDatabaseID</key>
@@ -1460,7 +1460,7 @@
 		<key>PVBit</key>
 		<string>16</string>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.ngpc</string>
+		<string>com.Genesis.ngpc</string>
 		<key>PVDatabaseID</key>
 		<string>37</string>
 		<key>PVScreenType</key>
@@ -1534,7 +1534,7 @@
 		<key>PVScreenType</key>
 		<string>MonoLCD</string>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.vb</string>
+		<string>com.Genesis.vb</string>
 		<key>PVDatabaseID</key>
 		<string>27</string>
 		<key>PVPortable</key>
@@ -1633,7 +1633,7 @@
 		<key>PVPortable</key>
 		<true/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.ws</string>
+		<string>com.Genesis.ws</string>
 		<key>PVDatabaseID</key>
 		<string>9</string>
 		<key>PVSupportedExtensions</key>
@@ -1719,7 +1719,7 @@
 		<key>PVPortable</key>
 		<true/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.wsc</string>
+		<string>com.Genesis.wsc</string>
 		<key>PVDatabaseID</key>
 		<string>10</string>
 		<key>PVSupportedExtensions</key>
@@ -1805,7 +1805,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.pce</string>
+		<string>com.Genesis.pce</string>
 		<key>PVDatabaseID</key>
 		<string>14</string>
 		<key>PVSupportedExtensions</key>
@@ -1884,7 +1884,7 @@
 		<key>PVScreenType</key>
 		<string>CRT</string>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.sgfx</string>
+		<string>com.Genesis.sgfx</string>
 		<key>PVDatabaseID</key>
 		<string>17</string>
 		<key>PVSupportedExtensions</key>
@@ -1963,7 +1963,7 @@
 		<key>PVScreenType</key>
 		<string>CRT</string>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.pcecd</string>
+		<string>com.Genesis.pcecd</string>
 		<key>PVDatabaseID</key>
 		<string>15</string>
 		<key>PVUsesCDs</key>
@@ -2090,7 +2090,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.pcfx</string>
+		<string>com.Genesis.pcfx</string>
 		<key>PVScreenType</key>
 		<string>CRT</string>
 		<key>PVDatabaseID</key>
@@ -2222,7 +2222,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.segacd</string>
+		<string>com.Genesis.segacd</string>
 		<key>PVDatabaseID</key>
 		<string>32</string>
 		<key>PVUsesCDs</key>
@@ -2363,7 +2363,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.genesis</string>
+		<string>com.Genesis.genesis</string>
 		<key>PVDatabaseID</key>
 		<string>33</string>
 		<key>PVSupportedExtensions</key>
@@ -2509,7 +2509,7 @@
 		<key>PVSystemShortNames</key>
 		<string>Saturn</string>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.saturn</string>
+		<string>com.Genesis.saturn</string>
 		<key>PVReleaseYear</key>
 		<string>1995</string>
 		<key>PVBit</key>
@@ -2643,7 +2643,7 @@
 		<key>PVPortable</key>
 		<true/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.gamegear</string>
+		<string>com.Genesis.gamegear</string>
 		<key>PVDatabaseID</key>
 		<string>30</string>
 		<key>PVSupportedExtensions</key>
@@ -2714,7 +2714,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.dreamcast</string>
+		<string>com.Genesis.dreamcast</string>
 		<key>PVDatabaseID</key>
 		<string>0</string>
 		<key>PVRequiresBIOS</key>
@@ -2885,7 +2885,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.mastersystem</string>
+		<string>com.Genesis.mastersystem</string>
 		<key>PVDatabaseID</key>
 		<string>31</string>
 		<key>PVSupportedExtensions</key>
@@ -2951,7 +2951,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.snes</string>
+		<string>com.Genesis.snes</string>
 		<key>PVDatabaseID</key>
 		<string>26</string>
 		<key>PVScreenType</key>
@@ -3071,7 +3071,7 @@
 		<key>PVScreenType</key>
 		<string>ColorLCD</string>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.gba</string>
+		<string>com.Genesis.gba</string>
 		<key>PVDatabaseID</key>
 		<string>20</string>
 		<key>PVBIOSNames</key>
@@ -3185,7 +3185,7 @@
 		<key>PVSupported</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.ds</string>
+		<string>com.Genesis.ds</string>
 		<key>PVDatabaseID</key>
 		<string>24</string>
 		<key>PVBIOSNames</key>
@@ -3358,7 +3358,7 @@
         <key>PVSupported</key>
         <false/>
         <key>PVSystemIdentifier</key>
-        <string>com.provenance.3ds</string>
+        <string>com.Genesis.3ds</string>
         <key>PVDatabaseID</key>
         <string>46</string>
         <key>PVSupportedExtensions</key>
@@ -3524,7 +3524,7 @@
 		<key>PVScreenType</key>
 		<string>DotMatrix</string>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.gb</string>
+		<string>com.Genesis.gb</string>
 		<key>PVDatabaseID</key>
 		<string>19</string>
 		<key>PVSupportedExtensions</key>
@@ -3603,7 +3603,7 @@
 		<key>PVPortable</key>
 		<true/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.gbc</string>
+		<string>com.Genesis.gbc</string>
 		<key>PVDatabaseID</key>
 		<string>21</string>
 		<key>PVSupportedExtensions</key>
@@ -3685,7 +3685,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.nes</string>
+		<string>com.Genesis.nes</string>
 		<key>PVDatabaseID</key>
 		<string>25</string>
 		<key>PVSupportedExtensions</key>
@@ -3769,7 +3769,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.music</string>
+		<string>com.Genesis.music</string>
 		<key>PVDatabaseID</key>
 		<string>-1</string>
 		<key>PVSupportedExtensions</key>
@@ -3857,7 +3857,7 @@
 		<key>PVScreenType</key>
 		<string>CRT</string>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.fds</string>
+		<string>com.Genesis.fds</string>
 		<key>PVDatabaseID</key>
 		<string>18</string>
 		<key>PVRequiresBIOS</key>
@@ -3946,7 +3946,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.sg1000</string>
+		<string>com.Genesis.sg1000</string>
 		<key>PVDatabaseID</key>
 		<string>35</string>
 		<key>PVSupportedExtensions</key>
@@ -4004,7 +4004,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.2600</string>
+		<string>com.Genesis.2600</string>
 		<key>PVDatabaseID</key>
 		<string>3</string>
 		<key>PVSupportedExtensions</key>
@@ -4072,7 +4072,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.7800</string>
+		<string>com.Genesis.7800</string>
 		<key>PVDatabaseID</key>
 		<string>5</string>
 		<key>PVSupportedExtensions</key>
@@ -4165,7 +4165,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.jaguar</string>
+		<string>com.Genesis.jaguar</string>
 		<key>PVDatabaseID</key>
 		<string>7</string>
 		<key>PVSupportedExtensions</key>
@@ -4284,7 +4284,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.jaguarcd</string>
+		<string>com.Genesis.jaguarcd</string>
 		<key>PVDatabaseID</key>
 		<string>8</string>
 		<key>PVSupportedExtensions</key>
@@ -4374,7 +4374,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.32X</string>
+		<string>com.Genesis.32X</string>
 		<key>PVDatabaseID</key>
 		<string>29</string>
 		<key>PVSupportedExtensions</key>
@@ -4481,7 +4481,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.5200</string>
+		<string>com.Genesis.5200</string>
 		<key>PVDatabaseID</key>
 		<string>4</string>
 		<key>PVRequiresBIOS</key>
@@ -4584,7 +4584,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.atari8bit</string>
+		<string>com.Genesis.atari8bit</string>
 		<key>PVDatabaseID</key>
 		<string>4</string>
 		<key>PVRequiresBIOS</key>
@@ -4713,7 +4713,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.atarist</string>
+		<string>com.Genesis.atarist</string>
 		<key>PVDatabaseID</key>
 		<string>-1</string>
 		<key>PVRequiresBIOS</key>
@@ -4817,7 +4817,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.dos</string>
+		<string>com.Genesis.dos</string>
 		<key>PVDatabaseID</key>
 		<string>-1</string>
 		<key>PVRequiresBIOS</key>
@@ -4921,7 +4921,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.c64</string>
+		<string>com.Genesis.c64</string>
 		<key>PVDatabaseID</key>
 		<string>41</string>
 		<key>PVRequiresBIOS</key>
@@ -5030,7 +5030,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.zxspectrum</string>
+		<string>com.Genesis.zxspectrum</string>
 		<key>PVDatabaseID</key>
 		<string>-1</string>
 		<key>PVRequiresBIOS</key>
@@ -5117,7 +5117,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.msx</string>
+		<string>com.Genesis.msx</string>
 		<key>PVDatabaseID</key>
 		<string>42</string>
 		<key>PVRequiresBIOS</key>
@@ -5286,7 +5286,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.msx2</string>
+		<string>com.Genesis.msx2</string>
 		<key>PVDatabaseID</key>
 		<string>43</string>
 		<key>PVRequiresBIOS</key>
@@ -5491,7 +5491,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.macintosh</string>
+		<string>com.Genesis.macintosh</string>
 		<key>PVDatabaseID</key>
 		<string>-1</string>
                 <key>PVRequiresBIOS</key>
@@ -5589,7 +5589,7 @@
 		<key>PVScreenType</key>
 		<string>DotMatrix</string>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.pokemonmini</string>
+		<string>com.Genesis.pokemonmini</string>
 		<key>PVDatabaseID</key>
 		<string>0</string>
 		<key>PVRequiresBIOS</key>
@@ -5739,7 +5739,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.odyssey2</string>
+		<string>com.Genesis.odyssey2</string>
 		<key>PVDatabaseID</key>
 		<string>40</string>
 		<key>PVSupportedExtensions</key>
@@ -5858,7 +5858,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.vectrex</string>
+		<string>com.Genesis.vectrex</string>
 		<key>PVDatabaseID</key>
 		<string>12</string>
 		<key>PVSupportedExtensions</key>
@@ -5884,7 +5884,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.ep128</string>
+		<string>com.Genesis.ep128</string>
 		<key>PVDatabaseID</key>
 		<string>-1</string>
 		<key>PVSupportedExtensions</key>
@@ -5986,7 +5986,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.colecovision</string>
+		<string>com.Genesis.colecovision</string>
 		<key>PVDatabaseID</key>
 		<string>11</string>
 		<key>PVSupportedExtensions</key>
@@ -6119,7 +6119,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.intellivision</string>
+		<string>com.Genesis.intellivision</string>
 		<key>PVDatabaseID</key>
 		<string>13</string>
 		<key>PVSupportedExtensions</key>
@@ -6199,7 +6199,7 @@
 		<key>PVPortable</key>
 		<true/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.supervision</string>
+		<string>com.Genesis.supervision</string>
 		<key>PVDatabaseID</key>
 		<string>0</string>
 		<key>PVSupportedExtensions</key>
@@ -6274,7 +6274,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.3DO</string>
+		<string>com.Genesis.3DO</string>
 		<key>PVDatabaseID</key>
 		<string>1</string>
 		<key>PVRequiresBIOS</key>
@@ -6416,7 +6416,7 @@
 		<key>PVPortable</key>
 		<false/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.pc98</string>
+		<string>com.Genesis.pc98</string>
 		<key>PVScreenType</key>
 		<string>CRT</string>
 		<key>PVDatabaseID</key>
@@ -6532,7 +6532,7 @@
 		<key>PVPortable</key>
 		<true/>
 		<key>PVSystemIdentifier</key>
-		<string>com.provenance.retroarch</string>
+		<string>com.Genesis.retroarch</string>
 		<key>PVScreenType</key>
 		<string>CRT</string>
 		<key>PVDatabaseID</key>

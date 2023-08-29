@@ -7,16 +7,16 @@
 #import <PVSupport/PVSupport-Swift.h>
 #import "gs/GSH_OpenGL/GSH_OpenGL.h"
 
-class CGSH_Provenance_OGL : public CGSH_OpenGL
+class CGSH_Genesis_OGL : public CGSH_OpenGL
 {
 public:
-	CGSH_Provenance_OGL(
+	CGSH_Genesis_OGL(
 		CAEAGLLayer *layer,
  	 	int width,
  	 	int height,
 		int res_factor
 	);
-	virtual ~CGSH_Provenance_OGL();
+	virtual ~CGSH_Genesis_OGL();
 
 	static FactoryFunction GetFactoryFunction(
 		CAEAGLLayer *layer,

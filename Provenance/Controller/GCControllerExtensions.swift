@@ -1,9 +1,9 @@
 //
 //  GCControllerExtensions.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Sev Gerk on 1/27/19.
-//  Copyright © 2019 Provenance Emu. All rights reserved.
+//  Copyright © 2019 Genesis Emu. All rights reserved.
 //
 
 import GameController

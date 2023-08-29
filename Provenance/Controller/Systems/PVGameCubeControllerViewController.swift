@@ -1,8 +1,8 @@
 //  PVGameCubeControllerViewController.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Joe Mattiello on 2021/10/20.
-//  Copyright (c) 2021 Provenance EMU. All rights reserved.
+//  Copyright (c) 2021 Genesis EMU. All rights reserved.
 //
 
 import PVSupport

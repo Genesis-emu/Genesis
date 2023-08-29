@@ -34,10 +34,10 @@
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>com.provenance</string>
+			<string>com.Genesis</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>provenance</string>
+				<string>Genesis</string>
 			</array>
 		</dict>
 	</array>
@@ -115,14 +115,14 @@
 				<key>NSIncludesSubdomains</key>
 				<true/>
 			</dict>
-			<key>provenance-emu.com</key>
+			<key>Genesis-emu.com</key>
 			<dict>
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>
 				<true/>
 				<key>NSIncludesSubdomains</key>
 				<true/>
 			</dict>
-			<key>provenance.app</key>
+			<key>Genesis.app</key>
 			<dict>
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>
 				<true/>
@@ -132,7 +132,7 @@
 		</dict>
 	</dict>
 	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>Provenance uses Bluetooth to support game controllers.</string>
+	<string>Genesis uses Bluetooth to support game controllers.</string>
 	<key>NSBonjourServices</key>
 	<array>
 		<string>_altserver._tcp</string>
@@ -140,11 +140,11 @@
 	<key>NSHighResolutionCapable</key>
 	<true/>
 	<key>NSLocalNetworkUsageDescription</key>
-	<string>Provenance uses the local network to find and communicate with AltServer.</string>
+	<string>Genesis uses the local network to find and communicate with AltServer.</string>
 	<key>NSUserActivityTypes</key>
 	<array>
-		<string>org.provenance-emu.game.play</string>
-		<string>org.provenance-emu.webserver</string>
+		<string>org.Genesis-emu.game.play</string>
+		<string>org.Genesis-emu.webserver</string>
 	</array>
 	<key>Revision</key>
 	<string>f9c61252</string>

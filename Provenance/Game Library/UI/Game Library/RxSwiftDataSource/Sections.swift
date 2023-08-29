@@ -1,9 +1,9 @@
 //
 //  Sections.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Joseph Mattiello on 11/4/18.
-//  Copyright © 2018 Provenance Emu. All rights reserved.
+//  Copyright © 2018 Genesis Emu. All rights reserved.
 //
 
 import Foundation

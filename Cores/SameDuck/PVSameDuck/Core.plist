@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.SameDuck</string>
+	<string>com.Genesis.SameDuck</string>
 	<key>PVPrincipleClass</key>
 	<string>PVSameDuckCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.megaduck</string>
+		<string>com.Genesis.megaduck</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>SameDuck</string>

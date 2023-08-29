@@ -3,7 +3,7 @@
 //  PVSupport
 //
 //  Created by Joseph Mattiello on 5/29/18.
-//  Copyright © 2018 Provenance. All rights reserved.
+//  Copyright © 2018 Genesis. All rights reserved.
 //
 
 import PVLibrary
@@ -24,8 +24,8 @@ protocol WebServerActivatorController: AnyObject {
             let webServerAddress: String = PVWebServer.shared.urlString
             let webDavAddress: String = PVWebServer.shared.webDavURLString
             let message = """
-            Read about how to import ROMs on the Provenance wiki at:
-            https://wiki.provenance-emu.com
+            Read about how to import ROMs on the Genesis wiki at:
+            https://wiki.Genesis-emu.com
 
             Upload/Download files to your device at:
 
@@ -82,8 +82,8 @@ extension WebServerActivatorController where Self: WebServerActivatorControllerR
         let webServerAddress: String = PVWebServer.shared.urlString
         let webDavAddress: String = PVWebServer.shared.webDavURLString
         let message = """
-        Read about how to import ROMs on the Provenance wiki at:
-        https://wiki.provenance-emu.com
+        Read about how to import ROMs on the Genesis wiki at:
+        https://wiki.Genesis-emu.com
 
         Upload/Download files to your device at:
 

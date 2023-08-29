@@ -161,12 +161,12 @@ test:
 developer_ios:
 	$(info Building iOS for Developer profile…)
 
-	bundle exec fastlane build_developer scheme:Provenance-Release
+	bundle exec fastlane build_developer scheme:Genesis-Release
 
 developer_tvos:
 	$(info Building tvOS for Developer profile…)
 
-	bundle exec fastlane build_developer scheme:ProvenanceTV-Release
+	bundle exec fastlane build_developer scheme:GenesisTV-Release
 
 ## Update & build for iOS
 ios: | update developer_ios
@@ -176,7 +176,7 @@ tvos: | update developer_tvos
 
 ## Open the workspace
 open:
-	open Provenance.xcworkspace
+	open Genesis.xcworkspace
 
 ## tag and release to github
 release: | _var_VERSION

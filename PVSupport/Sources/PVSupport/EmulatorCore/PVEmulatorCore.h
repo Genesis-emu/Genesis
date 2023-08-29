@@ -1,6 +1,6 @@
 //
 //  PVEmulatorCore.h
-//  Provenance
+//  Genesis
 //
 //  Created by James Addyman on 31/08/2013.
 //  Copyright (c) 2013 James Addyman. All rights reserved.

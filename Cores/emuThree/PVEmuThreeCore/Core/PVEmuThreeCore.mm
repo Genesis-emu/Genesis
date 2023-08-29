@@ -1,5 +1,5 @@
 //  PVEmuThreeCore.m
-//  Copyright © 2023 Provenance. All rights reserved.
+//  Copyright © 2023 Genesis. All rights reserved.
 
 #import "PVEmuThreeCore.h"
 #import "PVEmuThreeCore+Controls.h"
@@ -48,7 +48,7 @@ static bool _isOff = false;
         _videoHeight = 480;
         _videoBitDepth = 32; // ignored
         dispatch_queue_attr_t queueAttributes = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, QOS_CLASS_USER_INTERACTIVE, 0);
-        _callbackQueue = dispatch_queue_create("org.provenance-emu.emuThree.CallbackHandlerQueue", queueAttributes);
+        _callbackQueue = dispatch_queue_create("org.Genesis-emu.emuThree.CallbackHandlerQueue", queueAttributes);
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(optionUpdated:) name:@"OptionUpdated" object:nil];
         _isInitialized = false;
         [self parseOptions];

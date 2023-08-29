@@ -99,7 +99,7 @@ public final class IndexRequestHandler: CSIndexExtensionRequestHandler {
     private func indexResults(_ results: Results<PVGame>) {
         let items: [CSSearchableItem] = results.compactMap({ (game) -> CSSearchableItem? in
             if !game.md5Hash.isEmpty {
-                return CSSearchableItem(uniqueIdentifier: "org.provenance-emu.game.\(game.md5Hash)", domainIdentifier: "org.provenance-emu.game", attributeSet: game.spotlightContentSet)
+                return CSSearchableItem(uniqueIdentifier: "org.Genesis-emu.game.\(game.md5Hash)", domainIdentifier: "org.Genesis-emu.game", attributeSet: game.spotlightContentSet)
             } else {
                 return nil
             }

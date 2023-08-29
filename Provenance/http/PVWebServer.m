@@ -1,6 +1,6 @@
 //
 //  PVWebServer.m
-//  Provenance
+//  Genesis
 //
 //  Created by Daniel Gillespie on 7/25/15.
 //  Copyright (c) 2015 James Addyman. All rights reserved.
@@ -79,8 +79,8 @@
 - (NSUserActivity *)handoffActivity
 {
     if (!_handoffActivity) {
-        _handoffActivity = [[NSUserActivity alloc] initWithActivityType:@"org.provenance-emu.webserver"];
-        _handoffActivity.title = @"Provenance file manager";
+        _handoffActivity = [[NSUserActivity alloc] initWithActivityType:@"org.Genesis-emu.webserver"];
+        _handoffActivity.title = @"Genesis file manager";
         NSURL *url = [NSURL URLWithString:self.URLString];
         _handoffActivity.webpageURL = url;
     }
@@ -134,8 +134,8 @@
     // Settings dictionary
     NSDictionary *webSeverOptions = @{
                                       GCDWebServerOption_AutomaticallySuspendInBackground : @(NO),
-                                      GCDWebServerOption_ServerName : @"Provenance",
-                                      GCDWebServerOption_BonjourName : @"ProvenanceWWW",
+                                      GCDWebServerOption_ServerName : @"Genesis",
+                                      GCDWebServerOption_BonjourName : @"GenesisWWW",
                                       GCDWebServerOption_Port : @(webUploadPort)
                                       };
     NSError *error;
@@ -162,8 +162,8 @@
     
     NSDictionary *webDavSeverOptions = @{
                                          GCDWebServerOption_AutomaticallySuspendInBackground : @(NO),
-                                         GCDWebServerOption_ServerName : @"Provenance",
-                                         GCDWebServerOption_BonjourName : @"Provenance",
+                                         GCDWebServerOption_ServerName : @"Genesis",
+                                         GCDWebServerOption_BonjourName : @"Genesis",
                                          GCDWebServerOption_BonjourType : @"_webdav._tcp",
                                          GCDWebServerOption_Port : @(webDavPort)
                                          };

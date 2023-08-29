@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.play</string>
+	<string>com.Genesis.core.play</string>
 	<key>PVPrincipleClass</key>
 	<string>PVPlayCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.ps2</string>
+		<string>com.Genesis.ps2</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>Play!</string>

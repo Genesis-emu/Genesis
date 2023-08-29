@@ -1,5 +1,5 @@
-git_url("https://github.com/Provenance-Emu/fastlane.git")
-# git_branch("Provenance")
+git_url("https://github.com/Genesis-Emu/fastlane.git")
+# git_branch("Genesis")
 
 type("development") # The default type, can be: appstore, adhoc, enterprise or development
 
@@ -19,9 +19,9 @@ type("development") # The default type, can be: appstore, adhoc, enterprise or d
 #     username "..."  # Your Apple Developer Portal username
 # end
 
-dev_domain = ENV["DEV_DOMAIN"] || "org.provenance-emu"
+dev_domain = ENV["DEV_DOMAIN"] || "org.Genesis-emu"
 
-app_identifier(["#{dev_domain}.provenance", "#{dev_domain}.provenance.topshelf", "#{dev_domain}.provenance.spotlight"])
+app_identifier(["#{dev_domain}.Genesis", "#{dev_domain}.Genesis.topshelf", "#{dev_domain}.Genesis.spotlight"])
 username("apple@joemattiello.com") # Your Apple Developer Portal username
 team_name("Joseph Mattiello")
 team_id("S32Z3HMYVQ")

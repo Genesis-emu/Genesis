@@ -3,7 +3,7 @@
 //  PVRetroArch
 //
 //  Created by Joseph Mattiello on 6/15/22.
-//  Copyright © 2022 Provenance Emu. All rights reserved.
+//  Copyright © 2022 Genesis Emu. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -2101,7 +2101,7 @@ static void RETRO_CALLCONV video_callback(const void *data, unsigned width, unsi
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         dispatch_queue_attr_t queueAttributes = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_CONCURRENT, QOS_CLASS_USER_INTERACTIVE, 0);
-        serialQueue = dispatch_queue_create("com.provenance.video", queueAttributes);
+        serialQueue = dispatch_queue_create("com.Genesis.video", queueAttributes);
         
         DLOG(@"vid: width: %i height: %i, pitch: %zu. _videoWidth: %f, _videoHeight: %f\n", width, height, pitch, strongCurrent.videoWidth, strongCurrent.videoHeight);
     });

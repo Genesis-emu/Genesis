@@ -44,9 +44,9 @@
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Lp-si-dj1" userLabel="Warning Text">
                                     <rect key="frame" x="0.0" y="0.0" width="335" height="304.33333333333331"/>
-                                    <string key="text">Provenance is waiting for a remote debugger to connect before emulation can start. You will not be able to play until the debugger is connected.
+                                    <string key="text">Genesis is waiting for a remote debugger to connect before emulation can start. You will not be able to play until the debugger is connected.
 
-Provenance uses a technique called "JIT" to emulate the GameCube and Wii's CPU at fast speeds. Without JIT, Provenance would run at unplayably slow speeds.
+Genesis uses a technique called "JIT" to emulate the GameCube and Wii's CPU at fast speeds. Without JIT, Genesis would run at unplayably slow speeds.
 
 Apple does not allow JIT to be used on iOS by default. However, by attaching a debugger, iOS will allow JIT to be used.
 

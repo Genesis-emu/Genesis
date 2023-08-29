@@ -74,7 +74,7 @@
 #define USE_THREADS 0
 #define USE_DOUBLE_BUFFER NO
 
-#define OEGameCoreErrorDomain @"org.provenance.core"
+#define OEGameCoreErrorDomain @"org.Genesis.core"
 #define OEGameCoreCouldNotLoadStateError 420
 #define OEGameCoreCouldNotLoadROMError 69
 #define OEGameCoreCouldNotSaveStateError 42069
@@ -172,7 +172,7 @@ static NSString * const DuckStationCPUOverclockKey = @"duckstation/CPU/Overclock
 + (void)initialize {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        OE_CORE_LOG = os_log_create("org.provenance.DuckStation", "");
+        OE_CORE_LOG = os_log_create("org.Genesis.DuckStation", "");
     });
 }
 
@@ -195,7 +195,7 @@ static NSString * const DuckStationCPUOverclockKey = @"duckstation/CPU/Overclock
 #pragma mark - Execution
 
 -(NSString*) systemIdentifier {
-    return @"com.provenance.psx";
+    return @"com.Genesis.psx";
 }
 
 #pragma mark - Video

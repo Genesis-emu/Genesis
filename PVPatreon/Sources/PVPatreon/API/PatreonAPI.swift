@@ -10,9 +10,9 @@ import Foundation
 import AuthenticationServices
 import PVLogging
 
-private let clientID = Const.Patreon.Provenance.clientID
-private let clientSecret = Const.Patreon.Provenance.clientSecret
-private let campaignID = Const.Patreon.Provenance.campaignID
+private let clientID = Const.Patreon.Genesis.clientID
+private let clientSecret = Const.Patreon.Genesis.clientSecret
+private let campaignID = Const.Patreon.Genesis.campaignID
 
 extension PatreonAPI {
     enum Error: LocalizedError {
@@ -249,7 +249,7 @@ public extension PatreonAPI {
 
 private extension PatreonAPI {
     func fetchAccessToken(oauthCode: String, completion: @escaping (Result<(String, String), Swift.Error>) -> Void) {
-        let encodedRedirectURI = ("https://provenance-emu.com/patreon_redirect" as NSString).addingPercentEncoding(withAllowedCharacters: .alphanumerics)!
+        let encodedRedirectURI = ("https://Genesis-emu.com/patreon_redirect" as NSString).addingPercentEncoding(withAllowedCharacters: .alphanumerics)!
         let encodedOauthCode = (oauthCode as NSString).addingPercentEncoding(withAllowedCharacters: .alphanumerics)!
         
         let body = "code=\(encodedOauthCode)&grant_type=authorization_code&client_id=\(clientID)&client_secret=\(clientSecret)&redirect_uri=\(encodedRedirectURI)"

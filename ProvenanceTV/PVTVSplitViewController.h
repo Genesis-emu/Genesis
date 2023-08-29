@@ -1,6 +1,6 @@
 //
 //  PVTVSplitViewController.h
-//  Provenance
+//  Genesis
 //
 //  Created by James Addyman on 26/09/2015.
 //  Copyright © 2015 James Addyman. All rights reserved.

@@ -1,9 +1,9 @@
 //
 //  PVGPUViewController.h
-//  Provenance
+//  Genesis
 //
 //  Created by Joseph Mattiello on 1/11/22.
-//  Copyright © 2022 Provenance Emu. All rights reserved.
+//  Copyright © 2022 Genesis Emu. All rights reserved.
 //
 
 #if TARGET_OS_OSX

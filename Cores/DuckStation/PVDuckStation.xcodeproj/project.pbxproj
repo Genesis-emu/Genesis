@@ -896,7 +896,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = PV;
 				LastUpgradeCheck = 1250;
-				ORGANIZATIONNAME = "Provenance Emu";
+				ORGANIZATIONNAME = "Genesis Emu";
 				TargetAttributes = {
 					B36DE7471D6AB19C002EE3ED = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1544,7 +1544,7 @@
 					"$(PROJECT_DIR)/lib",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.duckstation";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.duckstation";
 				PRODUCT_NAME = PVDuckStation;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1634,7 +1634,7 @@
 					"$(PROJECT_DIR)/lib",
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.duckstation";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.duckstation";
 				PRODUCT_NAME = PVDuckStation;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1722,7 +1722,7 @@
 					"$(PROJECT_DIR)/lib",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.duckstation";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.duckstation";
 				PRODUCT_NAME = PVDuckStation;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.desmume2015</string>
+	<string>com.Genesis.core.desmume2015</string>
 	<key>PVPrincipleClass</key>
 	<string>PVDesmume2015Core</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.ds</string>
+		<string>com.Genesis.ds</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>Desmume2015</string>

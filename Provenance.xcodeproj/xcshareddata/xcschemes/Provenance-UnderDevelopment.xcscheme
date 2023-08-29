@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "930498BE2A93073800BF257F"
-               BuildableName = "Provenance-UnderDevelopment.app"
-               BlueprintName = "Provenance-UnderDevelopment"
-               ReferencedContainer = "container:Provenance.xcodeproj">
+               BuildableName = "Genesis-UnderDevelopment.app"
+               BlueprintName = "Genesis-UnderDevelopment"
+               ReferencedContainer = "container:Genesis.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "930498BE2A93073800BF257F"
-            BuildableName = "Provenance-UnderDevelopment.app"
-            BlueprintName = "Provenance-UnderDevelopment"
-            ReferencedContainer = "container:Provenance.xcodeproj">
+            BuildableName = "Genesis-UnderDevelopment.app"
+            BlueprintName = "Genesis-UnderDevelopment"
+            ReferencedContainer = "container:Genesis.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "930498BE2A93073800BF257F"
-            BuildableName = "Provenance-UnderDevelopment.app"
-            BlueprintName = "Provenance-UnderDevelopment"
-            ReferencedContainer = "container:Provenance.xcodeproj">
+            BuildableName = "Genesis-UnderDevelopment.app"
+            BlueprintName = "Genesis-UnderDevelopment"
+            ReferencedContainer = "container:Genesis.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

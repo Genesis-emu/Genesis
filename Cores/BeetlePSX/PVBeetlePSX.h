@@ -3,7 +3,7 @@
 //  PVBeetlePSX
 //
 //  Created by Joseph Mattiello on 01/28/22.
-//  Copyright © 2022 Provenance-EMU. All rights reserved.
+//  Copyright © 2022 Genesis-EMU. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

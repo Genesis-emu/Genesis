@@ -3,7 +3,7 @@
 //  PVDolphin
 //
 //  Created by Joseph Mattiello on 4/6/18.
-//  Copyright © 2021 Provenance. All rights reserved.
+//  Copyright © 2021 Genesis. All rights reserved.
 //
 
 #import "PVDolphinCore.h"
@@ -143,7 +143,7 @@ static void UpdateWiiPointer();
         sampleRate = 44100;
         isNTSC = YES;
         dispatch_queue_attr_t queueAttributes = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, QOS_CLASS_USER_INTERACTIVE, 0);
-        _callbackQueue = dispatch_queue_create("org.provenance-emu.dolphin.CallbackHandlerQueue", queueAttributes);
+        _callbackQueue = dispatch_queue_create("org.Genesis-emu.dolphin.CallbackHandlerQueue", queueAttributes);
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(optionUpdated:) name:@"OptionUpdated" object:nil];
         [self parseOptions];
     }
@@ -172,7 +172,7 @@ static void UpdateWiiPointer();
                                                attributes:nil
                                                     error:NULL];
     _romPath = [path copy];
-    if([[self systemIdentifier] isEqualToString:@"com.provenance.gamecube"])
+    if([[self systemIdentifier] isEqualToString:@"com.Genesis.gamecube"])
     {
         _dolphinCoreModule = @"gc";
         _isWii = false;

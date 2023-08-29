@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B3F7E295297736BE00362B92"
-               BuildableName = "Provenance-Lite.app"
-               BlueprintName = "Provenance-Lite"
-               ReferencedContainer = "container:Provenance.xcodeproj">
+               BuildableName = "Genesis-Lite.app"
+               BlueprintName = "Genesis-Lite"
+               ReferencedContainer = "container:Genesis.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B3F7E295297736BE00362B92"
-            BuildableName = "Provenance-Lite.app"
-            BlueprintName = "Provenance-Lite"
-            ReferencedContainer = "container:Provenance.xcodeproj">
+            BuildableName = "Genesis-Lite.app"
+            BlueprintName = "Genesis-Lite"
+            ReferencedContainer = "container:Genesis.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B3F7E295297736BE00362B92"
-            BuildableName = "Provenance-Lite.app"
-            BlueprintName = "Provenance-Lite"
-            ReferencedContainer = "container:Provenance.xcodeproj">
+            BuildableName = "Genesis-Lite.app"
+            BlueprintName = "Genesis-Lite"
+            ReferencedContainer = "container:Genesis.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

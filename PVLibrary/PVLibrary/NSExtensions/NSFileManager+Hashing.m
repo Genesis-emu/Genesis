@@ -1,6 +1,6 @@
 //
 //  NSFileManager+NSFileManager_Hashing.m
-//  Provenance
+//  Genesis
 //
 //  Created by James Addyman on 11/04/2015.
 //  Copyright (c) 2015 James Addyman. All rights reserved.

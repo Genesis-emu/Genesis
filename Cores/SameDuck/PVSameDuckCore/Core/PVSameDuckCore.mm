@@ -3,7 +3,7 @@
 //  PVSameDuck
 //
 //  Created by Joseph Mattiello on 6/15/22.
-//  Copyright © 2022 Provenance. All rights reserved.
+//  Copyright © 2022 Genesis. All rights reserved.
 //
 
 #import "PVSameDuckCore.h"

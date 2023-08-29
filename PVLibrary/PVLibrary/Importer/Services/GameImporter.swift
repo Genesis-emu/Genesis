@@ -1,7 +1,7 @@
 //  Converted to Swift 4 by Swiftify v4.1.6613 - https://objectivec2swift.com/
 //
 //  GameImporter.swift
-//  Provenance
+//  Genesis
 //
 //  Created by James Addyman on 01/04/2015.
 //  Copyright (c) 2015 James Addyman. All rights reserved.
@@ -22,9 +22,9 @@ import AppKit
 
 struct Constants {
     struct iCloud {
-//        static let containerIdentifier = "iCloud.org.provenance-emu.provenance"
+//        static let containerIdentifier = "iCloud.org.Genesis-emu.Genesis"
         // Dynamic version based off of bundle Identifier
-		static let containerIdentifier =  (Bundle.main.infoDictionary?["NSUbiquitousContainers"] as? [String: AnyObject])?.keys.first ?? "iCloud.org.provenance-emu.provenance"
+		static let containerIdentifier =  (Bundle.main.infoDictionary?["NSUbiquitousContainers"] as? [String: AnyObject])?.keys.first ?? "iCloud.org.Genesis-emu.Genesis"
     }
 }
 
@@ -89,7 +89,7 @@ public final class GameImporter {
 
     public private(set) var serialImportQueue: OperationQueue = {
         let queue = OperationQueue()
-        queue.name = "org.provenance-emu.provenance.serialImportQueue"
+        queue.name = "org.Genesis-emu.Genesis.serialImportQueue"
         queue.maxConcurrentOperationCount = 1
         return queue
     }()
@@ -570,8 +570,8 @@ public extension GameImporter {
         }
 
         // TODO: This will break if we move the ROMS to a new spot
-        // Remove extension and leading '/' so we can match 'com.provenance.vb/Tetris [SomeThing] US BLAH.vb'
-        // will match with /com.provenance.vb/Tetris.vb since it becomes 'com.provenance.vb/Tetris' since I use a beginswith query
+        // Remove extension and leading '/' so we can match 'com.Genesis.vb/Tetris [SomeThing] US BLAH.vb'
+        // will match with /com.Genesis.vb/Tetris.vb since it becomes 'com.Genesis.vb/Tetris' since I use a beginswith query
         // First try an extact match though incase there are mulitples that start with similiar
         var gamePartialPath: String = URL(fileURLWithPath: system.identifier, isDirectory: true).appendingPathComponent(gameFilename).deletingPathExtension().path
         if gamePartialPath.first == "/" {
@@ -584,7 +584,7 @@ public extension GameImporter {
         }
 
         // Find the game in the database
-        // First find an exact match incase there are multiples like com.provenance.vb/Teris [US].vb etc,
+        // First find an exact match incase there are multiples like com.Genesis.vb/Teris [US].vb etc,
         // If that's null, ie no matches, do a begins with
         // TODO: Warn / error / ask if more than 1 returned
         var games = database.all(PVGame.self, where: #keyPath(PVGame.romPath), value: gamePartialPath)

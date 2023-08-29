@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.atari800</string>
+	<string>com.Genesis.core.atari800</string>
 	<key>PVPrincipleClass</key>
 	<string>ATR800GameCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.5200</string>
-		<string>com.provenance.8bit</string>
+		<string>com.Genesis.5200</string>
+		<string>com.Genesis.8bit</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>Atari 800</string>

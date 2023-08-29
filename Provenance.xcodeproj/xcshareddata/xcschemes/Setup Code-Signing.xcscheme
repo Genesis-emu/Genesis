@@ -17,7 +17,7 @@
                BlueprintIdentifier = "B3B29D4D21561F0600903290"
                BuildableName = "Setup Code-Signing"
                BlueprintName = "Setup Code-Signing"
-               ReferencedContainer = "container:Provenance.xcodeproj">
+               ReferencedContainer = "container:Genesis.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,7 +46,7 @@
             BlueprintIdentifier = "B3B29D4D21561F0600903290"
             BuildableName = "Setup Code-Signing"
             BlueprintName = "Setup Code-Signing"
-            ReferencedContainer = "container:Provenance.xcodeproj">
+            ReferencedContainer = "container:Genesis.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </LaunchAction>
@@ -62,7 +62,7 @@
             BlueprintIdentifier = "B3B29D4D21561F0600903290"
             BuildableName = "Setup Code-Signing"
             BlueprintName = "Setup Code-Signing"
-            ReferencedContainer = "container:Provenance.xcodeproj">
+            ReferencedContainer = "container:Genesis.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -3,7 +3,7 @@
 //  PVLibrary
 //
 //  Created by Joseph Mattiello on 10/30/18.
-//  Copyright © 2018 Provenance Emu. All rights reserved.
+//  Copyright © 2018 Genesis Emu. All rights reserved.
 //
 
 import Foundation
@@ -59,7 +59,7 @@ public typealias PackageCompletion = (_ result: PackageResult) -> Void
 public final class LibrarySerializer {
     fileprivate init() {}
 
-    private static let serializeQueue = DispatchQueue(label: "com.provenance.serializer", qos: .background)
+    private static let serializeQueue = DispatchQueue(label: "com.Genesis.serializer", qos: .background)
 
     // MARK: - Metadata
 

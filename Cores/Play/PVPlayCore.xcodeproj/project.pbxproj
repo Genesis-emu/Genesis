@@ -21,8 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		9310345A29436AC3002D218C /* CGSH_Provenance_OGL.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9310344A29436AC2002D218C /* CGSH_Provenance_OGL.mm */; };
-		9310345B29436AC3002D218C /* CGSH_Provenance_OGL.h in Headers */ = {isa = PBXBuildFile; fileRef = 9310345929436AC3002D218C /* CGSH_Provenance_OGL.h */; };
+		9310345A29436AC3002D218C /* CGSH_Genesis_OGL.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9310344A29436AC2002D218C /* CGSH_Genesis_OGL.mm */; };
+		9310345B29436AC3002D218C /* CGSH_Genesis_OGL.h in Headers */ = {isa = PBXBuildFile; fileRef = 9310345929436AC3002D218C /* CGSH_Genesis_OGL.h */; };
 		93161E0C2A5A0AA6000C5362 /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 93161E092A5A0A31000C5362 /* libbz2.1.0.tbd */; };
 		9333C7E3298932970042CD99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C7621E2078325C009950E4 /* Foundation.framework */; };
 		9360C594294CB5E7000322B9 /* service_funcs.c in Sources */ = {isa = PBXBuildFile; fileRef = 9360C56E294CB5E6000322B9 /* service_funcs.c */; };
@@ -513,8 +513,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9310344A29436AC2002D218C /* CGSH_Provenance_OGL.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CGSH_Provenance_OGL.mm; sourceTree = "<group>"; };
-		9310345929436AC3002D218C /* CGSH_Provenance_OGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSH_Provenance_OGL.h; sourceTree = "<group>"; };
+		9310344A29436AC2002D218C /* CGSH_Genesis_OGL.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CGSH_Genesis_OGL.mm; sourceTree = "<group>"; };
+		9310345929436AC3002D218C /* CGSH_Genesis_OGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSH_Genesis_OGL.h; sourceTree = "<group>"; };
 		93161E052A5A09BC000C5362 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/lib/libbz2.tbd; sourceTree = DEVELOPER_DIR; };
 		93161E072A5A09F4000C5362 /* libbz2.1.0.8.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.8.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/lib/libbz2.1.0.8.tbd; sourceTree = DEVELOPER_DIR; };
 		93161E092A5A0A31000C5362 /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/lib/libbz2.1.0.tbd; sourceTree = DEVELOPER_DIR; };
@@ -4012,8 +4012,8 @@
 				9360C56D294CB5E6000322B9 /* libbig_int */,
 				939B194929490A820024133A /* CGSH_MTLViewController.swift */,
 				93F5FBF32945D1B600493D4F /* PVPlayCore.swift */,
-				9310345929436AC3002D218C /* CGSH_Provenance_OGL.h */,
-				9310344A29436AC2002D218C /* CGSH_Provenance_OGL.mm */,
+				9310345929436AC3002D218C /* CGSH_Genesis_OGL.h */,
+				9310344A29436AC2002D218C /* CGSH_Genesis_OGL.mm */,
 				B3A6208C2947895B00ED28E3 /* CGSH_VulkaniOS.h */,
 				B3A6208D2947895B00ED28E3 /* CGSH_VulkaniOS.mm */,
 				B3C76223207833DE009950E4 /* PVPlayCore.h */,
@@ -4121,7 +4121,7 @@
 				B3135B9C26E4CC290047F338 /* PVPlayCore.h in Headers */,
 				B3135B9F26E4CC330047F338 /* PVPlayCore+Saves.h in Headers */,
 				B3135BA126E4CC620047F338 /* PVPlay.h in Headers */,
-				9310345B29436AC3002D218C /* CGSH_Provenance_OGL.h in Headers */,
+				9310345B29436AC3002D218C /* CGSH_Genesis_OGL.h in Headers */,
 				B3A6208E2947895B00ED28E3 /* CGSH_VulkaniOS.h in Headers */,
 				B3135B9E26E4CC330047F338 /* PVPlayCore+Video.h in Headers */,
 			);
@@ -4202,7 +4202,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = PV;
 				LastUpgradeCheck = 1300;
-				ORGANIZATIONNAME = "Provenance Emu";
+				ORGANIZATIONNAME = "Genesis Emu";
 				TargetAttributes = {
 					934D2DFF294B4D4600BDEBA5 = {
 						CreatedOnToolsVersion = 14.1;
@@ -4542,7 +4542,7 @@
 				9360C594294CB5E7000322B9 /* service_funcs.c in Sources */,
 				B3135B9B26E4CAD40047F338 /* PVPlayCore.mm in Sources */,
 				B3A6208F2947895B00ED28E3 /* CGSH_VulkaniOS.mm in Sources */,
-				9310345A29436AC3002D218C /* CGSH_Provenance_OGL.mm in Sources */,
+				9310345A29436AC3002D218C /* CGSH_Genesis_OGL.mm in Sources */,
 				9360C597294CB5E7000322B9 /* div.c in Sources */,
 				B3135BA926E4CD600047F338 /* PVPlayCore+Audio.mm in Sources */,
 				9360C5A3294CB5E8000322B9 /* number_theory.c in Sources */,
@@ -4861,7 +4861,7 @@
 					"$(PROJECT_DIR)/lib",
 					"$(SRCROOT)/lib/$(CONFIGURATION)-$(PLATFORM_NAME)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.pvplay";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.pvplay";
 				PRODUCT_NAME = PVPlay;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;

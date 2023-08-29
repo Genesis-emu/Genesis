@@ -1,4 +1,4 @@
-# Install script for directory: /Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/dolphin-ios/Source/UnitTests
+# Install script for directory: /Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/dolphin-ios/Source/UnitTests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,7 +37,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/Applications/Xcode-14.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
 endif()
 
-set(CMAKE_BINARY_DIR "/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake")
+set(CMAKE_BINARY_DIR "/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake")
 
 if(NOT PLATFORM_NAME)
   if(NOT "$ENV{PLATFORM_NAME}" STREQUAL "")
@@ -59,9 +59,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Source/UnitTests/Common/cmake_install.cmake")
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Source/UnitTests/Core/cmake_install.cmake")
-  include("/Users/jmattiello/Workspace/Provenance/Provenance/Cores/Dolphin/cmake/Source/UnitTests/VideoCommon/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Source/UnitTests/Common/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Source/UnitTests/Core/cmake_install.cmake")
+  include("/Users/jmattiello/Workspace/Genesis/Genesis/Cores/Dolphin/cmake/Source/UnitTests/VideoCommon/cmake_install.cmake")
 
 endif()
 

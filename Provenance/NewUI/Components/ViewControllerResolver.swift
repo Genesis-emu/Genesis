@@ -1,9 +1,9 @@
 //
 //  ViewControllerResolver.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Ian Clawson on 2/10/22.
-//  Copyright © 2022 Provenance Emu. All rights reserved.
+//  Copyright © 2022 Genesis Emu. All rights reserved.
 //
 //  From: https://github.com/Geri-Borbas/iOS.Blog.SwiftUI_Search_Bar_in_Navigation_Bar
 

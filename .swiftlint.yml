@@ -43,11 +43,11 @@ opt_in_rules:
   - force_unwrapping
 
 included:
-  - Provenance
-  - Provenance Tests
-  - ProvenanceShared
-  - ProvenanceShared-tvOS
-  - ProvenanceTV
+  - Genesis
+  - Genesis Tests
+  - GenesisShared
+  - GenesisShared-tvOS
+  - GenesisTV
   - PVLibrary
   - PVSupport
   - Spotlight

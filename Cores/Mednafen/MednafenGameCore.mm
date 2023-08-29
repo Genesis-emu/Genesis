@@ -534,7 +534,7 @@ static void emulation_run(BOOL skipFrame) {
     [self parseOptions];
     [[NSFileManager defaultManager] createDirectoryAtPath:[self batterySavesPath] withIntermediateDirectories:YES attributes:nil error:NULL];
     
-    if([[self systemIdentifier] isEqualToString:@"com.provenance.lynx"])
+    if([[self systemIdentifier] isEqualToString:@"com.Genesis.lynx"])
     {
         self.systemType = MednaSystemLynx;
         
@@ -543,7 +543,7 @@ static void emulation_run(BOOL skipFrame) {
         //mednafenCoreAspect = OEIntSizeMake(game->nominal_width, game->nominal_height);
         sampleRate         = 48000;
     }
-    else if([[self systemIdentifier] isEqualToString:@"com.provenance.nes"])
+    else if([[self systemIdentifier] isEqualToString:@"com.Genesis.nes"])
     {
         self.systemType = MednaSystemNES;
         
@@ -552,7 +552,7 @@ static void emulation_run(BOOL skipFrame) {
         //mednafenCoreAspect = OEIntSizeMake(game->nominal_width, game->nominal_height);
         sampleRate         = 48000;
     }
-    else if([[self systemIdentifier] isEqualToString:@"com.provenance.snes"])
+    else if([[self systemIdentifier] isEqualToString:@"com.Genesis.snes"])
     {
         self.systemType = MednaSystemSNES;
         
@@ -562,7 +562,7 @@ static void emulation_run(BOOL skipFrame) {
         //mednafenCoreAspect = OEIntSizeMake(game->nominal_width, game->nominal_height);
         sampleRate         = 48000;
     }
-    else if([[self systemIdentifier] isEqualToString:@"com.provenance.gb"] || [[self systemIdentifier] isEqualToString:@"com.provenance.gbc"])
+    else if([[self systemIdentifier] isEqualToString:@"com.Genesis.gb"] || [[self systemIdentifier] isEqualToString:@"com.Genesis.gbc"])
     {
         self.systemType = MednaSystemGB;
         
@@ -571,7 +571,7 @@ static void emulation_run(BOOL skipFrame) {
         //mednafenCoreAspect = OEIntSizeMake(game->nominal_width, game->nominal_height);
         sampleRate         = 48000;
     }
-    else if([[self systemIdentifier] isEqualToString:@"com.provenance.gba"])
+    else if([[self systemIdentifier] isEqualToString:@"com.Genesis.gba"])
     {
         self.systemType = MednaSystemGBA;
         
@@ -580,7 +580,7 @@ static void emulation_run(BOOL skipFrame) {
         //mednafenCoreAspect = OEIntSizeMake(game->nominal_width, game->nominal_height);
         sampleRate         = 44100;
     }
-    else if([[self systemIdentifier] isEqualToString:@"com.provenance.genesis"]) // Genesis aka Megaddrive
+    else if([[self systemIdentifier] isEqualToString:@"com.Genesis.genesis"]) // Genesis aka Megaddrive
     {
         self.systemType = MednaSystemMD;
         
@@ -589,7 +589,7 @@ static void emulation_run(BOOL skipFrame) {
         //mednafenCoreAspect = OEIntSizeMake(game->nominal_width, game->nominal_height);
         sampleRate         = 48000;
     }
-    else if([[self systemIdentifier] isEqualToString:@"com.provenance.mastersystem"])
+    else if([[self systemIdentifier] isEqualToString:@"com.Genesis.mastersystem"])
     {
         self.systemType = MednaSystemSMS;
         
@@ -598,7 +598,7 @@ static void emulation_run(BOOL skipFrame) {
         //mednafenCoreAspect = OEIntSizeMake(game->nominal_width, game->nominal_height);
         sampleRate         = 48000;
     }
-    else if([[self systemIdentifier] isEqualToString:@"com.provenance.ngp"] || [[self systemIdentifier] isEqualToString:@"com.provenance.ngpc"])
+    else if([[self systemIdentifier] isEqualToString:@"com.Genesis.ngp"] || [[self systemIdentifier] isEqualToString:@"com.Genesis.ngpc"])
     {
         self.systemType = MednaSystemNeoGeo;
         
@@ -607,7 +607,7 @@ static void emulation_run(BOOL skipFrame) {
         //mednafenCoreAspect = OEIntSizeMake(game->nominal_width, game->nominal_height);
         sampleRate         = 44100;
     }
-    else if([[self systemIdentifier] isEqualToString:@"com.provenance.pce"] || [[self systemIdentifier] isEqualToString:@"com.provenance.pcecd"] || [[self systemIdentifier] isEqualToString:@"com.provenance.sgfx"])
+    else if([[self systemIdentifier] isEqualToString:@"com.Genesis.pce"] || [[self systemIdentifier] isEqualToString:@"com.Genesis.pcecd"] || [[self systemIdentifier] isEqualToString:@"com.Genesis.sgfx"])
     {
         self.systemType = MednaSystemPCE;
         
@@ -617,7 +617,7 @@ static void emulation_run(BOOL skipFrame) {
         //mednafenCoreAspect = OEIntSizeMake(game->nominal_width, game->nominal_height);
         sampleRate         = 48000;
     }
-    else if([[self systemIdentifier] isEqualToString:@"com.provenance.pcfx"])
+    else if([[self systemIdentifier] isEqualToString:@"com.Genesis.pcfx"])
     {
         self.systemType = MednaSystemPCFX;
         
@@ -626,7 +626,7 @@ static void emulation_run(BOOL skipFrame) {
         //mednafenCoreAspect = OEIntSizeMake(game->nominal_width, game->nominal_height);
         sampleRate         = 48000;
     }
-    else if([[self systemIdentifier] isEqualToString:@"com.provenance.saturn"])
+    else if([[self systemIdentifier] isEqualToString:@"com.Genesis.saturn"])
     {
         self.systemType = MednaSystemSS;
         
@@ -635,7 +635,7 @@ static void emulation_run(BOOL skipFrame) {
         //mednafenCoreAspect = OEIntSizeMake(game->nominal_width, game->nominal_height);
         sampleRate         = 44100;
     }
-    else if([[self systemIdentifier] isEqualToString:@"com.provenance.psx"])
+    else if([[self systemIdentifier] isEqualToString:@"com.Genesis.psx"])
     {
         self.systemType = MednaSystemPSX;
         
@@ -645,7 +645,7 @@ static void emulation_run(BOOL skipFrame) {
         //mednafenCoreAspect = OEIntSizeMake(game->nominal_width, game->nominal_height);
         sampleRate         = 44100;
     }
-    else if([[self systemIdentifier] isEqualToString:@"com.provenance.vb"])
+    else if([[self systemIdentifier] isEqualToString:@"com.Genesis.vb"])
     {
         self.systemType = MednaSystemVirtualBoy;
         
@@ -654,7 +654,7 @@ static void emulation_run(BOOL skipFrame) {
         //mednafenCoreAspect = OEIntSizeMake(game->nominal_width, game->nominal_height);
         sampleRate         = 48000;
     }
-    else if([[self systemIdentifier] isEqualToString:@"com.provenance.ws"] || [[self systemIdentifier] isEqualToString:@"com.provenance.wsc"])
+    else if([[self systemIdentifier] isEqualToString:@"com.Genesis.ws"] || [[self systemIdentifier] isEqualToString:@"com.Genesis.wsc"])
     {
         self.systemType = MednaSystemWonderSwan;
         

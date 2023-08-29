@@ -8,7 +8,7 @@ pool:
 
 variables:
   group: 'ios-pipeline'
-  xcWorkspacePath: "Provenance.xcworkspace"
+  xcWorkspacePath: "Genesis.xcworkspace"
   ${{ if contains('main,develop,release', variables['Build.SourceBranchName']) }}:
     configuration: 'Release'
   ${{ if not(contains('main,develop,release', variables['Build.SourceBranchName'])) }}:
@@ -21,18 +21,18 @@ variables:
   xcode-version: '14.1'
   xcodeVersion: specifyPath  # Options: 8, 9, 11, 12, default, specifyPath
   sdk: 'iphoneos'
-  scheme: 'Provenance'
+  scheme: 'Genesis'
   destinationPlatformOption: iOS
 
 # strategy:
 #   matrix:
 #     ios:
 #       sdk: 'iphoneos'
-#       scheme: 'Provenance'
+#       scheme: 'Genesis'
 #       destinationPlatformOption: iOS
 #     tvos:
 #       sdk: 'appletvos'
-#       scheme: 'ProvenanceTV'
+#       scheme: 'GenesisTV'
 #       destinationPlatformOption: tvOS
 #   maxParallel: 3
 
@@ -75,7 +75,7 @@ jobs:
        # signingOption: 'manual'
        # signingIdentity: '$(APPLE_CERTIFICATE_SIGNING_IDENTITY)'
        # provisioningProfileUuid: '$(APPLE_PROV_PROFILE_UUID)'
-       args: 'CODE_SIGNING_REQUIRED=NO AD_HOC_CODE_SIGNING_ALLOWED=YES CODE_SIGNING_ALLOWED=NO DEVELOPMENT_TEAM=S32Z3HMYVQ ORG_IDENTIFIER=org.provenance-emu'
+       args: 'CODE_SIGNING_REQUIRED=NO AD_HOC_CODE_SIGNING_ALLOWED=YES CODE_SIGNING_ALLOWED=NO DEVELOPMENT_TEAM=S32Z3HMYVQ ORG_IDENTIFIER=org.Genesis-emu'
       displayName: Building project $(scheme)
 
   # - task: CopyFiles@2
@@ -121,7 +121,7 @@ jobs:
 #       #exportMethod: '$(ExportMethod)'
 #       #exportPath: '$(agent.buildDirectory)/output/appletvos/$(configuration)'
 #       packageApp: false
-#       scheme: 'ProvenanceTV-Azure'
+#       scheme: 'GenesisTV-Azure'
 #       sdk: 'appletvsimulator'
 #       destinationTypeOption: 'simulators'
 #       useXcpretty: true
@@ -130,5 +130,5 @@ jobs:
 #     displayName: Building project $(scheme) - tvOS
 #     env:
 #       sdk: 'appletvsimulator'  # appletvsimulator, appletvos
-#       scheme: 'ProvenanceTV'
+#       scheme: 'GenesisTV'
 #       destinationPlatformOption: tvOS

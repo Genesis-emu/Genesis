@@ -1172,7 +1172,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = PV;
 				LastUpgradeCheck = 1300;
-				ORGANIZATIONNAME = "Provenance Emu";
+				ORGANIZATIONNAME = "Genesis Emu";
 				TargetAttributes = {
 					B30178D2207C901D0051B93D = {
 						CreatedOnToolsVersion = 9.3;
@@ -1408,7 +1408,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PVGearcoleco";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PVGearcoleco";
 				PRODUCT_NAME = PVGearcoleco;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -1657,7 +1657,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PVGearcoleco";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PVGearcoleco";
 				PRODUCT_NAME = PVGearcoleco;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -1687,7 +1687,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PVGearcoleco";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PVGearcoleco";
 				PRODUCT_NAME = PVGearcoleco;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;

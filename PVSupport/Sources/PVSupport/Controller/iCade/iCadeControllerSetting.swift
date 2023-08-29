@@ -1,7 +1,7 @@
 //  Converted to Swift 4 by Swiftify v4.2.29618 - https://objectivec2swift.com/
 //
 //  kICadeControllerSetting.h
-//  Provenance
+//  Genesis
 //
 //  Created by Josejulio Martínez on 10/07/15.
 //  Copyright (c) 2015 Josejulio Martínez. All rights reserved.

@@ -3,7 +3,7 @@
 //  PVReicast
 //
 //  Created by Joseph Mattiello on 4/6/18.
-//  Copyright © 2018 Provenance. All rights reserved.
+//  Copyright © 2018 Genesis. All rights reserved.
 //
 
 #import "PVReicastCore.h"
@@ -126,7 +126,7 @@ volatile bool has_init = false;
 //		NSDictionary *userInfo = @{
 //								   NSLocalizedDescriptionKey: @"Failed to load game.",
 //								   NSLocalizedFailureReasonErrorKey: @"Reicast failed to load GLES graphics.",
-//								   NSLocalizedRecoverySuggestionErrorKey: @"Provenance may not be compiled correctly."
+//								   NSLocalizedRecoverySuggestionErrorKey: @"Genesis may not be compiled correctly."
 //								   };
 //
 //		NSError *newError = [NSError errorWithDomain:PVEmulatorCoreErrorDomain

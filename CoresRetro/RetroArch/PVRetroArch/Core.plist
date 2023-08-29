@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.retroarch</string>
+	<string>com.Genesis.core.retroarch</string>
 	<key>PVPrincipleClass</key>
 	<string>PVRetroArchCore</string>
 	<key>PVProjectName</key>
 	<string>RetroArch</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.retroarch</string>
+		<string>com.Genesis.retroarch</string>
 	</array>
 	<key>PVProjectURL</key>
 	<string>https://github.com/libretro/RetroArch</string>
@@ -27,7 +27,7 @@
 			<string>RetroArch - Beetle PSX (HW Renderer)</string>
 			<key>PVSupportedSystems</key>
 			<array>
-				<string>com.provenance.psx</string>
+				<string>com.Genesis.psx</string>
 			</array>
 			<key>PVProjectURL</key>
 			<string>https://github.com/libretro/beetle-psx-libretro</string>
@@ -43,7 +43,7 @@
                         <string>RetroArch - Beetle PSX (SW Renderer)</string>
                         <key>PVSupportedSystems</key>
                         <array>
-                                <string>com.provenance.psx</string>
+                                <string>com.Genesis.psx</string>
                         </array>
                         <key>PVProjectURL</key>
                         <string>https://github.com/libretro/beetle-psx-libretro</string>
@@ -59,7 +59,7 @@
 			<string>SNES9x (RetroArch)</string>
 			<key>PVSupportedSystems</key>
 			<array>
-				<string>com.provenance.snes</string>
+				<string>com.Genesis.snes</string>
 			</array>
 			<key>PVProjectURL</key>
 			<string>https://docs.libretro.com/library/snes9x/</string>
@@ -75,7 +75,7 @@
 			<string>Flycast (RetroArch)</string>
 			<key>PVSupportedSystems</key>
 			<array>
-				<string>com.provenance.dreamcast</string>
+				<string>com.Genesis.dreamcast</string>
 			</array>
 			<key>PVProjectURL</key>
 			<string>https://github.com/flyinghead/flycast</string>
@@ -91,7 +91,7 @@
 			<string>Mupen64Plus-Next (RetroArch)</string>
 			<key>PVSupportedSystems</key>
 			<array>
-				<string>com.provenance.n64</string>
+				<string>com.Genesis.n64</string>
 			</array>
 			<key>PVProjectURL</key>
 			<string>https://github.com/libretro/mupen64plus-libretro-nx</string>
@@ -107,7 +107,7 @@
 			<string>Fuse (RetroArch)</string>
 			<key>PVSupportedSystems</key>
 			<array>
-				<string>com.provenance.zxspectrum</string>
+				<string>com.Genesis.zxspectrum</string>
 			</array>
 			<key>PVProjectURL</key>
 			<string>https://github.com/libretro/fuse-libretro</string>
@@ -121,7 +121,7 @@
 			<string>PVRetroArchCore</string>
 			<key>PVSupportedSystems</key>
 			<array>
-				<string>com.provenance.macintosh</string>
+				<string>com.Genesis.macintosh</string>
 			</array>
 			<key>PVProjectName</key>
 			<string>RetroArch - Mini vMac</string>
@@ -137,7 +137,7 @@
 			<string>PVRetroArchCore</string>
 			<key>PVSupportedSystems</key>
 			<array>
-				<string>com.provenance.dos</string>
+				<string>com.Genesis.dos</string>
 			</array>
 			<key>PVProjectName</key>
 			<string>RetroArch - DosBox Pure</string>
@@ -153,7 +153,7 @@
 			<string>PVRetroArchCore</string>
 			<key>PVSupportedSystems</key>
 			<array>
-				<string>com.provenance.ds</string>
+				<string>com.Genesis.ds</string>
 			</array>
 			<key>PVProjectName</key>
 			<string>RetroArch - MelonDS</string>
@@ -169,7 +169,7 @@
 			<string>PVRetroArchCore</string>
 			<key>PVSupportedSystems</key>
 			<array>
-				<string>com.provenance.3DO</string>
+				<string>com.Genesis.3DO</string>
 			</array>
 			<key>PVProjectName</key>
 			<string>RetroArch - Opera</string>
@@ -185,7 +185,7 @@
 			<string>PVRetroArchCore</string>
 			<key>PVSupportedSystems</key>
 			<array>
-				<string>com.provenance.pc98</string>
+				<string>com.Genesis.pc98</string>
 			</array>
 			<key>PVProjectName</key>
 			<string>RetroArch - NP2Kai (PC-98)</string>
@@ -201,9 +201,9 @@
 			<string>PVRetroArchCore</string>
 			<key>PVSupportedSystems</key>
 			<array>
-				<string>com.provenance.sgfx</string>
-				<string>com.provenance.pce</string>
-				<string>com.provenance.pcecd</string>
+				<string>com.Genesis.sgfx</string>
+				<string>com.Genesis.pce</string>
+				<string>com.Genesis.pcecd</string>
 			</array>
 			<key>PVProjectName</key>
 			<string>RetroArch - Beetle Supergrafx (PC Engine)</string>
@@ -219,7 +219,7 @@
                         <string>PVRetroArchCore</string>
                         <key>PVSupportedSystems</key>
                         <array>
-                                <string>com.provenance.nes</string>
+                                <string>com.Genesis.nes</string>
                         </array>
                         <key>PVProjectName</key>
                         <string>RetroArch - Nestopia</string> 
@@ -235,7 +235,7 @@
                         <string>PVRetroArchCore</string>
                         <key>PVSupportedSystems</key>
                         <array>
-				<string>com.provenance.saturn</string>
+				<string>com.Genesis.saturn</string>
                         </array>
                         <key>PVProjectName</key>
                         <string>RetroArch - Beetle Saturn</string>
@@ -251,7 +251,7 @@
                         <string>PVRetroArchCore</string>
                         <key>PVSupportedSystems</key>
                         <array>
-                                <string>com.provenance.saturn</string>
+                                <string>com.Genesis.saturn</string>
                         </array>
                         <key>PVProjectName</key>
                         <string>RetroArch - Yabause (Saturn)</string>
@@ -267,11 +267,11 @@
                         <string>PVRetroArchCore</string>
                         <key>PVSupportedSystems</key>
                         <array>
-                                <string>com.provenance.segacd</string>
-                                <string>com.provenance.genesis</string>
-                                <string>com.provenance.gamegear</string>
-				<string>com.provenance.sg1000</string>
-                                <string>com.provenance.mastersystem</string>
+                                <string>com.Genesis.segacd</string>
+                                <string>com.Genesis.genesis</string>
+                                <string>com.Genesis.gamegear</string>
+				<string>com.Genesis.sg1000</string>
+                                <string>com.Genesis.mastersystem</string>
                         </array>
                         <key>PVProjectName</key>
                         <string>RetroArch - Genesis Plus GX - MS/GG/MD/CD</string>
@@ -287,9 +287,9 @@
                         <string>PVRetroArchCore</string>
                         <key>PVSupportedSystems</key>
                         <array>
-                                <string>com.provenance.ngp</string>
-                                <string>com.provenance.ngpc</string>
-                                <string>com.provenance.neogeo</string>
+                                <string>com.Genesis.ngp</string>
+                                <string>com.Genesis.ngpc</string>
+                                <string>com.Genesis.neogeo</string>
                         </array>
                         <key>PVProjectName</key>
                         <string>RetroArch - FBNeo</string>
@@ -305,7 +305,7 @@
                         <string>PVRetroArchCore</string>
                         <key>PVSupportedSystems</key>
                         <array>
-                                <string>com.provenance.gba</string>
+                                <string>com.Genesis.gba</string>
                         </array>
                         <key>PVProjectName</key>
                         <string>RetroArch - Beetle GBA</string>
@@ -321,7 +321,7 @@
                         <string>PVRetroArchCore</string>
                         <key>PVSupportedSystems</key>
                         <array>
-                                <string>com.provenance.vb</string>
+                                <string>com.Genesis.vb</string>
                         </array>
                         <key>PVProjectName</key>
                         <string>RetroArch - Beetle VB</string>
@@ -337,9 +337,9 @@
                         <string>PVRetroArchCore</string>
                         <key>PVSupportedSystems</key>
                         <array>   
-                                <string>com.provenance.gb</string>
-                                <string>com.provenance.gbc</string>
-                                <string>com.provenance.gba</string>
+                                <string>com.Genesis.gb</string>
+                                <string>com.Genesis.gbc</string>
+                                <string>com.Genesis.gba</string>
                         </array>
                         <key>PVProjectName</key>
                         <string>RetroArch - mGBA</string>
@@ -355,8 +355,8 @@
                         <string>PVRetroArchCore</string>
                         <key>PVSupportedSystems</key>
                         <array>
-                                <string>com.provenance.gb</string>
-                                <string>com.provenance.gbc</string>
+                                <string>com.Genesis.gb</string>
+                                <string>com.Genesis.gbc</string>
                         </array>  
                         <key>PVProjectName</key>
                         <string>RetroArch - SameBoy</string>
@@ -372,9 +372,9 @@
                         <string>PVRetroArchCore</string>
                         <key>PVSupportedSystems</key>
                         <array>
-                                <string>com.provenance.ngp</string>
-                                <string>com.provenance.ngpc</string>
-                                <string>com.provenance.neogeo</string>
+                                <string>com.Genesis.ngp</string>
+                                <string>com.Genesis.ngpc</string>
+                                <string>com.Genesis.neogeo</string>
                         </array>
                         <key>PVProjectName</key>
                         <string>RetroArch - MAME 2010</string>
@@ -392,7 +392,7 @@
                         <string>RetroArch - PCSX ReARMed</string>
                         <key>PVSupportedSystems</key>
                         <array>
-                                <string>com.provenance.psx</string>
+                                <string>com.Genesis.psx</string>
                         </array>
                         <key>PVProjectURL</key>
                         <string>https://docs.libretro.com/library/pcsx_rearmed/</string>
@@ -408,7 +408,7 @@
                         <string>RetroArch - PPSSPP</string>
                         <key>PVSupportedSystems</key>
                         <array>
-                                <string>com.provenance.psp</string>
+                                <string>com.Genesis.psp</string>
                         </array>
                         <key>PVProjectURL</key>
                         <string>https://docs.libretro.com/library/ppsspp/</string>

@@ -3,7 +3,7 @@
 //  PVDesmume2015
 //
 //  Created by Joseph Mattiello on 11/1/18.
-//  Copyright © 2018 Provenance. All rights reserved.
+//  Copyright © 2018 Genesis. All rights reserved.
 //
 
 #import "PVDesmume2015+Audio.h"
@@ -403,7 +403,7 @@ coreaudio_push8(void* frame, u32 samples, bool wait) {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         dispatch_queue_attr_t queueAttributes = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, QOS_CLASS_USER_INTERACTIVE, 0);
-        serialQueue = dispatch_queue_create("com.provenance.reicase.audio", queueAttributes);
+        serialQueue = dispatch_queue_create("com.Genesis.reicase.audio", queueAttributes);
 
         group = dispatch_group_create();
         lastTime = CFAbsoluteTimeGetCurrent();

@@ -3,7 +3,7 @@
 //  PVSupport
 //
 //  Created by Dave Nicolson on 20.11.22.
-//  Copyright © 2022 Provenance Emu. All rights reserved.
+//  Copyright © 2022 Genesis Emu. All rights reserved.
 //
 
 import Foundation

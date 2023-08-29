@@ -59,20 +59,20 @@ Special thanks for all the Patreon and Discord members that provided testing fee
 - Merge branch 'feature/dos-box' into develop
 - Merge branch 'remove-unneeded-styling' into develop
 - Merge branch 'remove-unneeded-table-generics' into develop
-- Merge pull request #1919 from Provenance-Emu/feature/dos-box
+- Merge pull request #1919 from Genesis-Emu/feature/dos-box
 - Merge pull request #1995 from dnicolson/style-fixes
-- Merge pull request #2006 from Provenance-Emu/pullrequests/dnicolson/general-cleanup
+- Merge pull request #2006 from Genesis-Emu/pullrequests/dnicolson/general-cleanup
 - Merge pull request #2015 from dnicolson/fix-constraint-warnings
 - Merge pull request #2016 from dnicolson/use-tvalertcontroller
 - Merge pull request #2017 from dnicolson/remove-unneeded-styling
 - Merge pull request #2018 from dnicolson/use-system-background-for-settings
-- Merge pull request #2025 from Provenance-Emu/largeGameArt-Support
+- Merge pull request #2025 from Genesis-Emu/largeGameArt-Support
 - Merge pull request #2028 from dnicolson/add-light-theme
-- Merge pull request #2029 from Provenance-Emu/tvOS-GameInfo-Tweaks
-- Merge pull request #2030 from Provenance-Emu/feature/JoystickFixes
+- Merge pull request #2029 from Genesis-Emu/tvOS-GameInfo-Tweaks
+- Merge pull request #2030 from Genesis-Emu/feature/JoystickFixes
 - Merge pull request #2033 from dnicolson/fix-library-bottom-separators
-- Merge pull request #2036 from Provenance-Emu/feature/gh_build_action
-- Merge pull request #2038 from Provenance-Emu/mrjschulte_section_header_fix_tvOS
+- Merge pull request #2036 from Genesis-Emu/feature/gh_build_action
+- Merge pull request #2038 from Genesis-Emu/mrjschulte_section_header_fix_tvOS
 
 ### GitLog
 
@@ -215,7 +215,7 @@ Special thanks for all the Patreon and Discord members that provided testing fee
 - Remove unused variable
 - Remove VecXGL submodule
 - rename o2em and jaguar cores to PV..
-- Replace remaining com.provenance-emu with org
+- Replace remaining com.Genesis-emu with org
 - Replace sync network with async for artwork
 - Replace UIWebView with WKWebView
 - retro: add bliss, 4do, some organization
@@ -372,13 +372,13 @@ Special thanks for all the Patreon and Discord members that provided testing fee
 - Merge branch 'feature/dos-box' into develop
 - Merge branch 'release/2.1.0' into develop
 - Merge pull request #1761 from ianclawson/ian/swiftui-menu-path
-- Merge pull request #1764 from Provenance-Emu/feature/MoveableButtons
-- Merge pull request #1810 from Provenance-Emu/feature/fceuxUpdate
-- Merge pull request #1900 from Provenance-Emu/feature/1888_N64_19x9
-- Merge pull request #1901 from Provenance-Emu/feature/snes9xControllerFix
+- Merge pull request #1764 from Genesis-Emu/feature/MoveableButtons
+- Merge pull request #1810 from Genesis-Emu/feature/fceuxUpdate
+- Merge pull request #1900 from Genesis-Emu/feature/1888_N64_19x9
+- Merge pull request #1901 from Genesis-Emu/feature/snes9xControllerFix
 - Merge pull request #1909 from rrroyal/develop
-- Merge pull request #1926 from Provenance-Emu/feature/JoystickLayoutFix
-- Merge pull request #1933 from Provenance-Emu/feature/filtermanager
+- Merge pull request #1926 from Genesis-Emu/feature/JoystickLayoutFix
+- Merge pull request #1933 from Genesis-Emu/feature/filtermanager
 - movebuttons: fix some buttons from resetting
 - mupen add more core options
 - mupen fix type-o in option
@@ -615,7 +615,7 @@ Special thanks to contributors on this release;
 - #1414 smarter exceptions in PVSystem
 - #1645 PCE Audio setting tweaks to match real hardware
 - #1637 Cheats label name cut off fixed
-- #1649 two PCE module audio related setting tweaks that enable Provenance's PCE Audio output to match much closer to the measured MDFourier output of a real system, as tested with @artemio from the MDFourier project.
+- #1649 two PCE module audio related setting tweaks that enable Genesis's PCE Audio output to match much closer to the measured MDFourier output of a real system, as tested with @artemio from the MDFourier project.
 - Fixed rare crash in OERingBuffer
 - Cores that don't support saves no loner display save actions in menu
 - OpenVGDB Update (fixes artwork and metadata not loading)
@@ -710,7 +710,7 @@ Special thanks to contributors on this release;
 - #1583 NSLogger build issues on tvOS
 - #1584 TvOS Release does NOT build due to 'searchController' is unavailable in tvOS
 - #1585 Module 'AltKit' not found
-- #1550 Provenance for Apple TV adds "private" part to "partialPath" in PVFile
+- #1550 Genesis for Apple TV adds "private" part to "partialPath" in PVFile
 - #1551 #1575 Fix missing roms on rescan
 - #1556 Fix VirtualBoy Crash
 - #1568 On screen buttons do not work with mednafen core
@@ -743,7 +743,7 @@ Special thanks and shout-outs to @braindx, @error404-na, @zydeco, @mrjschulte, @
 
 #### New Features
 
-- **[Multi-disc Support](https://github.com/jasarien/Provenance/wiki/Importing-ROMs#multi-disc-games)** (disc-swapping)
+- **[Multi-disc Support](https://github.com/jasarien/Genesis/wiki/Importing-ROMs#multi-disc-games)** (disc-swapping)
 - iOS 11-15 Support
   <sup>Including Smart Invert Support so cover art and emulator view won't invert</sup><br>
 - iPhone X Support
@@ -754,7 +754,7 @@ Special thanks and shout-outs to @braindx, @error404-na, @zydeco, @mrjschulte, @
 - tvOS Ui sync up w iOS.
 - Timed Auto Saves (default: every 10 minutes)
 - Game Info View & Game Info Preview View (on 3D Touch)
-  - Extended editable ROM meta data ([Customizing ROMs](https://github.com/Provenance-Emu/Provenance/wiki/Customizing-ROMs))
+  - Extended editable ROM meta data ([Customizing ROMs](https://github.com/Genesis-Emu/Genesis/wiki/Customizing-ROMs))
     <sup>cover art, title, description, genre, release date, publisher, play history…</sup><br>
   - Single ROM Browsing (swipe left/right)
   - Links to Game Manuals

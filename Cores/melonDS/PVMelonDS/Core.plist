@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.MelonDS</string>
+	<string>com.Genesis.core.MelonDS</string>
 	<key>PVPrincipleClass</key>
 	<string>PVMelonDSCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.ds</string>
+		<string>com.Genesis.ds</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>MelonDS</string>

@@ -390,7 +390,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = PV;
 				LastUpgradeCheck = 1300;
-				ORGANIZATIONNAME = "Provenance Emu";
+				ORGANIZATIONNAME = "Genesis Emu";
 				TargetAttributes = {
 					B36DE79F1D6B7558002EE3ED = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -683,7 +683,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.ProSystem";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.ProSystem";
 				PRODUCT_NAME = PVProSystem;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -735,7 +735,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.ProSystem";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.ProSystem";
 				PRODUCT_NAME = PVProSystem;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -779,7 +779,7 @@
 					"@loader_path/Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.ProSystem";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.ProSystem";
 				PRODUCT_NAME = PVProSystem;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

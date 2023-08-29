@@ -4,7 +4,7 @@
   #   if UI.interactive?
   #     apple_id = UI.input "Please enter your Apple Development ID (usually e-mail address): "
   #     # password = UI.password "Please enter your iTunes Connect password (this is securely encrypted in your keychain. We will never access that information directly): "
-  #     $dev_domain = UI.input "Please enter your developer domain as {com,org,net}.{NAME} (ie; org.provenance-emu will be replaced with com.johnnyappleseed if you're Johnny Appleseed on iTunes connect.): "
+  #     $dev_domain = UI.input "Please enter your developer domain as {com,org,net}.{NAME} (ie; org.Genesis-emu will be replaced with com.johnnyappleseed if you're Johnny Appleseed on iTunes connect.): "
   #     if UI.confirm("Do you belong to multiple development teams (usually no)")
   #       team_id = UI.input "Please enter your iTunes Dev portal team number:"
   #       itc_team_id = UI.input "Please enter your iTunes Connect team number: (You can leave blank if you don't intend to use iTunes Connect)"
@@ -15,7 +15,7 @@
   desc 'User Setup'
   desc 'Work in progress'
   private_lane :user_setup do
-    UI.message "This lane will help you setup Provenance for signing and build."
+    UI.message "This lane will help you setup Genesis for signing and build."
     #UI.success "Successfully finished processing (usually green)"
     #UI.error "Wahaha, what's going on here! (usually red)"
     #UI.important "Make sure to use Windows (usually yellow)"
@@ -24,17 +24,17 @@
 
     apple_id = UI.input("What's your Apple ID login? (usually an e-mail address)")
     apple_pass = UI.password("Your password please: ") # password inputs are hidden
-    $dev_domain = UI.input("What's your developer domain (usually com.yourname)?\nThis will be used to generate unique App Bundle ids to your developer account.\neg; Official releases from the Provenance team use 'com.provenance'. You cannot use 'com.provenance' for your personal account, iOS Developer portal will not allow craeting signing certificates if an app already exists with that ID.")
+    $dev_domain = UI.input("What's your developer domain (usually com.yourname)?\nThis will be used to generate unique App Bundle ids to your developer account.\neg; Official releases from the Genesis team use 'com.Genesis'. You cannot use 'com.Genesis' for your personal account, iOS Developer portal will not allow craeting signing certificates if an app already exists with that ID.")
 
-    app_id = "#{$dev_domain}.provenance"
-    spotlight_id = "#{$dev_domain}.provenance.extension.spotlight"
-    topshelf_id = "#{$dev_domain}.provenance.topshelf-extension"
+    app_id = "#{$dev_domain}.Genesis"
+    spotlight_id = "#{$dev_domain}.Genesis.extension.spotlight"
+    topshelf_id = "#{$dev_domain}.Genesis.topshelf-extension"
 
     if UI.confirm("Do you want to generate new app entries in your developer account??")
       produce(
         username: apple_id,
         app_identifier: app_id,
-        app_name: 'Provenance',
+        app_name: 'Genesis',
         language: 'English',
         # sku: '123',
         # team_name: 'SunApps GmbH', # only necessary when in multiple teams

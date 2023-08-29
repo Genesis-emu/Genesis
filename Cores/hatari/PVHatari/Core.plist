@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.Hatari</string>
+	<string>com.Genesis.Hatari</string>
 	<key>PVPrincipleClass</key>
 	<string>PVHatari</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.atarist</string>
+		<string>com.Genesis.atarist</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>Hatari</string>

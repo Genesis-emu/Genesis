@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.potator</string>
+	<string>com.Genesis.core.potator</string>
 	<key>PVPrincipleClass</key>
 	<string>PVPotatorCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.supervision</string>
+		<string>com.Genesis.supervision</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>Potator</string>

@@ -1,9 +1,9 @@
 //
 //  PVAppDelegate+Helpers.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Joseph Mattiello on 11/12/22.
-//  Copyright © 2022 Provenance Emu. All rights reserved.
+//  Copyright © 2022 Genesis Emu. All rights reserved.
 //
 
 import Foundation
@@ -127,7 +127,7 @@ extension PVAppDelegate {
     }
     
     @IBAction func helpPressed(_ sender: Any) {
-        let url = URL.init(string: "https://wiki.provenance-emu.com/jit-help")!
+        let url = URL.init(string: "https://wiki.Genesis-emu.com/jit-help")!
         UIApplication.shared.open(url)
     }
     

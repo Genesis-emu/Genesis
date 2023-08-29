@@ -34,11 +34,11 @@
 
 use strict;
 
-BEGIN { push @INC, '/Users/seiryu/Code/Provenance/Cores/Flycast/flycast/core/deps/libzip/regress'; }
+BEGIN { push @INC, '/Users/seiryu/Code/Genesis/Cores/Flycast/flycast/core/deps/libzip/regress'; }
 
 use NiHTest;
 
-my $test = NiHTest::new({ default_program => 'ziptool_regress', srcdir => '/Users/seiryu/Code/Provenance/Cores/Flycast/flycast/core/deps/libzip/regress', top_builddir => '/Users/seiryu/Code/Provenance/Cores/Flycast/cmake/core/deps/libzip', zipcmp => '../../src/zipcmp', zipcmp_flags => '-p' });
+my $test = NiHTest::new({ default_program => 'ziptool_regress', srcdir => '/Users/seiryu/Code/Genesis/Cores/Flycast/flycast/core/deps/libzip/regress', top_builddir => '/Users/seiryu/Code/Genesis/Cores/Flycast/cmake/core/deps/libzip', zipcmp => '../../src/zipcmp', zipcmp_flags => '-p' });
 
 sub mangle_test {
 	my ($test, $variant) = @_;

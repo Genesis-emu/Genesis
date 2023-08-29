@@ -55,7 +55,7 @@ Some notes(and reminders) on the source code:
 	Avoid using a pointer into a nested array of a multidimensional array to access elements of the multidimensional array that lie outside of that specific
 	nested array, as such behavior is probably undefined.
 
-	Pointer provenance, DR260.
+	Pointer Genesis, DR260.
 
 	Don't create temporarily-invalid pointers via careless pointer arithmetic; restructure the expressions if possible, or utilize uintptr_t instead.
 

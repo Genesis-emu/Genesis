@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.visualboyadvance</string>
+	<string>com.Genesis.core.visualboyadvance</string>
 	<key>PVPrincipleClass</key>
 	<string>PVGBAEmulatorCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.gba</string>
+		<string>com.Genesis.gba</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>VisualBoyAdvance</string>

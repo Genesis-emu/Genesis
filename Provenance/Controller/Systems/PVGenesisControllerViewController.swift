@@ -1,7 +1,7 @@
 //  Converted to Swift 4 by Swiftify v4.1.6640 - https://objectivec2swift.com/
 //
 //  PVGenesisControllerViewController.swift
-//  Provenance
+//  Genesis
 //
 //  Created by James Addyman on 05/09/2013.
 //  Copyright (c) 2013 James Addyman. All rights reserved.

@@ -2054,7 +2054,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = PV;
 				LastUpgradeCheck = 1420;
-				ORGANIZATIONNAME = "Provenance Emu";
+				ORGANIZATIONNAME = "Genesis Emu";
 				TargetAttributes = {
 					93B3B1522A8CA9D100B60325 = {
 						CreatedOnToolsVersion = 15.0;
@@ -2680,7 +2680,7 @@
 				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance.retroarch-test";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis.retroarch-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -2883,7 +2883,7 @@
 				MTL_ENABLE_MODULES = YES;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "-Wl,-segalign,4000";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.coresretro.pvretroarchcore";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.coresretro.pvretroarchcore";
 				PRODUCT_NAME = PVRetroArch;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;

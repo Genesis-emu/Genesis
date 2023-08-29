@@ -1,24 +1,24 @@
 [submodule "PVMupen64Plus/mupen64plus-video-gliden64"]
 	path = Cores/Mupen64Plus/Plugins/Video/gliden64
-	url = https://github.com/Provenance-Emu/GLideN64.git
+	url = https://github.com/Genesis-Emu/GLideN64.git
 [submodule "PVMupen64Plus/Plugins/mupen64plus-core"]
 	path = Cores/Mupen64Plus/Plugins/Core
-	url = https://github.com/Provenance-Emu/mupen64plus-core.git
+	url = https://github.com/Genesis-Emu/mupen64plus-core.git
 [submodule "PVMupen64Plus/Plugins/mupen64plus-rsp-hle"]
 	path = Cores/Mupen64Plus/Plugins/rsp/hle
 	url = https://github.com/mupen64plus/mupen64plus-rsp-hle.git
 [submodule "PVMupen64Plus/Plugins/mupen64plus-video-rice"]
 	path = Cores/Mupen64Plus/Plugins/Video/rice
-	url = https://github.com/Provenance-Emu/mupen64plus-video-rice.git
+	url = https://github.com/Genesis-Emu/mupen64plus-video-rice.git
 [submodule "PVLibrary/LzmaSDKObjC"]
 	path = PVLibrary/LzmaSDKObjC
-	url = https://github.com/Provenance-Emu/LzmaSDKObjC.git
+	url = https://github.com/Genesis-Emu/LzmaSDKObjC.git
 [submodule "Cores/VirtualJaguar"]
 	path = Cores/VirtualJaguar
-	url = https://github.com/Provenance-Emu/Core-VirtualJaguar.git
+	url = https://github.com/Genesis-Emu/Core-VirtualJaguar.git
 [submodule "Cores/Reicast/reicast-emulator"]
 	path = Cores/Reicast/reicast-emulator
-	url = https://github.com/Provenance-Emu/reicast-emulator.git
+	url = https://github.com/Genesis-Emu/reicast-emulator.git
 [submodule "Cores/PokeMini/PokeMini-libretro"]
 	path = Cores/PokeMini/PokeMini-libretro
 	url = https://github.com/libretro/PokeMini.git
@@ -39,112 +39,112 @@
 	url = https://github.com/libretro/desmume2015.git
 [submodule "Cores/O2EM"]
 	path = Cores/O2EM
-	url = https://github.com/Provenance-Emu/O2EM-Core.git
+	url = https://github.com/Genesis-Emu/O2EM-Core.git
 [submodule "Cores/CrabEMU"]
 	path = Cores/CrabEMU
-	url = https://github.com/Provenance-Emu/CrabEmu-Core.git
+	url = https://github.com/Genesis-Emu/CrabEmu-Core.git
 [submodule "Cores/Bliss"]
 	path = Cores/Bliss
-	url = https://github.com/Provenance-Emu/Bliss-Core.git
+	url = https://github.com/Genesis-Emu/Bliss-Core.git
 [submodule "Cores/4DO"]
 	path = Cores/4DO
-	url = https://github.com/Provenance-Emu/4DO-Core.git
+	url = https://github.com/Genesis-Emu/4DO-Core.git
 [submodule "Cores/mGBA/mGBA-Core"]
 	path = Cores/mGBA/mGBA-Core
-	url = https://github.com/Provenance-Emu/mGBA-Core.git
+	url = https://github.com/Genesis-Emu/mGBA-Core.git
 [submodule "Cores/snesticle/SNESticle"]
 	path = Cores/snesticle/SNESticle
-	url = https://github.com/Provenance-Emu/SNESticle.git
+	url = https://github.com/Genesis-Emu/SNESticle.git
 [submodule "Cores/sm64ex/sm64ex-ios"]
 	path = Cores/sm64ex/sm64ex-ios
-	url = https://github.com/Provenance-Emu/sm64ex-ios.git
+	url = https://github.com/Genesis-Emu/sm64ex-ios.git
 [submodule "Cores/ProSystem/ProSystem1_3"]
 	path = Cores/ProSystem/ProSystem1_3
-	url = https://github.com/Provenance-Emu/ProSystem1_3.git
+	url = https://github.com/Genesis-Emu/ProSystem1_3.git
 [submodule "Cores/FinalBurnNeo/FBNeo"]
 	path = Cores/FinalBurnNeo/FBNeo
-	url = https://github.com/Provenance-Emu/FBNeo.git
+	url = https://github.com/Genesis-Emu/FBNeo.git
 [submodule "Cores/FCEU/fceux"]
 	path = Cores/FCEU/fceux
-	url = https://github.com/Provenance-Emu/fceux.git
+	url = https://github.com/Genesis-Emu/fceux.git
 [submodule "Cores/DosBox/dosbox-pure"]
 	path = Cores/DosBox/dosbox-pure
-	url = https://github.com/Provenance-Emu/dosbox-pure.git
+	url = https://github.com/Genesis-Emu/dosbox-pure.git
 [submodule "Cores/Mini_vMac/libretro-minivmac"]
 	path = Cores/Mini_vMac/libretro-minivmac
-	url = https://github.com/Provenance-Emu/libretro-minivmac.git
+	url = https://github.com/Genesis-Emu/libretro-minivmac.git
 [submodule "Cores/BeetlePSX/beetle-psx-libretro"]
 	path = Cores/BeetlePSX/beetle-psx-libretro
-	url = https://github.com/Provenance-Emu/beetle-psx-libretro.git
+	url = https://github.com/Genesis-Emu/beetle-psx-libretro.git
 [submodule "Cores/Potator/potator"]
 	path = Cores/Potator/potator
-	url = https://github.com/Provenance-Emu/potator.git
+	url = https://github.com/Genesis-Emu/potator.git
 [submodule "Cores/ep128emu/ep128emu-core"]
 	path = Cores/ep128emu/ep128emu-core
-	url = https://github.com/Provenance-Emu/ep128emu-core.git
+	url = https://github.com/Genesis-Emu/ep128emu-core.git
 [submodule "Cores/hatari/hatari"]
 	path = Cores/hatari/hatari
-	url = https://github.com/Provenance-Emu/hatari.git
+	url = https://github.com/Genesis-Emu/hatari.git
 [submodule "Cores/fmsx/fmsx-libretro"]
 	path = Cores/fmsx/fmsx-libretro
-	url = https://github.com/Provenance-Emu/fmsx-libretro.git
+	url = https://github.com/Genesis-Emu/fmsx-libretro.git
 [submodule "Cores/pcsx_rearmed/pcsx_rearmed"]
 	path = Cores/pcsx_rearmed/pcsx_rearmed
-	url = https://github.com/Provenance-Emu/pcsx_rearmed.git
+	url = https://github.com/Genesis-Emu/pcsx_rearmed.git
 [submodule "Cores/opera/opera-libretro"]
 	path = Cores/opera/opera-libretro
-	url = https://github.com/Provenance-Emu/opera-libretro.git
+	url = https://github.com/Genesis-Emu/opera-libretro.git
 [submodule "Cores/Mu/Mu"]
 	path = Cores/Mu/Mu
-	url = https://github.com/Provenance-Emu/Mu.git
+	url = https://github.com/Genesis-Emu/Mu.git
 [submodule "Cores/Yabause/yabause"]
 	path = Cores/Yabause/yabause
-	url = https://github.com/Provenance-Emu/yabause.git
+	url = https://github.com/Genesis-Emu/yabause.git
 [submodule "Cores/melonDS/melonDS"]
 	path = Cores/melonDS/melonDS
-	url = https://github.com/Provenance-Emu/melonDS.git
+	url = https://github.com/Genesis-Emu/melonDS.git
 [submodule "Cores/Mupen64Plus-NX/mupen64plus-libretro-nx"]
 	path = Cores/Mupen64Plus-NX/mupen64plus-libretro-nx
-	url = https://github.com/Provenance-Emu/mupen64plus-libretro-nx.git
+	url = https://github.com/Genesis-Emu/mupen64plus-libretro-nx.git
 [submodule "Cores/GameMusicEmu/libretro-gme"]
 	path = Cores/GameMusicEmu/libretro-gme
-	url = https://github.com/Provenance-Emu/libretro-gme.git
+	url = https://github.com/Genesis-Emu/libretro-gme.git
 [submodule "Cores/VecX/libretro-vecx"]
 	path = Cores/VecX/libretro-vecx
-	url = https://github.com/Provenance-Emu/libretro-vecx.git
+	url = https://github.com/Genesis-Emu/libretro-vecx.git
 [submodule "Cores/Stella/Stella/stella"]
 	path = Cores/Stella/Stella/stella
-	url = https://github.com/Provenance-Emu/stella.git
+	url = https://github.com/Genesis-Emu/stella.git
 [submodule "Cores/SameDuck/SameBoy"]
 	path = Cores/SameDuck/SameBoy
-	url = https://github.com/Provenance-Emu/SameBoy.git
+	url = https://github.com/Genesis-Emu/SameBoy.git
 [submodule "Cores/blueMSX/blueMSX-libretro"]
 	path = Cores/blueMSX/blueMSX-libretro
-	url = https://github.com/Provenance-Emu/blueMSX-libretro.git
+	url = https://github.com/Genesis-Emu/blueMSX-libretro.git
 [submodule "Cores/fuse/fuse-libretro"]
 	path = Cores/fuse/fuse-libretro
-	url = https://github.com/Provenance-Emu/fuse-libretro.git
+	url = https://github.com/Genesis-Emu/fuse-libretro.git
 [submodule "Cores/Gearcoleco/Gearcoleco"]
 	path = Cores/Gearcoleco/Gearcoleco
-	url = https://github.com/Provenance-Emu/Gearcoleco.git
+	url = https://github.com/Genesis-Emu/Gearcoleco.git
 [submodule "Cores/Citra/citra"]
 	path = Cores/Citra/citra
-	url = https://github.com/Provenance-Emu/citra.git
+	url = https://github.com/Genesis-Emu/citra.git
 [submodule "Cores/FreeIntv/FreeIntv"]
 	path = Cores/FreeIntv/FreeIntv
-	url = https://github.com/Provenance-Emu/FreeIntv.git
+	url = https://github.com/Genesis-Emu/FreeIntv.git
 [submodule "Cores/Genesis-Plus-GX/PVGenesis/Deps/Genesis-Plus-GX"]
 	path = Cores/Genesis-Plus-GX/PVGenesis/Deps/Genesis-Plus-GX
-	url = https://github.com/Provenance-Emu/Genesis-Plus-GX.git
+	url = https://github.com/Genesis-Emu/Genesis-Plus-GX.git
 [submodule "Cores/Mupen64Plus/Plugins/rsp/cxd4"]
 	path = Cores/Mupen64Plus/Plugins/rsp/cxd4
-	url = https://github.com/Provenance-Emu/mupen64plus-rsp-cxd4.git
+	url = https://github.com/Genesis-Emu/mupen64plus-rsp-cxd4.git
 [submodule "Cores/TIC80/TIC-80"]
 	path = Cores/TIC80/TIC-80
-	url = https://github.com/Provenance-Emu/TIC-80.git
+	url = https://github.com/Genesis-Emu/TIC-80.git
 [submodule "Dependencies/MoltenVK"]
 	path = Dependencies/MoltenVK
-	url = https://github.com/Provenance-Emu/MoltenVK.git
+	url = https://github.com/Genesis-Emu/MoltenVK.git
 [submodule "CoresRetro/RetroArch/RetroArch"]
         path = CoresRetro/RetroArch/RetroArch
         url = https://github.com/libretro/RetroArch.git

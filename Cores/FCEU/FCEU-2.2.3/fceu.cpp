@@ -998,7 +998,7 @@ void FCEUI_SetRegion(int region) {
 	normalscanlines += newppu;
 	totalscanlines = normalscanlines + (overclock_enabled ? postrenderscanlines : 0);
 	FCEUI_SetVidSystem(pal_emulation);
-#if 0 //Provenance
+#if 0 //Genesis
     RefreshThrottleFPS();
 #endif
 #ifdef WIN32

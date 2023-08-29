@@ -1,6 +1,6 @@
 //
 //  PVGame+Spotlight.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Joseph Mattiello on 3/11/18.
 //  Copyright © 2018 James Addyman. All rights reserved.
@@ -77,12 +77,12 @@ public extension PVGame {
         }
 
     var spotlightUniqueIdentifier: String {
-            return "org.provenance-emu.game.\(md5Hash)"
+            return "org.Genesis-emu.game.\(md5Hash)"
         }
     #endif
 
     var spotlightActivity: NSUserActivity {
-        let activity = NSUserActivity(activityType: "org.provenance-emu.game.play")
+        let activity = NSUserActivity(activityType: "org.Genesis-emu.game.play")
         activity.title = title
         activity.userInfo = ["md5": md5Hash]
 

@@ -1,5 +1,5 @@
 private_lane :badge_alpha do
-  version_number = get_version_number(target: 'Provenance')
+  version_number = get_version_number(target: 'Genesis')
   build_number = ENV['build_number'] || number_of_commits(all: true)
 
   if is_ci?
@@ -13,12 +13,12 @@ private_lane :badge_alpha do
     alpha: true,
     dark: false,
     shield_no_resize: true,
-    glob: '/Provenance*/**/*.appiconset/*.{png,PNG}'
+    glob: '/Genesis*/**/*.appiconset/*.{png,PNG}'
   )
 end
 
 private_lane :badge_beta do
-  version_number = get_version_number(target: 'Provenance')
+  version_number = get_version_number(target: 'Genesis')
 
   build_number = ENV['build_number'] || number_of_commits(all: true)
 
@@ -31,6 +31,6 @@ private_lane :badge_beta do
     alpha: false,
     dark: false,
     shield_no_resize: true,
-    glob: '/Provenance*/**/*.appiconset/*.{png,PNG}'
+    glob: '/Genesis*/**/*.appiconset/*.{png,PNG}'
   )
 end

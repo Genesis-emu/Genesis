@@ -46,7 +46,7 @@
                BlueprintIdentifier = "B3E21D6A203211BE009939D3"
                BuildableName = "Spotlight.appex"
                BlueprintName = "Spotlight"
-               ReferencedContainer = "container:Provenance.xcodeproj">
+               ReferencedContainer = "container:Genesis.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

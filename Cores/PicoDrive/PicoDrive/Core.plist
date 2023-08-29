@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.picodrive</string>
+	<string>com.Genesis.core.picodrive</string>
 	<key>PVPrincipleClass</key>
 	<string>PicodriveGameCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.32X</string>
+		<string>com.Genesis.32X</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>PicoDrive</string>

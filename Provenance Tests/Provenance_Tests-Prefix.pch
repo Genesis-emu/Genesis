@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'Provenance Tests' target in the 'Provenance' project
+// Prefix header for all source files of the 'Genesis Tests' target in the 'Genesis' project
 //
 
 #import <Availability.h>

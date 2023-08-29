@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.beetlepsx</string>
+	<string>com.Genesis.core.beetlepsx</string>
 	<key>PVPrincipleClass</key>
 	<string>PVBeetlePSXCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.psx</string>
+		<string>com.Genesis.psx</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>BeetlePSX</string>

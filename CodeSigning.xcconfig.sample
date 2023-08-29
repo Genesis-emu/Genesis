@@ -5,9 +5,9 @@ DEVELOPMENT_TEAM = XYZ0123456
 
 // Prefix of unique bundle IDs registered to you in Apple Developer Portal.
 // You need to register:
-//   - com.myuniquename.provenance
-//   - com.myuniquename.provenance.spotlight
-//   - com.myuniquename.provenance.topshelf
+//   - com.myuniquename.Genesis
+//   - com.myuniquename.Genesis.spotlight
+//   - com.myuniquename.Genesis.topshelf
 ORG_IDENTIFIER = com.myuniquename
 
 // Set to YES if you have a valid paid Apple Developer account
@@ -35,5 +35,5 @@ CODE_SIGN_IDENTITY_MAC = Apple Development
 // entitlements, comment out the line and delete the following entitlements
 //   - com.apple.vm.device-access
 // from the following file
-//   - Provenance/macOS.entitlements
+//   - Genesis/macOS.entitlements
 PROVISIONING_PROFILE_SPECIFIER_MAC = 00000000-1111-2222-3333-444444444444

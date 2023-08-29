@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.duckstation</string>
+	<string>com.Genesis.core.duckstation</string>
 	<key>PVPrincipleClass</key>
 	<string>PVDuckStationCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.psx</string>
+		<string>com.Genesis.psx</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>DuckStation</string>

@@ -3,30 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.mednafen</string>
+	<string>com.Genesis.core.mednafen</string>
 	<key>PVPrincipleClass</key>
 	<string>MednafenGameCore</string>
 	<key>PVProjectName</key>
 	<string>Mednafen</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.saturn</string>
-		<string>com.provenance.psx</string>
-		<string>com.provenance.lynx</string>
-		<string>com.provenance.ngp</string>
-		<string>com.provenance.ngpc</string>
-		<string>com.provenance.pce</string>
-		<string>com.provenance.pcecd</string>
-		<string>com.provenance.pcfx</string>
-		<string>com.provenance.sgfx</string>
-		<string>com.provenance.vb</string>
-		<string>com.provenance.ws</string>
-		<string>com.provenance.wsc</string>
-		<string>com.provenance.nes</string>
-		<string>com.provenance.snes</string>
-		<string>com.provenance.gb</string>
-		<string>com.provenance.gbc</string>
-		<string>com.provenance.gba</string>
+		<string>com.Genesis.saturn</string>
+		<string>com.Genesis.psx</string>
+		<string>com.Genesis.lynx</string>
+		<string>com.Genesis.ngp</string>
+		<string>com.Genesis.ngpc</string>
+		<string>com.Genesis.pce</string>
+		<string>com.Genesis.pcecd</string>
+		<string>com.Genesis.pcfx</string>
+		<string>com.Genesis.sgfx</string>
+		<string>com.Genesis.vb</string>
+		<string>com.Genesis.ws</string>
+		<string>com.Genesis.wsc</string>
+		<string>com.Genesis.nes</string>
+		<string>com.Genesis.snes</string>
+		<string>com.Genesis.gb</string>
+		<string>com.Genesis.gbc</string>
+		<string>com.Genesis.gba</string>
 	</array>
 	<key>PVProjectURL</key>
 	<string>https://mednafen.github.io</string>

@@ -1,9 +1,9 @@
 //
 //  PVUser.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Joe Mattiello on 11/20/2022.
-//  Copyright (c) 2022 Provenance EMU. All rights reserved.
+//  Copyright (c) 2022 Genesis EMU. All rights reserved.
 //
 
 import Foundation

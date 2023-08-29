@@ -13,7 +13,7 @@ let cSettings: [CSetting] = [
 ]
 
 let package = Package(
-	name: "Provenance",
+	name: "Genesis",
 	platforms: [
 		.iOS(.v11),
 		.tvOS(.v11),

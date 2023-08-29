@@ -1,7 +1,7 @@
 //  Converted to Swift 4 by Swiftify v4.1.6640 - https://objectivec2swift.com/
 //
 //  PVNeoGeoPocketControllerViewController.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Joe Mattiello on 03/06/17.
 //  Copyright © 2017 James Addyman. All rights reserved.

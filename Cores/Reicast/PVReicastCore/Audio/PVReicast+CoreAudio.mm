@@ -3,7 +3,7 @@
 //  PVReicast
 //
 //  Created by Joseph Mattiello on 11/1/18.
-//  Copyright © 2018 Provenance. All rights reserved.
+//  Copyright © 2018 Genesis. All rights reserved.
 //
 
 #import "PVReicast+CoreAudio.h"

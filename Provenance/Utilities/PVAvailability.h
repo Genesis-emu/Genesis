@@ -1,6 +1,6 @@
 //
 //  PVAvailability.h
-//  Provenance
+//  Genesis
 //
 //  Created by Marcel Voß on 20.09.16.
 //  Copyright © 2016 James Addyman. All rights reserved.

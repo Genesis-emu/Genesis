@@ -3,7 +3,7 @@
 //  PVLoggingTests
 //
 //  Created by Joseph Mattiello on 1/4/23.
-//  Copyright © 2023 Provenance Emu. All rights reserved.
+//  Copyright © 2023 Genesis Emu. All rights reserved.
 //
 
 @testable import PVLogging

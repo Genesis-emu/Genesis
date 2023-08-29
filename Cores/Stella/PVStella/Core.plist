@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.stella</string>
+	<string>com.Genesis.core.stella</string>
 	<key>PVPrincipleClass</key>
 	<string>PVStellaGameCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.2600</string>
+		<string>com.Genesis.2600</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>Stella</string>

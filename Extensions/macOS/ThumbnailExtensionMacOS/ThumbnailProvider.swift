@@ -3,7 +3,7 @@
 //  ThumbnailExtensionMacOS
 //
 //  Created by Joseph Mattiello on 11/12/22.
-//  Copyright © 2022 Provenance Emu. All rights reserved.
+//  Copyright © 2022 Genesis Emu. All rights reserved.
 //
 
 import QuickLookThumbnailing

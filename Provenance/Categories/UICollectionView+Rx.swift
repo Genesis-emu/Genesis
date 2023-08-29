@@ -1,9 +1,9 @@
 //
 //  UICollectionView+Rx.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Dan Berglund on 2020-06-09.
-//  Copyright © 2020 Provenance Emu. All rights reserved.
+//  Copyright © 2020 Genesis Emu. All rights reserved.
 //
 
 import Foundation

@@ -27,13 +27,13 @@
         <!--Cheats View Controller-->
         <scene sceneID="kc5-17-IQa">
             <objects>
-                <tableViewController storyboardIdentifier="cheatCodeInfo" id="hsD-Zr-uXs" customClass="PVCheatsViewController" customModule="Provenance" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="cheatCodeInfo" id="hsD-Zr-uXs" customClass="PVCheatsViewController" customModule="Genesis" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" id="oC9-sy-vYe">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="cheatCodeCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cheatCodeCell" id="H00-Ry-Zln" userLabel="cheatCodeCell" customClass="PVCheatsTableViewCell" customModule="Provenance" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="cheatCodeCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cheatCodeCell" id="H00-Ry-Zln" userLabel="cheatCodeCell" customClass="PVCheatsTableViewCell" customModule="Genesis" customModuleProvider="target">
                                 <rect key="frame" x="96" y="66" width="1728" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H00-Ry-Zln" id="iv8-JP-fTR">
@@ -96,7 +96,7 @@
         <!--Cheats Info View Controller-->
         <scene sceneID="XqO-yS-7nV">
             <objects>
-                <viewController id="Nv0-IQ-dFu" customClass="PVCheatsInfoViewController" customModule="Provenance" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Nv0-IQ-dFu" customClass="PVCheatsInfoViewController" customModule="Genesis" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UX0-cR-VbI"/>
                         <viewControllerLayoutGuide type="bottom" id="mF6-1U-5Lh"/>

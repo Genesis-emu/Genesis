@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.fMSX</string>
+	<string>com.Genesis.core.fMSX</string>
 	<key>PVPrincipleClass</key>
 	<string>PVfMSXCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.msx</string>
-		<string>com.provenance.msx2</string>
+		<string>com.Genesis.msx</string>
+		<string>com.Genesis.msx2</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>fMSX</string>

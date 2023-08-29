@@ -3539,7 +3539,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = PV;
 				LastUpgradeCheck = 1300;
-				ORGANIZATIONNAME = "Provenance Emu";
+				ORGANIZATIONNAME = "Genesis Emu";
 				TargetAttributes = {
 					935BB0502985469B00AA68DC = {
 						CreatedOnToolsVersion = 14.2;
@@ -3796,7 +3796,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PVOpera";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PVOpera";
 				PRODUCT_NAME = PVOpera;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;

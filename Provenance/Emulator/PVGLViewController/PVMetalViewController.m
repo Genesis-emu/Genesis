@@ -1,6 +1,6 @@
 //
 //  PVMetalViewController.m
-//  Provenance
+//  Genesis
 //
 //  Created by James Addyman on 08/08/2013.
 //  Copyright (c) 2013 James Addyman. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import "PVMetalViewController.h"
 @import PVSupport;
-#import "Provenance-Swift.h"
+#import "Genesis-Swift.h"
 #import <QuartzCore/QuartzCore.h>
 
 #if !TARGET_OS_MACCATALYST && !TARGET_OS_OSX

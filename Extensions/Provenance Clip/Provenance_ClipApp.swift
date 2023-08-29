@@ -1,15 +1,15 @@
 //
-//  Provenance_ClipApp.swift
-//  Provenance Clip
+//  Genesis_ClipApp.swift
+//  Genesis Clip
 //
 //  Created by Joseph Mattiello on 2/19/22.
-//  Copyright © 2022 Provenance Emu. All rights reserved.
+//  Copyright © 2022 Genesis Emu. All rights reserved.
 //
 
 import SwiftUI
 
 @main
-struct Provenance_ClipApp: App {
+struct Genesis_ClipApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

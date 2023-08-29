@@ -30,7 +30,7 @@ import Foundation
     if let auxError = DOLJitManager.shared().getAuxiliaryError() {
       self.is_presenting_alert = true
       
-      let controller = UIAlertController(title: "Failed to Activate Workaround", message: "Provenance attempted to enable JIT with a different workaround, but the following error was returned:\n\n\(auxError)\n\nProvenance will now fallback to waiting for a remote debugger.", preferredStyle: .alert)
+      let controller = UIAlertController(title: "Failed to Activate Workaround", message: "Genesis attempted to enable JIT with a different workaround, but the following error was returned:\n\n\(auxError)\n\nGenesis will now fallback to waiting for a remote debugger.", preferredStyle: .alert)
       controller.addAction(UIAlertAction.init(title: "OK", style: .default, handler: { _ in
         self.is_presenting_alert = false
       }))
@@ -88,7 +88,7 @@ import Foundation
   }
   
   @IBAction func helpPressed(_ sender: Any) {
-    let url = URL.init(string: "https://wiki.provenance-emu/jit")
+    let url = URL.init(string: "https://wiki.Genesis-emu/jit")
     UIApplication.shared.open(url!, options: [:], completionHandler: nil)
   }
   

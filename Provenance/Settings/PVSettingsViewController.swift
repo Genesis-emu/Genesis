@@ -1,7 +1,7 @@
 //  Converted to Swift 4 by Swiftify v4.1.6613 - https://objectivec2swift.com/
 //
 //  PVSettingsViewController.swift
-//  Provenance
+//  Genesis
 //
 //  Created by James Addyman on 21/08/2013.
 //  Copyright (c) 2013 James Addyman. All rights reserved.
@@ -403,7 +403,7 @@ final class PVSettingsViewController: QuickTableViewController {
                 detailTextLabel.numberOfLines = 0
             },
             action: { _ in
-                if let url = URL(string: "https://twitter.com/provenanceapp") {
+                if let url = URL(string: "https://twitter.com/Genesisapp") {
                     UIApplication.shared.open(url, options: [:], completionHandler: nil)
                 }
             }
@@ -417,7 +417,7 @@ final class PVSettingsViewController: QuickTableViewController {
                 detailTextLabel.numberOfLines = 0
             },
             action: { _ in
-                if let url = URL(string: "https://github.com/Provenance-Emu/Provenance") {
+                if let url = URL(string: "https://github.com/Genesis-Emu/Genesis") {
                     UIApplication.shared.open(url, options: [:], completionHandler: nil)
                 }
             }
@@ -431,7 +431,7 @@ final class PVSettingsViewController: QuickTableViewController {
                 detailTextLabel.numberOfLines = 0
             },
             action: { _ in
-                if let url = URL(string: "https://provenance-emu.com/patreon") {
+                if let url = URL(string: "https://Genesis-emu.com/patreon") {
                     UIApplication.shared.open(url, options: [:], completionHandler: nil)
                 }
             }
@@ -459,7 +459,7 @@ final class PVSettingsViewController: QuickTableViewController {
                 detailTextLabel.numberOfLines = 0
             },
             action: { [weak self] _ in
-                if let url = URL(string: "https://provenance-emu.com/blog/") {
+                if let url = URL(string: "https://Genesis-emu.com/blog/") {
 #if canImport(SafariServices)
                     let webVC = WebkitViewController(url: url)
                     self?.navigationController?.pushViewController(webVC, animated: true)
@@ -478,7 +478,7 @@ final class PVSettingsViewController: QuickTableViewController {
                 detailTextLabel.numberOfLines = 0
             },
             action: { [weak self] _ in
-                if let url = URL(string: "https://wiki.provenance-emu.com/faqs") {
+                if let url = URL(string: "https://wiki.Genesis-emu.com/faqs") {
 #if canImport(SafariServices)
                     let webVC = WebkitViewController(url: url)
                     self?.navigationController?.pushViewController(webVC, animated: true)
@@ -497,7 +497,7 @@ final class PVSettingsViewController: QuickTableViewController {
                 detailTextLabel.numberOfLines = 0
             },
             action: { [weak self] _ in
-                if let url = URL(string: "https://wiki.provenance-emu.com/") {
+                if let url = URL(string: "https://wiki.Genesis-emu.com/") {
 #if canImport(SafariServices)
                     let webVC = WebkitViewController(url: url)
                     self?.navigationController?.pushViewController(webVC, animated: true)
@@ -595,7 +595,7 @@ final class PVSettingsViewController: QuickTableViewController {
                                segue: "coresSegue",
                                customization: nil),
             SegueNavigationRow(text: NSLocalizedString("Licenses", comment: "Licenses"),
-                               detailText: .subtitle("Open-source libraries Provenance uses and their respective licenses."),
+                               detailText: .subtitle("Open-source libraries Genesis uses and their respective licenses."),
                                icon: .sfSymbol("mail.stack.fill"),
                                viewController: self,
                                segue: "licensesSegue",
@@ -727,7 +727,7 @@ final class PVSettingsViewController: QuickTableViewController {
 
     @IBAction func help(_: Any) {
         #if canImport(SafariServices)
-            let webVC = WebkitViewController(url: URL(string: "https://wiki.provenance-emu.com/")!)
+            let webVC = WebkitViewController(url: URL(string: "https://wiki.Genesis-emu.com/")!)
             navigationController?.pushViewController(webVC, animated: true)
         #endif
     }

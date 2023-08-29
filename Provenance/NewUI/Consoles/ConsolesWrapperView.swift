@@ -1,9 +1,9 @@
 //
 //  ConsolesWrapperView.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Ian Clawson on 1/26/22.
-//  Copyright © 2022 Provenance Emu. All rights reserved.
+//  Copyright © 2022 Genesis Emu. All rights reserved.
 //
 
 import Foundation

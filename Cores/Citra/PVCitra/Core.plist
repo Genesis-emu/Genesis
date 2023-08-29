@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.Citra</string>
+	<string>com.Genesis.Citra</string>
 	<key>PVPrincipleClass</key>
 	<string>PVCitraCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.3ds</string>
+		<string>com.Genesis.3ds</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>Citra</string>

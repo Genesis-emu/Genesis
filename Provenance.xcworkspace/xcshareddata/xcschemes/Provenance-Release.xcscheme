@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1AD9AA341ACC988F00EC87A0"
-               BuildableName = "Provenance Tests.xctest"
-               BlueprintName = "Provenance Tests"
-               ReferencedContainer = "container:Provenance.xcodeproj">
+               BuildableName = "Genesis Tests.xctest"
+               BlueprintName = "Genesis Tests"
+               ReferencedContainer = "container:Genesis.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -71,9 +71,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1A3D409317B2DCE4004DFFFC"
-               BuildableName = "Provenance.app"
-               BlueprintName = "Provenance"
-               ReferencedContainer = "container:Provenance.xcodeproj">
+               BuildableName = "Genesis.app"
+               BlueprintName = "Genesis"
+               ReferencedContainer = "container:Genesis.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -87,9 +87,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1A3D409317B2DCE4004DFFFC"
-            BuildableName = "Provenance.app"
-            BlueprintName = "Provenance"
-            ReferencedContainer = "container:Provenance.xcodeproj">
+            BuildableName = "Genesis.app"
+            BlueprintName = "Genesis"
+            ReferencedContainer = "container:Genesis.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -98,9 +98,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1AD9AA341ACC988F00EC87A0"
-               BuildableName = "Provenance Tests.xctest"
-               BlueprintName = "Provenance Tests"
-               ReferencedContainer = "container:Provenance.xcodeproj">
+               BuildableName = "Genesis Tests.xctest"
+               BlueprintName = "Genesis Tests"
+               ReferencedContainer = "container:Genesis.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -126,9 +126,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1A3D409317B2DCE4004DFFFC"
-            BuildableName = "Provenance.app"
-            BlueprintName = "Provenance"
-            ReferencedContainer = "container:Provenance.xcodeproj">
+            BuildableName = "Genesis.app"
+            BlueprintName = "Genesis"
+            ReferencedContainer = "container:Genesis.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -149,9 +149,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1A3D409317B2DCE4004DFFFC"
-            BuildableName = "Provenance.app"
-            BlueprintName = "Provenance"
-            ReferencedContainer = "container:Provenance.xcodeproj">
+            BuildableName = "Genesis.app"
+            BlueprintName = "Genesis"
+            ReferencedContainer = "container:Genesis.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -160,7 +160,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
-      customArchiveName = "Provenance"
+      customArchiveName = "Genesis"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

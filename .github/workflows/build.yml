@@ -28,34 +28,34 @@ jobs:
       fail-fast: false
       matrix:
         target:
-          - Provenance-Release
-          - ProvenanceTV-Release
-          - "Provenance-XL Release"
-          - Provenance-UnderDevelopment
+          - Genesis-Release
+          - GenesisTV-Release
+          - "Genesis-XL Release"
+          - Genesis-UnderDevelopment
         include:
-          - target: Provenance-Release
+          - target: Genesis-Release
             sdk: iphoneos
-            scheme: Provenance-Release
-            APP_NAME: Provenance
-            IPA_NAME: Provenance
-          - target: ProvenanceTV-Release
+            scheme: Genesis-Release
+            APP_NAME: Genesis
+            IPA_NAME: Genesis
+          - target: GenesisTV-Release
             sdk: appletvos
-            scheme: ProvenanceTV-Release
-            APP_NAME: Provenance
-            IPA_NAME: ProvenanceTV
-          - target: "Provenance-XL Release"
+            scheme: GenesisTV-Release
+            APP_NAME: Genesis
+            IPA_NAME: GenesisTV
+          - target: "Genesis-XL Release"
             sdk: iphoneos
-            scheme: "Provenance-XL Release"
-            APP_NAME: Provenance-XL
-            IPA_NAME: Provenance-XL
-          - target: Provenance-UnderDevelopment
+            scheme: "Genesis-XL Release"
+            APP_NAME: Genesis-XL
+            IPA_NAME: Genesis-XL
+          - target: Genesis-UnderDevelopment
             sdk: iphoneos
-            scheme: Provenance-UnderDevelopment
-            APP_NAME: Provenance-UnderDevelopment
-            IPA_NAME: Provenance-UnderDevelopment
+            scheme: Genesis-UnderDevelopment
+            APP_NAME: Genesis-UnderDevelopment
+            IPA_NAME: Genesis-UnderDevelopment
           # - target: macOS
           #   sdk: macosx
-          #   scheme: Provenance
+          #   scheme: Genesis
 
     runs-on: 'macos-12'
     timeout-minutes: 300
@@ -84,21 +84,21 @@ jobs:
       - name: Install dependencies
         run: brew install ldid
 
-      - name: Build Provenance
+      - name: Build Genesis
         run: |
-          xcodebuild -configuration Release -workspace Provenance.xcworkspace -scheme "${{ matrix.scheme }}" -sdk ${{ matrix.sdk }} archive -archivePath ./archive CODE_SIGNING_REQUIRED=NO AD_HOC_CODE_SIGNING_ALLOWED=YES CODE_SIGNING_ALLOWED=NO DEVELOPMENT_TEAM=S32Z3HMYVQ ORG_IDENTIFIER=org.provenance-emu | xcpretty && exit ${PIPESTATUS[0]}
+          xcodebuild -configuration Release -workspace Genesis.xcworkspace -scheme "${{ matrix.scheme }}" -sdk ${{ matrix.sdk }} archive -archivePath ./archive CODE_SIGNING_REQUIRED=NO AD_HOC_CODE_SIGNING_ALLOWED=YES CODE_SIGNING_ALLOWED=NO DEVELOPMENT_TEAM=S32Z3HMYVQ ORG_IDENTIFIER=org.Genesis-emu | xcpretty && exit ${PIPESTATUS[0]}
 
-      # - name: Build Provenance
+      # - name: Build Genesis
       #   run: |
       #     rm -rf ~/Library/Developer/Xcode/DerivedData/
-      #     rm ./Provenance.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
-      #     rm ./Provenance.xcworkspace/xcshareddata/swiftpm/Package.resolved
-      #     xcodebuild -workspace Provenance.xcworkspace -scheme Provenance-Release -sdk iphoneos archive -archivePath ./archive CODE_SIGNING_REQUIRED=NO AD_HOC_CODE_SIGNING_ALLOWED=YES CODE_SIGNING_ALLOWED=NO DEVELOPMENT_TEAM=XYZ0123456 ORG_IDENTIFIER=org.provenance-emu | xcpretty && exit ${PIPESTATUS[0]}
+      #     rm ./Genesis.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
+      #     rm ./Genesis.xcworkspace/xcshareddata/swiftpm/Package.resolved
+      #     xcodebuild -workspace Genesis.xcworkspace -scheme Genesis-Release -sdk iphoneos archive -archivePath ./archive CODE_SIGNING_REQUIRED=NO AD_HOC_CODE_SIGNING_ALLOWED=YES CODE_SIGNING_ALLOWED=NO DEVELOPMENT_TEAM=XYZ0123456 ORG_IDENTIFIER=org.Genesis-emu | xcpretty && exit ${PIPESTATUS[0]}
 
       - name: Fakesign app
         run: |
           #rm -rf archive.xcarchive/Products/Applications/${{ matrix.APP_NAME }}.app/Frameworks/*.framework/Frameworks/
-          ldid -SProvenance/Provenance.entitlements archive.xcarchive/Products/Applications/${{ matrix.APP_NAME }}.app/${{ matrix.APP_NAME }}
+          ldid -SGenesis/Genesis.entitlements archive.xcarchive/Products/Applications/${{ matrix.APP_NAME }}.app/${{ matrix.APP_NAME }}
 
       - name: Convert to IPA
         run: |

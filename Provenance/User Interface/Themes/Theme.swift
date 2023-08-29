@@ -1,6 +1,6 @@
 //
 //  Test.swift
-//  Provenance
+//  Genesis
 //
 //  Created by Joseph Mattiello on 2/8/18.
 //  Copyright © 2018 James Addyman. All rights reserved.
@@ -12,7 +12,7 @@ import PVSupport
 import UIKit
 
 public extension UIColor {
-    static let provenanceBlue: UIColor = UIColor(red: 0.1, green: 0.5, blue: 0.95, alpha: 1.0)
+    static let GenesisBlue: UIColor = UIColor(red: 0.1, green: 0.5, blue: 0.95, alpha: 1.0)
     static let iosBlue: UIColor   = .init(hex: "#007aff")!
     static let grey333: UIColor = .init(hex: "#333")!
     static let grey1C: UIColor = .init(hex: "#1C1C1C")!

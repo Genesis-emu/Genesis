@@ -1,6 +1,6 @@
 //
 //  UIImage+Scaling.m
-//  Provenance
+//  Genesis
 //
 //  Created by James Addyman on 09/09/2013.
 //  Copyright (c) 2013 James Addyman. All rights reserved.

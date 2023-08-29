@@ -145,7 +145,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = PV;
 				LastUpgradeCheck = 1300;
-				ORGANIZATIONNAME = "Provenance Emu";
+				ORGANIZATIONNAME = "Genesis Emu";
 				TargetAttributes = {
 					9396AEEB297305F700B1EA1C = {
 						CreatedOnToolsVersion = 14.2;
@@ -402,7 +402,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PVNP2Kai";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PVNP2Kai";
 				PRODUCT_NAME = PVNP2Kai;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;

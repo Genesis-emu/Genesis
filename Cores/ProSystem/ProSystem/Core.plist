@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.prosystem</string>
+	<string>com.Genesis.core.prosystem</string>
 	<key>PVPrincipleClass</key>
 	<string>PVProSystemGameCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.7800</string>
+		<string>com.Genesis.7800</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>ProSystem</string>

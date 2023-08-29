@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.tgbdual</string>
+	<string>com.Genesis.core.tgbdual</string>
 	<key>PVPrincipleClass</key>
 	<string>PVTGBDualCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.gb</string>
-		<string>com.provenance.gbc</string>
+		<string>com.Genesis.gb</string>
+		<string>com.Genesis.gbc</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>TGBDual</string>

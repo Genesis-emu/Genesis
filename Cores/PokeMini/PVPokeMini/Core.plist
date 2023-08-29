@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.pokemini</string>
+	<string>com.Genesis.core.pokemini</string>
 	<key>PVPrincipleClass</key>
 	<string>PVPokeMiniEmulatorCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.pokemonmini</string>
+		<string>com.Genesis.pokemonmini</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>PokeMini</string>

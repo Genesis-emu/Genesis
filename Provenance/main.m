@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import <Provenance-Swift.h>
+#import <Genesis-Swift.h>
 
 int main(int argc, char *argv[]) {
    @autoreleasepool {

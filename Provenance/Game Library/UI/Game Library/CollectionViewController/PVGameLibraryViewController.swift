@@ -1,7 +1,7 @@
 //  Converted to Swift 4 by Swiftify v4.1.6613 - https://objectivec2swift.com/
 //
 //  PVGameLibraryViewController.swift
-//  Provenance
+//  Genesis
 //
 //  Created by James Addyman on 07/04/2013.
 //  Copyright (c) 2013 JamSoft. All rights reserved.
@@ -250,7 +250,7 @@ final class PVGameLibraryViewController: GCEventViewController, UITextFieldDeleg
             logo.layer.cornerRadius = 4.0
             logo.layer.masksToBounds = true
             let name = UILabel()
-            name.text = " Provenance"
+            name.text = " Genesis"
             name.font = font
             name.textColor = .white
             name.sizeToFit()
@@ -688,9 +688,9 @@ final class PVGameLibraryViewController: GCEventViewController, UITextFieldDeleg
         #if DEBUG && !targetEnvironment(simulator)
             if !PVSettingsModel.shared.haveWarnedAboutDebug, !officialBundleID {
                 #if os(tvOS)
-                    let releaseScheme = "ProvenanceTV-Release"
+                    let releaseScheme = "GenesisTV-Release"
                 #else
-                    let releaseScheme = "Provenance-Release"
+                    let releaseScheme = "Genesis-Release"
                 #endif
                 let alert = UIAlertController(title: "Debug Mode Detected",
                                               message: "⚠️ Detected app built in 'Debug' mode. Build with the " + releaseScheme + " scheme in XCode for best performance. This alert will only be presented this one time.",
@@ -704,7 +704,7 @@ final class PVGameLibraryViewController: GCEventViewController, UITextFieldDeleg
         #endif
     }
 
-    fileprivate lazy var officialBundleID: Bool = Bundle.main.bundleIdentifier!.contains("org.provenance-emu.")
+    fileprivate lazy var officialBundleID: Bool = Bundle.main.bundleIdentifier!.contains("org.Genesis-emu.")
 
     var transitioningToSize: CGSize?
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -741,7 +741,7 @@ final class PVGameLibraryViewController: GCEventViewController, UITextFieldDeleg
         } else if segue.identifier == "gameMoreInfoPageVCSegue" {
             let game = sender as! PVGame
 
-            let firstVC = UIStoryboard(name: "Provenance", bundle: nil).instantiateViewController(withIdentifier: "gameMoreInfoVC") as! PVGameMoreInfoViewController
+            let firstVC = UIStoryboard(name: "Genesis", bundle: nil).instantiateViewController(withIdentifier: "gameMoreInfoVC") as! PVGameMoreInfoViewController
             firstVC.game = game
 
             let moreInfoCollectionVC = segue.destination as! GameMoreInfoPageViewController
@@ -1144,7 +1144,7 @@ final class PVGameLibraryViewController: GCEventViewController, UITextFieldDeleg
         #if os(iOS)
 
         actionSheet.addAction(UIAlertAction(title: "Copy MD5 URL", symbol: "arrow.up.doc", style: .default, handler: { (_: UIAlertAction) -> Void in
-            let md5URL = "provenance://open?md5=\(game.md5Hash)"
+            let md5URL = "Genesis://open?md5=\(game.md5Hash)"
             UIPasteboard.general.string = md5URL
             let alert = UIAlertController(title: nil, message: "URL copied to clipboard.", preferredStyle: .alert)
             alert.preferredContentSize = CGSize(width: 300, height: 150)

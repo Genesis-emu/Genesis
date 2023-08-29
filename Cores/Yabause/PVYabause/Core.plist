@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.Yabause</string>
+	<string>com.Genesis.Yabause</string>
 	<key>PVPrincipleClass</key>
 	<string>PVYabauseCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.saturn</string>
+		<string>com.Genesis.saturn</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>Yabause</string>

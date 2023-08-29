@@ -1,9 +1,9 @@
 //
 //  ComplicationController.swift
-//  Provenance Watch WatchKit Extension
+//  Genesis Watch WatchKit Extension
 //
 //  Created by Joseph Mattiello on 12/16/21.
-//  Copyright © 2021 Provenance Emu. All rights reserved.
+//  Copyright © 2021 Genesis Emu. All rights reserved.
 //
 
 import ClockKit
@@ -15,7 +15,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
 
     func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void) {
         let descriptors = [
-            CLKComplicationDescriptor(identifier: "complication", displayName: "Provenance", supportedFamilies: CLKComplicationFamily.allCases)
+            CLKComplicationDescriptor(identifier: "complication", displayName: "Genesis", supportedFamilies: CLKComplicationFamily.allCases)
             // Multiple complication support can be added here with more descriptors
         ]
         

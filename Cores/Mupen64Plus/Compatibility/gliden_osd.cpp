@@ -3,7 +3,7 @@
 //  PVMupen64Plus
 //
 //  Created by Joseph Mattiello on 4/13/18.
-//  Copyright © 2018 Provenance. All rights reserved.
+//  Copyright © 2018 Genesis. All rights reserved.
 //
 
 #include <stdio.h>

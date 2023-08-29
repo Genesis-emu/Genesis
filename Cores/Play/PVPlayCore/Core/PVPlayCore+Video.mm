@@ -3,7 +3,7 @@
 //  PVPlay
 //
 //  Created by Joseph Mattiello on 11/1/18.
-//  Copyright © 2021 Provenance. All rights reserved.
+//  Copyright © 2021 Genesis. All rights reserved.
 //
 
 #import "PVPlayCore+Video.h"
@@ -23,9 +23,9 @@
 #include "PreferenceDefs.h"
 #include "PH_Generic.h"
 #include "PS2VM.h"
-#include "CGSH_Provenance_OGL.h"
+#include "CGSH_Genesis_OGL.h"
 
-extern CGSH_Provenance_OGL *gsHandler;
+extern CGSH_Genesis_OGL *gsHandler;
 extern CPH_Generic *padHandler;
 extern UIView *m_view;
 extern CPS2VM *_ps2VM;

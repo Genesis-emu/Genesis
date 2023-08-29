@@ -27,7 +27,7 @@ FOUNDATION_EXPORT const unsigned char PVSupport_FrameworkVersionString[];
 //    #import <PVSupportObjC/NSFileManager+OEHashingAdditions.h>
 //    #import <PVSupportObjC/PVLogging.h>
 //    #import <PVSupportObjC/PVLogEntry.h>
-//    #import <PVSupportObjC/PVProvenanceLogging.h>
+//    #import <PVSupportObjC/PVGenesisLogging.h>
 //
 //    # pragma mark - Audio
 //    #import <PVSupportObjC/TPCircularBuffer.h>

@@ -3,7 +3,7 @@
 //  PVRetroArch
 //
 //  Created by Joseph Mattiello on 4/6/18.
-//  Copyright © 2021 Provenance. All rights reserved.
+//  Copyright © 2021 Genesis. All rights reserved.
 //
 
 #import "PVRetroArchCore.h"
@@ -330,7 +330,7 @@ void extract_bundles();
 	NSString *optConfig = [NSString stringWithFormat:@"%@/../../RetroArch/config/opt.cfg",
 						  self.batterySavesPath];
     NSFileManager *fm = [[NSFileManager alloc] init];
-	if(!self.coreIdentifier || [[self coreIdentifier] isEqualToString:@"com.provenance.core.retroarch"] || !romPath) {
+	if(!self.coreIdentifier || [[self coreIdentifier] isEqualToString:@"com.Genesis.core.retroarch"] || !romPath) {
         if (romPath != nil && romPath.length > 0 && [fm fileExistsAtPath: romPath]) {
             optConfig = romPath;
         }

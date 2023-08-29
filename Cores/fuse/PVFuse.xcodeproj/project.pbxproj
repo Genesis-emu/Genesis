@@ -1241,7 +1241,7 @@
 		B3C7621C20783243009950E4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B3C7621E2078325C009950E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3C7622120783297009950E4 /* PVSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PVSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3DE9ADC2971324A00CE7168 /* libretro.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libretro.a; path = "../../../../../Library/Developer/Xcode/DerivedData/Provenance-fmnqyejnhdyaeteisvwsdqchzshl/Build/Products/Debug-iphoneos/libretro.a"; sourceTree = "<group>"; };
+		B3DE9ADC2971324A00CE7168 /* libretro.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libretro.a; path = "../../../../../Library/Developer/Xcode/DerivedData/Genesis-fmnqyejnhdyaeteisvwsdqchzshl/Build/Products/Debug-iphoneos/libretro.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3334,7 +3334,7 @@
 			buildPhases = (
 			);
 			buildToolPath = make;
-			buildWorkingDirectory = "/Users/jmattiello/Workspace/Provenance/Provenance/Cores/fuse/fuse-libretro";
+			buildWorkingDirectory = "/Users/jmattiello/Workspace/Genesis/Genesis/Cores/fuse/fuse-libretro";
 			dependencies = (
 			);
 			name = fuse_make;
@@ -3406,7 +3406,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = PV;
 				LastUpgradeCheck = 1300;
-				ORGANIZATIONNAME = "Provenance Emu";
+				ORGANIZATIONNAME = "Genesis Emu";
 				TargetAttributes = {
 					B30178D2207C901D0051B93D = {
 						CreatedOnToolsVersion = 9.3;
@@ -3721,7 +3721,7 @@
 					"-Wl,-all_load",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.provenance-emu.PVFuse";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Genesis-emu.PVFuse";
 				PRODUCT_NAME = PVFuse;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;

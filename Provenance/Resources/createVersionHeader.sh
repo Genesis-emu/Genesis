@@ -84,8 +84,8 @@ success_exit()
     exit 0
 }
 
-VERSION_H_PATH="${PROJECT_DIR}/Provenance/Version.h"
-VERSION_SWIFT_PATH="${PROJECT_DIR}/Provenance/Version.swift"
+VERSION_H_PATH="${PROJECT_DIR}/Genesis/Version.h"
+VERSION_SWIFT_PATH="${PROJECT_DIR}/Genesis/Version.swift"
 
 ######## --------------- GIT VERISON -------------------
 GIT=`xcrun -find git`

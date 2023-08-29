@@ -1,11 +1,11 @@
-#import "CGSH_Provenance_OGL.h"
+#import "CGSH_Genesis_OGL.h"
 #import "AppConfig.h"
 #import <OpenGLES/ES3/gl.h>
 #import <OpenGLES/ES3/glext.h>
 #import "PVPlayCore.h"
 #import <PVLogging/PVLogging.h>
 
-CGSH_Provenance_OGL::CGSH_Provenance_OGL(
+CGSH_Genesis_OGL::CGSH_Genesis_OGL(
 	CAEAGLLayer *layer,
 	int width,
 	int height,
@@ -19,23 +19,23 @@ CGSH_Provenance_OGL::CGSH_Provenance_OGL(
  	CGSH_OpenGL::RegisterPreferences();
 }
 
-CGSH_Provenance_OGL::~CGSH_Provenance_OGL()
+CGSH_Genesis_OGL::~CGSH_Genesis_OGL()
 {
 }
 
-CGSH_OpenGL::FactoryFunction CGSH_Provenance_OGL::GetFactoryFunction(
+CGSH_OpenGL::FactoryFunction CGSH_Genesis_OGL::GetFactoryFunction(
 	CAEAGLLayer *layer,
 	int width,
 	int height,
 	int res_factor)
 {
 	return [layer, width, height, res_factor]() { 
-		return new CGSH_Provenance_OGL(
+		return new CGSH_Genesis_OGL(
  	 	 	layer, width, height, res_factor); 
 	};
 }
 
-void CGSH_Provenance_OGL::InitializeImpl()
+void CGSH_Genesis_OGL::InitializeImpl()
 {
  	m_context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES3];
  	if(![EAGLContext setCurrentContext:m_context])
@@ -55,7 +55,7 @@ void CGSH_Provenance_OGL::InitializeImpl()
 }
 
 
-void CGSH_Provenance_OGL::CreateFramebuffer()
+void CGSH_Genesis_OGL::CreateFramebuffer()
 {
 	assert(m_defaultFramebuffer == 0);
 	glGenFramebuffers(1, &m_defaultFramebuffer);
@@ -79,7 +79,7 @@ void CGSH_Provenance_OGL::CreateFramebuffer()
 
 void MakeCurrentThreadRealTime();
 
-void CGSH_Provenance_OGL::PresentBackbuffer()
+void CGSH_Genesis_OGL::PresentBackbuffer()
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

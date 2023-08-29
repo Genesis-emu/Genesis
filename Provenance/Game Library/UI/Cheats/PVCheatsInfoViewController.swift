@@ -1,6 +1,6 @@
 //
 //  PVCheatsInfoViewController.swift
-//  Provenance
+//  Genesis
 //
 
 import PVLibrary
@@ -215,7 +215,7 @@ final class PVCheatsInfoViewController: UIViewController, UITextFieldDelegate {
         for button in codeTypeButtons {
             let codeTypeButton:UIButton = button
             if codeTypeButton.tag == sender.tag {
-                codeTypeButton.setBackgroundImage(.pixel(ofColor: .provenanceBlue), for: .normal)
+                codeTypeButton.setBackgroundImage(.pixel(ofColor: .GenesisBlue), for: .normal)
             } else {
                 codeTypeButton.setBackgroundImage(.pixel(ofColor: .darkGray), for: .normal)
             }
@@ -263,7 +263,7 @@ final class PVCheatsInfoViewController: UIViewController, UITextFieldDelegate {
             codeTypeButton.leadingAnchor.constraint(equalTo: codeTextObj!.leadingAnchor, constant: 0).isActive = true
             codeTypeButton.trailingAnchor.constraint(equalTo: codeTextObj!.trailingAnchor, constant: 0).isActive = true
             if (typeIdx == 0) {
-                codeTypeButton.setBackgroundImage(.pixel(ofColor: .provenanceBlue), for: .normal)
+                codeTypeButton.setBackgroundImage(.pixel(ofColor: .GenesisBlue), for: .normal)
                 codeTypeButton.topAnchor.constraint(equalTo: codeTextObj!.bottomAnchor, constant: 10).isActive = true
                 codeTypeButton.bottomAnchor.constraint(equalTo: codeTextObj!.bottomAnchor, constant: buttonHeight + 5).isActive = true
             } else {

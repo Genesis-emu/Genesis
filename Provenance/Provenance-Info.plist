@@ -23,7 +23,7 @@
         <string>Owner</string>
         <key>LSItemContentTypes</key>
         <array>
-          <string>com.provenance.rom</string>
+          <string>com.Genesis.rom</string>
         </array>
       </dict>
       <dict>
@@ -35,7 +35,7 @@
         <string>Owner</string>
         <key>LSItemContentTypes</key>
         <array>
-          <string>com.provenance.savestate</string>
+          <string>com.Genesis.savestate</string>
         </array>
       </dict>
       <dict>
@@ -90,10 +90,10 @@
         <key>CFBundleURLIconFile</key>
         <string>URLIcon-83.5@2x</string>
         <key>CFBundleURLName</key>
-        <string>org.provenance-emu.provenance</string>
+        <string>org.Genesis-emu.Genesis</string>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>provenance</string>
+          <string>Genesis</string>
         </array>
       </dict>
     </array>
@@ -128,7 +128,7 @@
     <string>public.app-category.games</string>
     <key>LSApplicationQueriesSchemes</key>
     <array>
-      <string>provenance</string>
+      <string>Genesis</string>
     </array>
     <key>LSRequiresIPhoneOS</key>
     <true/>
@@ -182,14 +182,14 @@
           <key>NSIncludesSubdomains</key>
           <true/>
         </dict>
-        <key>provenance-emu.com</key>
+        <key>Genesis-emu.com</key>
         <dict>
           <key>NSExceptionAllowsInsecureHTTPLoads</key>
           <true/>
           <key>NSIncludesSubdomains</key>
           <true/>
         </dict>
-        <key>wiki.provenance-emu.com</key>
+        <key>wiki.Genesis-emu.com</key>
         <dict>
           <key>NSExceptionAllowsInsecureHTTPLoads</key>
           <true/>
@@ -224,20 +224,20 @@
     <true/>
     <key>NSUbiquitousContainers</key>
     <dict>
-      <key>iCloud.org.provenance-emu.provenance</key>
+      <key>iCloud.org.Genesis-emu.Genesis</key>
       <dict>
         <key>NSUbiquitousContainerIsDocumentScopePublic</key>
         <true/>
         <key>NSUbiquitousContainerName</key>
-        <string>Provenance</string>
+        <string>Genesis</string>
         <key>NSUbiquitousContainerSupportedFolderLevels</key>
         <string>Any</string>
       </dict>
     </dict>
     <key>NSUserActivityTypes</key>
     <array>
-      <string>org.provenance-emu.game.play</string>
-      <string>org.provenance-emu.webserver</string>
+      <string>org.Genesis-emu.game.play</string>
+      <string>org.Genesis-emu.webserver</string>
     </array>
     <key>Revision</key>
     <string>78dc628</string>
@@ -294,9 +294,9 @@
         <key>UTTypeIconFiles</key>
         <array/>
         <key>UTTypeIdentifier</key>
-        <string>com.provenance.rom</string>
+        <string>com.Genesis.rom</string>
         <key>UTTypeReferenceURL</key>
-        <string>https://provenance-emu.com/</string>
+        <string>https://Genesis-emu.com/</string>
         <key>UTTypeTagSpecification</key>
         <dict>
           <key>public.filename-extension</key>
@@ -351,7 +351,7 @@
           </array>
           <key>public.mime-type</key>
           <array>
-            <string>com.provenance.rom</string>
+            <string>com.Genesis.rom</string>
           </array>
         </dict>
       </dict>
@@ -372,9 +372,9 @@
         <key>UTTypeIconFiles</key>
         <array/>
         <key>UTTypeIdentifier</key>
-        <string>com.provenance.savestate</string>
+        <string>com.Genesis.savestate</string>
         <key>UTTypeReferenceURL</key>
-        <string>https://provenance-emu.com/</string>
+        <string>https://Genesis-emu.com/</string>
         <key>UTTypeTagSpecification</key>
         <dict>
           <key>public.filename-extension</key>
@@ -383,7 +383,7 @@
           </array>
           <key>public.mime-type</key>
           <array>
-            <string>com.provenance.savestate</string>
+            <string>com.Genesis.savestate</string>
           </array>
         </dict>
       </dict>
@@ -453,7 +453,7 @@
         <key>UTTypeIconFiles</key>
         <array/>
         <key>UTTypeIdentifier</key>
-        <string>com.provenance.rom</string>
+        <string>com.Genesis.rom</string>
         <key>UTTypeTagSpecification</key>
         <dict>
           <key>public.filename-extension</key>
@@ -508,7 +508,7 @@
           </array>
           <key>public.mime-type</key>
           <array>
-            <string>com.provenance.rom</string>
+            <string>com.Genesis.rom</string>
           </array>
         </dict>
       </dict>
@@ -532,7 +532,7 @@
         <key>UTTypeIconFiles</key>
         <array/>
         <key>UTTypeIdentifier</key>
-        <string>com.provenance.artwork</string>
+        <string>com.Genesis.artwork</string>
         <key>UTTypeTagSpecification</key>
         <dict>
           <key>public.filename-extension</key>
@@ -559,7 +559,7 @@
         <key>UTTypeIconFiles</key>
         <array/>
         <key>UTTypeIdentifier</key>
-        <string>com.provenance.savestate</string>
+        <string>com.Genesis.savestate</string>
         <key>UTTypeTagSpecification</key>
         <dict>
           <key>public.filename-extension</key>
@@ -568,7 +568,7 @@
           </array>
           <key>public.mime-type</key>
           <array>
-            <string>com.provenance.savestate</string>
+            <string>com.Genesis.savestate</string>
           </array>
         </dict>
       </dict>

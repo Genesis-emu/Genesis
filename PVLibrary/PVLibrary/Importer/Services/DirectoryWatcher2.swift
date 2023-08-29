@@ -1,6 +1,6 @@
 //
 //  DirectoryWatcher.swift
-//  Provenance
+//  Genesis
 //
 //  Created by James Addyman on 11/04/2013.
 //  Copyright (c) 2013 Testut Tech. All rights reserved.
@@ -84,7 +84,7 @@ public final class DirectoryWatcher2 {
     }
 
     fileprivate var dispatch_sources = [URL: WatchedDir]()
-    fileprivate let serialQueue: DispatchQueue = DispatchQueue(label: "org.provenance-emu.provenance.serialExtractorQueue")
+    fileprivate let serialQueue: DispatchQueue = DispatchQueue(label: "org.Genesis-emu.Genesis.serialExtractorQueue")
 
     private func initialScan(_ url: URL) throws {
         let exts = PVEmulatorConfiguration.archiveExtensions

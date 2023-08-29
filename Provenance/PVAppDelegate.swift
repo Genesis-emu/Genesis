@@ -1,5 +1,5 @@
 //  PVAppDelegate.swift
-//  Provenance
+//  Genesis
 //
 //  Created by James Addyman on 07/08/2013.
 //  Copyright (c) 2013 James Addyman. All rights reserved.
@@ -66,7 +66,7 @@ final class PVAppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
 
         #if os(tvOS)
-        window.tintColor = .provenanceBlue
+        window.tintColor = .GenesisBlue
         #else
         let darkTheme = (PVSettingsModel.shared.theme == .auto && window.traitCollection.userInterfaceStyle == .dark) || PVSettingsModel.shared.theme == .dark
         window.overrideUserInterfaceStyle = darkTheme ? .dark : .light
@@ -89,7 +89,7 @@ final class PVAppDelegate: UIResponder, UIApplicationDelegate {
 
             window.rootViewController = sideNav
         } else {
-            let storyboard = UIStoryboard.init(name: "Provenance", bundle: Bundle.main)
+            let storyboard = UIStoryboard.init(name: "Genesis", bundle: Bundle.main)
             let vc = storyboard.instantiateInitialViewController()
 
             window.rootViewController = vc

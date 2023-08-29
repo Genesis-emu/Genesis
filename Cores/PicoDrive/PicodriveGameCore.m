@@ -91,7 +91,7 @@ static void video_callback(const void *data, unsigned width, unsigned height, si
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         dispatch_queue_attr_t queueAttributes = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_CONCURRENT, QOS_CLASS_USER_INTERACTIVE, 0);
-        memory_queue = dispatch_queue_create("com.provenance.video", queueAttributes);
+        memory_queue = dispatch_queue_create("com.Genesis.video", queueAttributes);
     });
         
     dispatch_apply(height, memory_queue, ^(size_t y){

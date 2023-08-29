@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>PVCoreIdentifier</key>
-	<string>com.provenance.core.genplusgx</string>
+	<string>com.Genesis.core.genplusgx</string>
 	<key>PVPrincipleClass</key>
 	<string>PVGenesisEmulatorCore</string>
 	<key>PVSupportedSystems</key>
 	<array>
-		<string>com.provenance.genesis</string>
-		<string>com.provenance.gamegear</string>
-		<string>com.provenance.mastersystem</string>
-		<string>com.provenance.sg1000</string>
-		<string>com.provenance.segacd</string>
+		<string>com.Genesis.genesis</string>
+		<string>com.Genesis.gamegear</string>
+		<string>com.Genesis.mastersystem</string>
+		<string>com.Genesis.sg1000</string>
+		<string>com.Genesis.segacd</string>
 	</array>
 	<key>PVProjectName</key>
 	<string>Genesis Plus GX</string>
