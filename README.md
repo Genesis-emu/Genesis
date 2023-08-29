@@ -57,6 +57,7 @@ The reason why we forked Provenace was to try to upstream most PRs from Provenan
  - Nintendo
    - DS
    - GameCube (Dolphin)
+   - Nintendo 3DS (emuThreeDS)
  - Sega
    - Dreamcast (Flycast)
  - Sony
