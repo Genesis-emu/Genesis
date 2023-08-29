@@ -36,23 +36,23 @@ jobs:
           - target: Provenance-Release
             sdk: iphoneos
             scheme: Provenance-Release
-            APP_NAME: Provenance
-            IPA_NAME: Provenance
+            APP_NAME: Genesis
+            IPA_NAME: Genesis
           - target: ProvenanceTV-Release
             sdk: appletvos
             scheme: ProvenanceTV-Release
-            APP_NAME: Provenance
-            IPA_NAME: ProvenanceTV
+            APP_NAME: Genesis
+            IPA_NAME: GenesisTV
           - target: "Provenance-XL Release"
             sdk: iphoneos
             scheme: "Provenance-XL Release"
-            APP_NAME: Provenance-XL
-            IPA_NAME: Provenance-XL
+            APP_NAME: Genesis-XL
+            IPA_NAME: Genesis-XL
           - target: Provenance-UnderDevelopment
             sdk: iphoneos
             scheme: Provenance-UnderDevelopment
-            APP_NAME: Provenance-UnderDevelopment
-            IPA_NAME: Provenance-UnderDevelopment
+            APP_NAME: Genesis-UnderDevelopment
+            IPA_NAME: Genesis-UnderDevelopment
           # - target: macOS
           #   sdk: macosx
           #   scheme: Provenance
@@ -86,7 +86,7 @@ jobs:
 
       - name: Build Provenance
         run: |
-          xcodebuild -configuration Release -workspace Provenance.xcworkspace -scheme "${{ matrix.scheme }}" -sdk ${{ matrix.sdk }} archive -archivePath ./archive CODE_SIGNING_REQUIRED=NO AD_HOC_CODE_SIGNING_ALLOWED=YES CODE_SIGNING_ALLOWED=NO DEVELOPMENT_TEAM=S32Z3HMYVQ ORG_IDENTIFIER=org.provenance-emu | xcpretty && exit ${PIPESTATUS[0]}
+          xcodebuild -configuration Release -workspace Provenance.xcworkspace -scheme "${{ matrix.scheme }}" -sdk ${{ matrix.sdk }} archive -archivePath ./archive CODE_SIGNING_REQUIRED=NO AD_HOC_CODE_SIGNING_ALLOWED=YES CODE_SIGNING_ALLOWED=NO DEVELOPMENT_TEAM=S32Z3HMYVQ ORG_IDENTIFIER=org.genesis-emu | xcpretty && exit ${PIPESTATUS[0]}
 
       # - name: Build Provenance
       #   run: |
