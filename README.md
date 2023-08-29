@@ -13,7 +13,7 @@ To get started, please go to Releases and grab the latest IPA and install into a
 
 
 
-### Why 'Genesis'?
+### Why did you create this?
 
 The reason why we forked Provenace was to try to upstream most PRs from Provenance into one IPA rather than a bunch of scattered IPAs.
 
