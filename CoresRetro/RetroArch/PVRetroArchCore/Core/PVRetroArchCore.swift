@@ -30,13 +30,26 @@ extension PVRetroArchCore: CoreOptional {
             title: ENABLE_ANALOG_KEY,
             description: nil,
             requiresRestart: false),
-              defaultValue: (
-                PVRetroArchCore.systemName.contains("dos") ||
-                PVRetroArchCore.systemName.contains("mac") ||
-                PVRetroArchCore.systemName.contains("pc98")
-              ) ? false : true)
+              defaultValue: (PVRetroArchCore.systemName.contains("dos")  ||
+                             PVRetroArchCore.systemName.contains("mac")  ||
+                             PVRetroArchCore.systemName.contains("pc98")) ? false : true)
+    }()
+    static var numKeyControlOption: CoreOption = {
+        .bool(.init(
+            title: ENABLE_NUM_KEY,
+            description: nil,
+            requiresRestart: false),
+              defaultValue: false)
+    }()
+    static var analogDpadControlOption: CoreOption = {
+        .bool(.init(
+            title: ENABLE_ANALOG_DPAD,
+            description: nil,
+            requiresRestart: false),
+              defaultValue: true)
     }()
     //
+    
     static var mupenRDPOption: CoreOption = {
           .enumeration(.init(title: "Mupen RDP Plugin",
                description: "(Requires Restart)",
@@ -47,33 +60,51 @@ extension PVRetroArchCore: CoreOptional {
           ],
           defaultValue: 1)
     }()
+    static var volumeOption: CoreOption = {
+        .enumeration(.init(title: "Audio Volume",
+                           description: "",
+                           requiresRestart: false),
+                     values: [
+                        .init(title: "100%", description: "100%", value: 100),
+                        .init(title: "90%", description: "90%", value: 90),
+                        .init(title: "80%", description: "80%", value: 80),
+                        .init(title: "70%", description: "70%", value: 70),
+                        .init(title: "60%", description: "60%", value: 60),
+                        .init(title: "50%", description: "50%", value: 50),
+                        .init(title: "40%", description: "40%", value: 40),
+                        .init(title: "30%", description: "30%", value: 30),
+                        .init(title: "20%", description: "20%", value: 20),
+                        .init(title: "10%", description: "10%", value: 10),
+                        .init(title: "0%", description: "0%", value: 0),
+                     ],
+                     defaultValue: 80)
+    }()
     //
     public static var options: [CoreOption] {
         var options = [CoreOption]()
         var coreOptions: [CoreOption] = [gsOption]
-        if (self.systemName.contains("snes") ||
-            self.systemName.contains("dos") ||
-            self.systemName.contains("mac") ||
-            self.systemName.contains("pc98") ||
-            self.systemName.contains("pce") ||
-            self.systemName.contains("ds") ||
-            self.systemName.contains("psx") ||
-            self.systemName.contains("retroarch")
-        ) {
-            coreOptions.append(retroArchControlOption)
-        }
+        
+        coreOptions.append(retroArchControlOption)
         if (self.className.contains("mupen")) {
             coreOptions.append(mupenRDPOption)
         }
+        if (self.systemName.contains("psx") ||
+            self.systemName.contains("dreamcast") ||
+            self.systemName.contains("saturn")
+        ) {
+            coreOptions.append(analogDpadControlOption)
+        }
+        coreOptions.append(analogKeyControlOption)
         if (self.systemName.contains("retroarch") ||
              self.systemName.contains("dos") ||
              self.systemName.contains("mac") ||
              self.systemName.contains("pc98")) {
-            coreOptions.append(analogKeyControlOption)
+            coreOptions.append(numKeyControlOption)
         }
         if (UIScreen.screens.count > 1 && UIDevice.current.userInterfaceIdiom == .pad) {
             coreOptions.append(secondScreenOption)
         }
+        coreOptions.append(volumeOption)
         let coreGroup:CoreOption = .group(.init(title: "RetroArch Core",
                                                 description: "Override options for RetroArch Core"),
                                           subOptions: coreOptions)
@@ -89,9 +120,6 @@ extension PVRetroArchCore: CoreOptional {
     @objc var retroControl: Bool {
         PVRetroArchCore.valueForOption(PVRetroArchCore.retroArchControlOption).asBool
     }
-    @objc var bindAnalog: Bool {
-        PVRetroArchCore.valueForOption(PVRetroArchCore.analogKeyControlOption).asBool
-    }
     @objc var secondScreen: Bool {
         PVRetroArchCore.valueForOption(PVRetroArchCore.secondScreenOption).asBool
     }
@@ -100,9 +128,13 @@ extension PVRetroArchCore: CoreOptional {
         var optionValuesFile: String = ""
         var optionOverwrite: Bool = false
         self.gsPreference = NSNumber(value: gs).int8Value
-        self.bindAnalogKeys = bindAnalog
+        self.volume = NSNumber(value: PVRetroArchCore.valueForOption(PVRetroArchCore.volumeOption).asInt ?? 100).int8Value
+        self.bindAnalogKeys = PVRetroArchCore.valueForOption(PVRetroArchCore.analogKeyControlOption).asBool
+        self.bindNumKeys = PVRetroArchCore.valueForOption(PVRetroArchCore.numKeyControlOption).asBool
+        self.bindAnalogDpad = PVRetroArchCore.valueForOption(PVRetroArchCore.analogDpadControlOption).asBool
         self.retroArchControls = true
         self.hasTouchControls=false
+        self.extractArchive=true
         if (UIScreen.screens.count > 1 && UIDevice.current.userInterfaceIdiom == .pad) {
             self.hasSecondScreen = secondScreen;
         }
@@ -111,12 +143,19 @@ extension PVRetroArchCore: CoreOptional {
                 self.gsPreference = 2; // Use Vulkan PSP
             }
             if (self.systemIdentifier!.contains("snes") ||
+                self.systemIdentifier!.contains("nes")  ||
+                self.systemIdentifier!.contains("dreamcast")  ||
+                self.systemIdentifier!.contains("genesis")  ||
+                self.systemIdentifier!.contains("saturn")  ||
+                self.systemIdentifier!.contains("3DO")  ||
+                self.systemIdentifier!.contains("gb")  ||
+                self.systemIdentifier!.contains("segacd")  ||
+                self.systemIdentifier!.contains("gba")  ||
                 self.systemIdentifier!.contains("psx")  ||
                 self.systemIdentifier!.contains("pce") ||
                 self.systemIdentifier!.contains("ds") ||
                 self.systemIdentifier!.contains("psp") ||
-                self.systemIdentifier!.contains("n64") ||
-                self.systemIdentifier!.contains("retroarch")) {
+                self.systemIdentifier!.contains("n64")) {
                 self.retroArchControls = retroControl
                 self.hasTouchControls = true
             }
@@ -126,6 +165,13 @@ extension PVRetroArchCore: CoreOptional {
                 self.retroArchControls = retroControl
                 self.hasTouchControls = true
                 optionValues += "input_auto_game_focus = \"1\"\n"
+            }
+            if (self.systemIdentifier!.contains("dos")  ||
+                self.systemIdentifier!.contains("mac")  ||
+                self.systemIdentifier!.contains("pc98") ||
+                self.systemIdentifier!.contains("neo")
+            ) {
+                self.extractArchive = false;
             }
         }
         if (self.coreIdentifier != nil && self.coreIdentifier!.contains("mupen")) {
@@ -212,6 +258,21 @@ extension PVRetroArchCore: GameWithCheat {
     @objc func usePrimaryScreen() {
         if UIScreen.screens.count > 1 && self.window != nil && self.window != UIApplication.shared.keyWindow {
             self.window.screen = UIScreen.main
+        }
+    }
+}
+
+extension PVRetroArchCore: CoreActions {
+    public var coreActions: [CoreAction]? {
+        return [CoreAction(title: "Game Options (RetroArch Options Menu)", options: nil, style:.default)]
+    }
+    public func selected(action: CoreAction) {
+        switch action.title {
+            case "Game Options (RetroArch Options Menu)":
+                menuToggle()
+                break;
+            default:
+                print("Unknown action: " + action.title)
         }
     }
 }

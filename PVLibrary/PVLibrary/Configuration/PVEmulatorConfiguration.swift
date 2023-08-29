@@ -383,7 +383,7 @@ public final class PVEmulatorConfiguration: NSObject {
         }
     }
 
-    public static let archiveExtensions: [String] = ["zip", "7z", "rar", "7zip", "gz", "gzip"]
+    public static let archiveExtensions: [String] = ["7z"]
     public static let artworkExtensions: [String] = ["png", "jpg", "jpeg"]
     public static let specialExtensions: [String] = ["cue", "m3u", "svs", "mcr", "plist", "ccd", "img", "iso", "sub", "bin"]
     public static let allKnownExtensions: [String] = {
@@ -739,9 +739,7 @@ public extension PVEmulatorConfiguration {
                 return false
             } else if obj2Extension == "m3u" {
                 return true
-            } // Check cue/ccd
-            else if (obj1Extension == "cue" && obj2Extension != "cue") || (obj1Extension == "ccd" && obj2Extension != "ccd") {
-                return obj1Filename < obj2Filename
+            // Check cue/ccd
             } else if obj1Extension == "cue" || obj1Extension == "ccd" {
                 return true
             } else if obj2Extension == "cue" || obj2Extension == "ccd" {
@@ -753,10 +751,9 @@ public extension PVEmulatorConfiguration {
                 return true
             } // Standard sort
             else {
-                return obj1Filename > obj2Filename
+                return obj1Filename < obj2Filename
             }
         }
-
         return sortedPaths
     }
 }
