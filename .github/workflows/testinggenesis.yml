@@ -2,7 +2,7 @@ name: Build and Upload Genesis for Testing Branch
 on:
   push:
     branches:
-      - testing
+      - main
 
 # concurrency:
 #   group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && github.head_ref || github.ref }}
